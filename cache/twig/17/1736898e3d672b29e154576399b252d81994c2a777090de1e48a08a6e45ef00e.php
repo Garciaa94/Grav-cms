@@ -40,8 +40,12 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
     public function block_input($context, array $blocks = [])
     {
         // line 4
-        echo "    <div class=\"form-textarea-wrapper ";
+        echo "    <div class=\"";
+        ((($context["form_field_wrapper_classes"] ?? null)) ? (print (twig_escape_filter($this->env, ($context["form_field_wrapper_classes"] ?? null), "html", null, true))) : (print ("form-textarea-wrapper")));
+        echo " ";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "size", []), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "wrapper_classes", []), "html", null, true);
         echo "\">
         <textarea
             ";
@@ -53,7 +57,7 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
         // line 9
         echo "            ";
         $this->displayBlock('input_attributes', $context, $blocks);
-        // line 25
+        // line 32
         echo "            >";
         echo twig_escape_filter($this->env, twig_trim_filter(($context["value"] ?? null)), "html");
         echo "</textarea>
@@ -65,18 +69,15 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
     public function block_input_attributes($context, array $blocks = [])
     {
         // line 10
-        echo "                ";
-        if ($this->getAttribute(($context["field"] ?? null), "classes", [], "any", true, true)) {
-            echo "class=\"";
-            echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "classes", []), "html", null, true);
-            echo "\" ";
-        } else {
-            echo "class=\"";
-            echo twig_escape_filter($this->env, (($this->getAttribute(($context["field"] ?? null), "classes", [], "any", true, true)) ? (_twig_default_filter($this->getAttribute(($context["field"] ?? null), "classes", []), "input")) : ("input")), "html", null, true);
-            echo "\" ";
-        }
+        echo "                class=\"";
+        echo twig_escape_filter($this->env, ($context["form_field_textarea_classes"] ?? null), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "classes", []), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "size", []), "html", null, true);
+        echo "\"
+                ";
         // line 11
-        echo "                ";
         if ($this->getAttribute(($context["field"] ?? null), "id", [], "any", true, true)) {
             echo "id=\"";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "id", []));
@@ -125,7 +126,7 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
         }
         // line 19
         echo "                ";
-        if (twig_in_filter($this->getAttribute($this->getAttribute(($context["field"] ?? null), "validate", []), "required", []), [0 => "on", 1 => "true", 2 => 1])) {
+        if (($context["required"] ?? null)) {
             echo "required=\"required\"";
         }
         // line 20
@@ -139,11 +140,7 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
         echo "                ";
         if ($this->getAttribute($this->getAttribute(($context["field"] ?? null), "validate", []), "message", [])) {
             echo "title=\"";
-            if ($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "twig", [], "any", false, true), "twig", [], "any", false, true), "filters", [], "any", false, true), "tu", [], "array", true, true)) {
-                echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Plugin\Admin\AdminTwigExtension')->tuFilter($this->getAttribute($this->getAttribute(($context["field"] ?? null), "validate", []), "message", [])));
-            } else {
-                echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate($this->env, $this->getAttribute($this->getAttribute(($context["field"] ?? null), "validate", []), "message", [])));
-            }
+            echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate($this->env, $this->getAttribute($this->getAttribute(($context["field"] ?? null), "validate", []), "message", [])));
             echo "\"";
         }
         // line 22
@@ -161,6 +158,42 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
             echo "\"";
         }
         // line 24
+        echo "                ";
+        if ($this->getAttribute(($context["field"] ?? null), "minlength", [], "any", true, true)) {
+            echo "minlength=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "minlength", []), "html", null, true);
+            echo "\"";
+        }
+        // line 25
+        echo "                ";
+        if ($this->getAttribute(($context["field"] ?? null), "maxlength", [], "any", true, true)) {
+            echo "maxlength=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["field"] ?? null), "maxlength", []), "html", null, true);
+            echo "\"";
+        }
+        // line 26
+        echo "                ";
+        if ($this->getAttribute(($context["field"] ?? null), "datasets", [])) {
+            // line 27
+            echo "                    ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["field"] ?? null), "datasets", []));
+            foreach ($context['_seq'] as $context["datakey"] => $context["datavalue"]) {
+                // line 28
+                echo "                        data-";
+                echo twig_escape_filter($this->env, $context["datakey"], "html", null, true);
+                echo "=\"";
+                echo twig_escape_filter($this->env, $context["datavalue"], "html_attr");
+                echo "\"
+                    ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['datakey'], $context['datavalue'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 30
+            echo "                ";
+        }
+        // line 31
         echo "            ";
     }
 
@@ -176,7 +209,7 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
 
     public function getDebugInfo()
     {
-        return array (  164 => 24,  157 => 23,  150 => 22,  139 => 21,  132 => 20,  127 => 19,  120 => 18,  115 => 17,  110 => 16,  105 => 15,  98 => 14,  93 => 13,  86 => 12,  79 => 11,  68 => 10,  65 => 9,  57 => 25,  54 => 9,  49 => 7,  43 => 4,  40 => 3,  30 => 1,);
+        return array (  197 => 31,  194 => 30,  183 => 28,  178 => 27,  175 => 26,  168 => 25,  161 => 24,  154 => 23,  147 => 22,  140 => 21,  133 => 20,  128 => 19,  121 => 18,  116 => 17,  111 => 16,  106 => 15,  99 => 14,  94 => 13,  87 => 12,  81 => 11,  72 => 10,  69 => 9,  61 => 32,  58 => 9,  53 => 7,  43 => 4,  40 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -192,13 +225,13 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
         return new Source("{% extends \"forms/field.html.twig\" %}
 
 {% block input %}
-    <div class=\"form-textarea-wrapper {{ field.size }}\">
+    <div class=\"{{ form_field_wrapper_classes ?: 'form-textarea-wrapper' }} {{ field.size }} {{ field.wrapper_classes }}\">
         <textarea
             {# required attribute structures #}
             name=\"{{ (scope ~ field.name)|fieldName }}\"
             {# input attribute structures #}
             {% block input_attributes %}
-                {% if field.classes is defined %}class=\"{{ field.classes }}\" {% else %}class=\"{{ field.classes|default('input') }}\" {% endif %}
+                class=\"{{ form_field_textarea_classes }} {{ field.classes }} {{ field.size }}\"
                 {% if field.id is defined %}id=\"{{ field.id|e }}\" {% endif %}
                 {% if field.style is defined %}style=\"{{ field.style|e }}\" {% endif %}
                 {% if field.disabled or isDisabledToggleable %}disabled=\"disabled\"{% endif %}
@@ -207,11 +240,18 @@ class __TwigTemplate_f4db7100aaf70c85af1412b5f6c70e5f31fe0cf9b824a40bda8f173b460
                 {% if field.novalidate in ['on', 'true', 1] %}novalidate=\"novalidate\"{% endif %}
                 {% if field.readonly in ['on', 'true', 1] %}readonly=\"readonly\"{% endif %}
                 {% if field.autocomplete in ['on', 'off'] %}autocomplete=\"{{ field.autocomplete }}\"{% endif %}
-                {% if field.validate.required in ['on', 'true', 1] %}required=\"required\"{% endif %}
+                {% if required %}required=\"required\"{% endif %}
                 {% if field.validate.pattern %}pattern=\"{{ field.validate.pattern }}\"{% endif %}
-                {% if field.validate.message %}title=\"{% if grav.twig.twig.filters['tu'] is defined %}{{ field.validate.message|tu|e }}{% else %}{{ field.validate.message|t|e }}{% endif %}\"{% endif %}
+                {% if field.validate.message %}title=\"{{ field.validate.message|t|e }}\"{% endif %}
                 {% if field.rows is defined %}rows=\"{{ field.rows }}\"{% endif %}
                 {% if field.cols is defined %}cols=\"{{ field.cols }}\"{% endif %}
+                {% if field.minlength is defined %}minlength=\"{{ field.minlength }}\"{% endif %}
+                {% if field.maxlength is defined %}maxlength=\"{{ field.maxlength }}\"{% endif %}
+                {% if field.datasets %}
+                    {% for datakey, datavalue in field.datasets %}
+                        data-{{ datakey }}=\"{{ datavalue|e('html_attr') }}\"
+                    {% endfor %}
+                {% endif %}
             {% endblock %}
             >{{ value|trim|e('html') }}</textarea>
     </div>

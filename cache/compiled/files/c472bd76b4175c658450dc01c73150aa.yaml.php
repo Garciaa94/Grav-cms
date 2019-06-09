@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/themes/antimatter/languages.yaml',
-    'modified' => 1512568073,
+    'modified' => 1559800684,
     'data' => [
         'en' => [
             'TRANSLATION_TEST' => 'Antimatter!',

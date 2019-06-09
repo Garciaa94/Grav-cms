@@ -24,6 +24,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             'head' => [$this, 'block_head'],
             'stylesheets' => [$this, 'block_stylesheets'],
             'javascripts' => [$this, 'block_javascripts'],
+            'assets' => [$this, 'block_assets'],
             'header' => [$this, 'block_header'],
             'header_extra' => [$this, 'block_header_extra'],
             'header_navigation' => [$this, 'block_header_navigation'],
@@ -44,49 +45,50 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
         echo "<!DOCTYPE html>
 <html lang=\"";
         // line 3
-        echo (($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguage", [])) ? ($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguage", [])) : ("en"));
+        echo (($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [])) ? ($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [])) : ($this->getAttribute($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "config", []), "site", []), "default_lang", [])));
         echo "\">
 <head>
 ";
         // line 5
         $this->displayBlock('head', $context, $blocks);
-        // line 40
+        // line 43
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 41
+        // line 44
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "body_classes", []);
         echo "\">
     <div id=\"sb-site\">
         ";
-        // line 43
+        // line 46
         $this->displayBlock('header', $context, $blocks);
-        // line 60
-        echo "
-        ";
-        // line 61
-        $this->displayBlock('showcase', $context, $blocks);
-        // line 62
-        echo "
-        ";
         // line 63
-        $this->displayBlock('body', $context, $blocks);
-        // line 68
         echo "
         ";
-        // line 69
+        // line 64
+        $this->displayBlock('showcase', $context, $blocks);
+        // line 65
+        echo "
+        ";
+        // line 66
+        $this->displayBlock('body', $context, $blocks);
+        // line 71
+        echo "
+        ";
+        // line 72
         $this->displayBlock('footer', $context, $blocks);
-        // line 77
+        // line 80
         echo "    </div>
     ";
-        // line 78
+        // line 81
         $this->displayBlock('sidebar_navigation', $context, $blocks);
-        // line 85
+        // line 88
         echo "    ";
         $this->displayBlock('bottom', $context, $blocks);
-        // line 98
+        // line 101
         echo "</body>
 </html>
 ";
+        $this->env->getExtension('Phive\Twig\Extensions\Deferred\DeferredExtension')->resolve($this, $context, $blocks);
     }
 
     // line 5
@@ -120,18 +122,17 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
         // line 13
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 29
-        echo "    ";
-        echo $this->getAttribute(($context["assets"] ?? null), "css", [], "method");
         echo "
-
     ";
-        // line 31
+        // line 30
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 37
-        echo "    ";
-        echo $this->getAttribute(($context["assets"] ?? null), "js", [], "method");
+        // line 36
         echo "
-
+    ";
+        // line 37
+        $this->displayBlock('assets', $context, $blocks);
+        // line 41
+        echo "
 ";
     }
 
@@ -183,33 +184,53 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
         echo "    ";
     }
 
-    // line 31
+    // line 30
     public function block_javascripts($context, array $blocks = [])
     {
-        // line 32
+        // line 31
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "jquery", 1 => 101], "method");
-        // line 33
+        // line 32
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "theme://js/modernizr.custom.71422.js", 1 => 100], "method");
-        // line 34
+        // line 33
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "theme://js/antimatter.js"], "method");
-        // line 35
+        // line 34
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "theme://js/slidebars.min.js"], "method");
-        // line 36
+        // line 35
         echo "    ";
     }
 
-    // line 43
+    public function block_assets($context, array $blocks = array())
+    {
+        $this->env->getExtension('Phive\Twig\Extensions\Deferred\DeferredExtension')->defer($this, 'assets');
+    }
+
+    // line 37
+    public function block_assets_deferred($context, array $blocks = array())
+    {
+        // line 38
+        echo "        ";
+        echo $this->getAttribute(($context["assets"] ?? null), "css", [], "method");
+        echo "
+        ";
+        // line 39
+        echo $this->getAttribute(($context["assets"] ?? null), "js", [], "method");
+        echo "
+    ";
+        $this->env->getExtension('Phive\Twig\Extensions\Deferred\DeferredExtension')->resolve($this, $context, $blocks);
+    }
+
+    // line 46
     public function block_header($context, array $blocks = [])
     {
-        // line 44
+        // line 47
         echo "        <header id=\"header\">
             <div id=\"logo\">
                 <h3><a href=\"";
-        // line 46
+        // line 49
         echo (((($context["base_url"] ?? null) == "")) ? ("/") : (($context["base_url"] ?? null)));
         echo "\">";
         echo $this->getAttribute($this->getAttribute(($context["config"] ?? null), "site", []), "title", []);
@@ -217,103 +238,100 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             </div>
             <div id=\"navbar\">
                 ";
-        // line 49
+        // line 52
         $this->displayBlock('header_extra', $context, $blocks);
-        // line 50
-        echo "                ";
-        if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "langswitcher", []), "enabled", [])) {
-            // line 51
-            echo "                ";
-            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 51)->display($context);
-            // line 52
-            echo "                ";
-        }
         // line 53
         echo "                ";
-        $this->displayBlock('header_navigation', $context, $blocks);
+        if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "langswitcher", []), "enabled", [])) {
+            // line 54
+            echo "                ";
+            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 54)->display($context);
+            // line 55
+            echo "                ";
+        }
         // line 56
+        echo "                ";
+        $this->displayBlock('header_navigation', $context, $blocks);
+        // line 59
         echo "                <span class=\"panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars\"></span>
             </div>
         </header>
         ";
     }
 
-    // line 49
+    // line 52
     public function block_header_extra($context, array $blocks = [])
     {
     }
 
-    // line 53
+    // line 56
     public function block_header_navigation($context, array $blocks = [])
     {
-        // line 54
+        // line 57
         echo "                ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 54)->display($context);
-        // line 55
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 57)->display($context);
+        // line 58
         echo "                ";
     }
 
-    // line 61
+    // line 64
     public function block_showcase($context, array $blocks = [])
     {
     }
 
-    // line 63
+    // line 66
     public function block_body($context, array $blocks = [])
     {
-        // line 64
+        // line 67
         echo "        <section id=\"body\" class=\"";
         echo ($context["class"] ?? null);
         echo "\">
             ";
-        // line 65
+        // line 68
         $this->displayBlock('content', $context, $blocks);
-        // line 66
+        // line 69
         echo "        </section>
         ";
     }
 
-    // line 65
+    // line 68
     public function block_content($context, array $blocks = [])
     {
     }
 
-    // line 69
+    // line 72
     public function block_footer($context, array $blocks = [])
     {
-        // line 70
+        // line 73
         echo "        <footer id=\"footer\">
             <div class=\"totop\">
                 <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
             </div>
-            <p><a href=\"https://www.facebook.com/garcia94\">FaceBook</a>  <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by peter.garcia@pucese.edu.ec</a>.</p>
+            <p><a href=\"https://www.facebook.com/garciaa94\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a>peter.garcia@pucese.edu.ec</a>.</p>
         </footer>
         ";
     }
 
-    // line 78
+    // line 81
     public function block_sidebar_navigation($context, array $blocks = [])
     {
-        // line 79
+        // line 82
         echo "        <div class=\"sb-slidebar sb-left sb-width-thin\">
             <div id=\"panel\">
             ";
-        // line 81
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 81)->display($context);
-        // line 82
+        // line 84
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 84)->display($context);
+        // line 85
         echo "            </div>
         </div>
     ";
     }
 
-    // line 85
+    // line 88
     public function block_bottom($context, array $blocks = [])
     {
-        // line 86
-        echo "        ";
-        echo $this->getAttribute(($context["assets"] ?? null), "js", [0 => "bottom"], "method");
-        echo "
-        <script>
+        // line 89
+        echo "         <script>
         \$(function () {
             \$(document).ready(function() {
               \$.slidebars({
@@ -323,6 +341,10 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             });
         });
         </script>
+        ";
+        // line 99
+        echo $this->getAttribute(($context["assets"] ?? null), "js", [0 => "bottom"], "method");
+        echo "
     ";
     }
 
@@ -338,7 +360,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
 
     public function getDebugInfo()
     {
-        return array (  313 => 86,  310 => 85,  304 => 82,  302 => 81,  298 => 79,  295 => 78,  285 => 70,  282 => 69,  277 => 65,  272 => 66,  270 => 65,  265 => 64,  262 => 63,  257 => 61,  253 => 55,  250 => 54,  247 => 53,  242 => 49,  235 => 56,  232 => 53,  229 => 52,  226 => 51,  223 => 50,  221 => 49,  213 => 46,  209 => 44,  206 => 43,  202 => 36,  199 => 35,  196 => 34,  193 => 33,  190 => 32,  187 => 31,  183 => 28,  180 => 27,  177 => 26,  174 => 25,  171 => 24,  168 => 23,  165 => 22,  163 => 21,  160 => 20,  157 => 19,  154 => 18,  151 => 17,  148 => 16,  145 => 15,  142 => 14,  139 => 13,  131 => 37,  129 => 31,  123 => 29,  121 => 13,  116 => 11,  112 => 10,  109 => 9,  107 => 8,  99 => 7,  96 => 6,  93 => 5,  87 => 98,  84 => 85,  82 => 78,  79 => 77,  77 => 69,  74 => 68,  72 => 63,  69 => 62,  67 => 61,  64 => 60,  62 => 43,  57 => 41,  54 => 40,  52 => 5,  47 => 3,  44 => 2,  42 => 1,);
+        return array (  346 => 99,  334 => 89,  331 => 88,  325 => 85,  323 => 84,  319 => 82,  316 => 81,  306 => 73,  303 => 72,  298 => 68,  293 => 69,  291 => 68,  286 => 67,  283 => 66,  278 => 64,  274 => 58,  271 => 57,  268 => 56,  263 => 52,  256 => 59,  253 => 56,  250 => 55,  247 => 54,  244 => 53,  242 => 52,  234 => 49,  230 => 47,  227 => 46,  220 => 39,  215 => 38,  212 => 37,  203 => 35,  200 => 34,  197 => 33,  194 => 32,  191 => 31,  188 => 30,  184 => 28,  181 => 27,  178 => 26,  175 => 25,  172 => 24,  169 => 23,  166 => 22,  164 => 21,  161 => 20,  158 => 19,  155 => 18,  152 => 17,  149 => 16,  146 => 15,  143 => 14,  140 => 13,  135 => 41,  133 => 37,  130 => 36,  128 => 30,  125 => 29,  123 => 13,  118 => 11,  114 => 10,  111 => 9,  109 => 8,  101 => 7,  98 => 6,  95 => 5,  88 => 101,  85 => 88,  83 => 81,  80 => 80,  78 => 72,  75 => 71,  73 => 66,  70 => 65,  68 => 64,  65 => 63,  63 => 46,  58 => 44,  55 => 43,  53 => 5,  48 => 3,  45 => 2,  43 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -353,7 +375,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
     {
         return new Source("{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
-<html lang=\"{{ grav.language.getLanguage ?: 'en' }}\">
+<html lang=\"{{ grav.language.getActive ?: grav.config.site.default_lang }}\">
 <head>
 {% block head %}
     <meta charset=\"utf-8\" />
@@ -379,7 +401,6 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
         {% endif %}
     {% endblock %}
-    {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
@@ -387,7 +408,11 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
         {% do assets.addJs('theme://js/antimatter.js') %}
         {% do assets.addJs('theme://js/slidebars.min.js') %}
     {% endblock %}
-    {{ assets.js() }}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
 
 {% endblock head %}
 </head>
@@ -424,7 +449,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             <div class=\"totop\">
                 <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
             </div>
-            <p><a href=\"https://www.facebook.com/garcia94\">FaceBook</a>  <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by peter.garcia@pucese.edu.ec</a>.</p>
+            <p><a href=\"https://www.facebook.com/garciaa94\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a>peter.garcia@pucese.edu.ec</a>.</p>
         </footer>
         {% endblock %}
     </div>
@@ -436,8 +461,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
         </div>
     {% endblock %}
     {% block bottom %}
-        {{ assets.js('bottom') }}
-        <script>
+         <script>
         \$(function () {
             \$(document).ready(function() {
               \$.slidebars({
@@ -447,6 +471,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             });
         });
         </script>
+        {{ assets.js('bottom')|raw }}
     {% endblock %}
 </body>
 </html>

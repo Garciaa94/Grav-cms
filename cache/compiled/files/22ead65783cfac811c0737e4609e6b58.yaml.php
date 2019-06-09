@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/themes/antimatter/blueprints.yaml',
-    'modified' => 1512568073,
+    'modified' => 1559800684,
     'data' => [
         'name' => 'Antimatter',
-        'version' => '2.1.2',
+        'version' => '2.2.0',
         'description' => 'Antimatter is the default theme included with **Grav**',
         'icon' => 'empire',
         'author' => [
@@ -18,6 +18,12 @@ return [
         'keywords' => 'antimatter, theme, core, modern, fast, responsive, html5, css3',
         'bugs' => 'https://github.com/getgrav/grav-theme-antimatter/issues',
         'license' => 'MIT',
+        'dependencies' => [
+            0 => [
+                'name' => 'grav',
+                'version' => '>=1.5.10'
+            ]
+        ],
         'form' => [
             'validation' => 'loose',
             'fields' => [
