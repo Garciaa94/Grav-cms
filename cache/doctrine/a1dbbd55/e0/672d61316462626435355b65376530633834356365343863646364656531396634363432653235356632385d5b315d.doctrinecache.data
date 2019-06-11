@@ -1,9 +1,5 @@
----
-title: 'Ejercicio JS 1.2'
-published: true
----
-
-<html lang="es">
+1560728289
+a:2:{s:7:"content";s:1747:"<html lang="es">
     <body>
 <center>        
 <script type="text/javascript">
@@ -45,7 +41,7 @@ published: true
     }
 </script>
             <p><label for="valor">Ingrese un número:</label><br><input type="text" id="valor" onkeyup="myFunction()"><script>.sleep(50000);</script><br><br><code id="figura" class="fig"></code></p>
-			<script>//sleep(2000);</script>
+            <script>//sleep(2000);</script>
     </center> 
 </body>
-</html>
+</html>";s:12:"content_meta";N;}

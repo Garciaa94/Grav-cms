@@ -1,17 +1,5 @@
----
-title: HOME
-content:
-    items:
-        - '@self.children'
-    limit: 5
-    order:
-        by: date
-        dir: desc
-    pagination: true
-    url_taxonomy_filters: true
----
-
-<html lang="en">
+1560819655
+a:2:{s:7:"content";s:2302:"<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,4 +74,4 @@ content:
   <path d="M270 150 L0 270 L0 30 Z " style="fill:rgb(0,0,0);"/><!-- tringulo Izquierdo -->
 </svg>
 </body>
-</html>
+</html>";s:12:"content_meta";N;}

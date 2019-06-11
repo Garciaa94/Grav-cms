@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/accounts/adriangarcia.yaml',
-    'modified' => 1559801312,
+    'modified' => 1560127344,
     'data' => [
         'email' => 'adrian1994215@gmail.com',
         'fullname' => 'Adrian Garcia',

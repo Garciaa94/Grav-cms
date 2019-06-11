@@ -1,17 +1,5 @@
----
-title: HOME
-content:
-    items:
-        - '@self.children'
-    limit: 5
-    order:
-        by: date
-        dir: desc
-    pagination: true
-    url_taxonomy_filters: true
----
-
-<html lang="en">
+1560818575
+a:2:{s:7:"content";s:2303:"<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,12 +66,12 @@ content:
     <br>
     Bandera de Jamaica
     <br>
-<svg width="600" height="300">
-  <rect width="600" height="300" style="fill:rgb(254,223,0);" /><!-- Color base bandera -->
-  <path d="M300 110 L20 0 L580 0 Z " style="fill:rgb(0,155,58);"/> <!-- triangulo arriba-->
-  <path d="M300 190 L20 300 L580 300 Z " style="fill:rgb(0,155,58);"/><!-- triangulo abajo -->
-  <path d="M330 150 L600 270 L600 30 Z " style="fill:rgb(0,0,0);"/><!-- triangulo derecho -->
-  <path d="M270 150 L0 270 L0 30 Z " style="fill:rgb(0,0,0);"/><!-- tringulo Izquierdo -->
+     <svg width="600" height="300">
+<rect width="600" height="300" style="fill:rgb(254,223,0);" /><!-- Color base bandera -->
+  <path d="M300 120 L20 0 L580 0 Z " style="fill:rgb(0,155,58);"/> <!-- triangulo arriba-->
+  <path d="M300 180 L20 300 L580 300 Z " style="fill:rgb(0,155,58);"/><!-- triangulo abajo -->
+  <path d="M320 150 L600 280 L600 20 Z " style="fill:rgb(0,0,0);"/><!-- triangulo derecho -->
+  <path d="M280 150 L0 280 L0 20 Z " style="fill:rgb(0,0,0);"/><!-- tringulo derecho -->
 </svg>
 </body>
-</html>
+</html>";s:12:"content_meta";N;}
