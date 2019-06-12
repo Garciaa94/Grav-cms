@@ -75,8 +75,5 @@ content:
             <li><a href="https://www.facebook.com/garciaa94">FaceBook</a></li>
         </center></ul>
     </div>
-    <br>
-    Bandera de Jamaica
-    <br>
 </body>
 </html>

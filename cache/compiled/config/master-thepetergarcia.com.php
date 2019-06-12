@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560325255,
-    'checksum' => 'c4c6097dc2c7e520568319cac16e5cf1',
+    'timestamp' => 1560328015,
+    'checksum' => '5f0003cdfdca2bcda5056be2cc58872f',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -39,7 +39,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1560321884
+                'modified' => 1560326302
             ],
             'themes/antimatter' => [
                 'file' => 'user/config/themes/antimatter.yaml',
@@ -112,6 +112,10 @@ return [
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
                 'modified' => 1560321765
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/plugins/ganalytics/ganalytics.yaml',
+                'modified' => 1560327988
             ]
         ]
     ],
@@ -330,6 +334,24 @@ return [
                         'send_welcome_email' => false
                     ]
                 ]
+            ],
+            'ganalytics' => [
+                'enabled' => true,
+                'trackingId' => 'UA-139886031-1',
+                'position' => 'head',
+                'objectName' => 'ga',
+                'forceSsl' => false,
+                'async' => true,
+                'anonymizeIp' => false,
+                'blockedIps' => [
+                    
+                ],
+                'cookieConfig' => false,
+                'cookieName' => '_ga',
+                'cookieDomain' => 'wwww.thepetergarcia.com',
+                'cookieExpires' => 63072000,
+                'debugStatus' => false,
+                'debugTrace' => true
             ]
         ],
         'backups' => [
