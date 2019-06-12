@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://admin/admin.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321762,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
@@ -12,6 +12,10 @@ return [
         'body_classes' => '',
         'content_padding' => true,
         'twofa_enabled' => true,
+        'log_viewer_files' => [
+            0 => 'grav',
+            1 => 'email'
+        ],
         'sidebar' => [
             'activate' => 'tab',
             'hover_delay' => 100,
@@ -28,7 +32,8 @@ return [
             'dashboard-pages' => true
         ],
         'pages' => [
-            'show_parents' => 'both'
+            'show_parents' => 'both',
+            'show_modular' => true
         ],
         'session' => [
             'timeout' => 1800
@@ -37,10 +42,11 @@ return [
             'delete_page' => true
         ],
         'edit_mode' => 'normal',
-        'frontend_pages_target' => '_blank',
+        'frontend_preview_target' => 'inline',
         'show_github_msg' => true,
         'pages_list_display_field' => 'title',
-        'google_fonts' => true,
+        'google_fonts' => false,
+        'admin_icons' => 'line-awesome',
         'enable_auto_updates_check' => true,
         'notifications' => [
             'feed' => true,

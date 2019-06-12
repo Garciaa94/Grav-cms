@@ -1,13 +1,13 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1559802175,
-    'checksum' => 'b7ff2c175ace414eb70ef7d9f6a08c0f',
+    'timestamp' => 1560325375,
+    'checksum' => '074a2107f3aa3bc1ddb89a06aee9d69a',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
                 'file' => 'user/plugins/admin/blueprints/config/media.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321762
             ]
         ],
         'system/blueprints/config' => [
@@ -43,11 +43,11 @@ return [
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321763
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321765
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
@@ -59,19 +59,19 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321762
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321766
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321764
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1512568073
+                'modified' => 1560321765
             ]
         ]
     ],
@@ -2394,10 +2394,10 @@ return [
             ],
             'plugins.email.mailer.engine' => [
                 'type' => 'select',
-                'label' => 'Mail Engine',
+                'label' => 'PLUGIN_EMAIL.MAIL_ENGINE',
                 'size' => 'medium',
                 'options' => [
-                    'none' => 'Disabled',
+                    'none' => 'PLUGIN_ADMIN.DISABLED',
                     'smtp' => 'SMTP',
                     'sendmail' => 'Sendmail'
                 ],
@@ -2406,11 +2406,11 @@ return [
             ],
             'plugins.email.content_type' => [
                 'type' => 'select',
-                'label' => 'Content type',
+                'label' => 'PLUGIN_EMAIL.CONTENT_TYPE',
                 'size' => 'medium',
                 'default' => 'text/html',
                 'options' => [
-                    'text/plain' => 'Plain text',
+                    'text/plain' => 'PLUGIN_EMAIL.CONTENT_TYPE_PLAIN_TEXT',
                     'text/html' => 'HTML'
                 ],
                 'name' => 'plugins.email.content_type',
@@ -2419,14 +2419,14 @@ return [
             'plugins.email.charset' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'Charset',
+                'label' => 'PLUGIN_EMAIL.CHARSET',
                 'name' => 'plugins.email.charset',
                 'validation' => 'loose'
             ],
             'plugins.email.from' => [
                 'type' => 'email',
                 'size' => 'medium',
-                'label' => 'Email from',
+                'label' => 'PLUGIN_EMAIL.EMAIL_FORM',
                 'validate' => [
                     'required' => true,
                     'type' => 'email'
@@ -2437,14 +2437,14 @@ return [
             'plugins.email.from_name' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'Email from name',
+                'label' => 'PLUGIN_EMAIL.EMAIL_FROM_NAME',
                 'name' => 'plugins.email.from_name',
                 'validation' => 'loose'
             ],
             'plugins.email.to' => [
                 'type' => 'email',
                 'size' => 'medium',
-                'label' => 'Email to',
+                'label' => 'PLUGIN_EMAIL.EMAIL_TO',
                 'multiple' => true,
                 'validate' => [
                     'required' => true,
@@ -2456,14 +2456,14 @@ return [
             'plugins.email.to_name' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'Email to name',
+                'label' => 'PLUGIN_EMAIL.EMAIL_TO_NAME',
                 'name' => 'plugins.email.to_name',
                 'validation' => 'loose'
             ],
             'plugins.email.cc' => [
                 'type' => 'email',
                 'size' => 'medium',
-                'label' => 'Email CC',
+                'label' => 'PLUGIN_EMAIL.EMAIL_CC',
                 'multiple' => true,
                 'validate' => [
                     'type' => 'email'
@@ -2474,14 +2474,14 @@ return [
             'plugins.email.cc_name' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'Email CC name',
+                'label' => 'PLUGIN_EMAIL.EMAIL_CC_NAME',
                 'name' => 'plugins.email.cc_name',
                 'validation' => 'loose'
             ],
             'plugins.email.bcc' => [
                 'type' => 'email',
                 'size' => 'medium',
-                'label' => 'Email BCC',
+                'label' => 'PLUGIN_EMAIL.EMAIL_BCC',
                 'multiple' => true,
                 'validate' => [
                     'type' => 'email'
@@ -2492,7 +2492,7 @@ return [
             'plugins.email.reply_to' => [
                 'type' => 'email',
                 'size' => 'medium',
-                'label' => 'Email reply-to',
+                'label' => 'PLUGIN_EMAIL.EMAIL_REPLY_TO',
                 'multiple' => true,
                 'validate' => [
                     'type' => 'email'
@@ -2503,14 +2503,14 @@ return [
             'plugins.email.reply_to_name' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'Email reply-to name',
+                'label' => 'PLUGIN_EMAIL.EMAIL_REPLY_TO_NAME',
                 'name' => 'plugins.email.reply_to_name',
                 'validation' => 'loose'
             ],
             'plugins.email.body' => [
                 'type' => 'textarea',
                 'size' => 'medium',
-                'label' => 'Email body',
+                'label' => 'PLUGIN_EMAIL.EMAIL_BODY',
                 'name' => 'plugins.email.body',
                 'validation' => 'loose'
             ],
@@ -2522,14 +2522,14 @@ return [
             'plugins.email.mailer.smtp.server' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'SMTP server',
+                'label' => 'PLUGIN_EMAIL.SMTP_SERVER',
                 'name' => 'plugins.email.mailer.smtp.server',
                 'validation' => 'loose'
             ],
             'plugins.email.mailer.smtp.port' => [
                 'type' => 'text',
                 'size' => 'small',
-                'label' => 'SMTP port',
+                'label' => 'PLUGIN_EMAIL.SMTP_PORT',
                 'validate' => [
                     'type' => 'number',
                     'min' => 1,
@@ -2541,9 +2541,9 @@ return [
             'plugins.email.mailer.smtp.encryption' => [
                 'type' => 'select',
                 'size' => 'medium',
-                'label' => 'SMTP encryption',
+                'label' => 'PLUGIN_EMAIL.SMTP_ENCRYPTION',
                 'options' => [
-                    'none' => 'None',
+                    'none' => 'PLUGIN_EMAIL.SMTP_ENCRYPTION_NONE',
                     'ssl' => 'SSL',
                     'tls' => 'TLS'
                 ],
@@ -2553,14 +2553,16 @@ return [
             'plugins.email.mailer.smtp.user' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'SMTP login name',
+                'autocomplete' => 'nope',
+                'label' => 'PLUGIN_EMAIL.SMTP_LOGIN_NAME',
                 'name' => 'plugins.email.mailer.smtp.user',
                 'validation' => 'loose'
             ],
             'plugins.email.mailer.smtp.password' => [
                 'type' => 'password',
                 'size' => 'medium',
-                'label' => 'SMTP password',
+                'autocomplete' => 'nope',
+                'label' => 'PLUGIN_EMAIL.SMTP_PASSWORD',
                 'name' => 'plugins.email.mailer.smtp.password',
                 'validation' => 'loose'
             ],
@@ -2572,13 +2574,57 @@ return [
             'plugins.email.mailer.sendmail.bin' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => 'Path to sendmail',
+                'label' => 'PLUGIN_EMAIL.PATH_TO_SENDMAIL',
                 'name' => 'plugins.email.mailer.sendmail.bin',
+                'validation' => 'loose'
+            ],
+            'plugins.email.queue' => [
+                'type' => '_parent',
+                'name' => 'plugins.email.queue',
+                'form_field' => false
+            ],
+            'plugins.email.queue.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_EMAIL.QUEUE_ENABLED',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.email.queue.enabled',
+                'validation' => 'loose'
+            ],
+            'plugins.email.queue.flush_frequency' => [
+                'type' => 'cron',
+                'label' => 'PLUGIN_EMAIL.QUEUE_FLUSH_FREQUENCY',
+                'size' => 'medium',
+                'default' => '* * * * *',
+                'name' => 'plugins.email.queue.flush_frequency',
+                'validation' => 'loose'
+            ],
+            'plugins.email.queue.flush_msg_limit' => [
+                'type' => 'number',
+                'label' => 'PLUGIN_EMAIL.QUEUE_FLUSH_MSG_LIMIT',
+                'size' => 'x-small',
+                'append' => 'PLUGIN_EMAIL.QUEUE_FLUSH_MSG_LIMIT_APPEND',
+                'name' => 'plugins.email.queue.flush_msg_limit',
+                'validation' => 'loose'
+            ],
+            'plugins.email.queue.flush_time_limit' => [
+                'type' => 'number',
+                'label' => 'PLUGIN_EMAIL.QUEUE_FLUSH_TIME_LIMIT',
+                'size' => 'x-small',
+                'append' => 'PLUGIN_EMAIL.QUEUE_FLUSH_TIME_LIMIT_APPEND',
+                'name' => 'plugins.email.queue.flush_time_limit',
                 'validation' => 'loose'
             ],
             'plugins.email.debug' => [
                 'type' => 'toggle',
-                'label' => 'Debug',
+                'label' => 'PLUGIN_EMAIL.DEBUG',
                 'highlight' => 1,
                 'default' => 0,
                 'options' => [
@@ -3158,7 +3204,7 @@ return [
             ],
             'plugins.admin.twofa_enabled' => [
                 'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.2FA_TITLE',
+                'label' => 'PLUGIN_LOGIN.2FA_TITLE',
                 'default' => 1,
                 'highlight' => 1,
                 'options' => [
@@ -3267,17 +3313,17 @@ return [
                 'name' => 'plugins.admin.edit_mode',
                 'validation' => 'loose'
             ],
-            'plugins.admin.frontend_pages_target' => [
+            'plugins.admin.frontend_preview_target' => [
                 'type' => 'select',
-                'label' => 'Open frontend pages in',
+                'label' => 'Preview pages target',
                 'size' => 'medium',
-                'default' => '_blank',
+                'default' => 'inline',
                 'options' => [
+                    'inline' => 'Inline in Admin',
                     '_blank' => 'New tab',
-                    'frontend_tab' => 'Separate tab (always the same)',
                     '_self' => 'Current tab'
                 ],
-                'name' => 'plugins.admin.frontend_pages_target',
+                'name' => 'plugins.admin.frontend_preview_target',
                 'validation' => 'loose'
             ],
             'plugins.admin.pages' => [
@@ -3298,11 +3344,33 @@ return [
                 'name' => 'plugins.admin.pages.show_parents',
                 'validation' => 'loose'
             ],
+            'plugins.admin.pages.parents_levels' => [
+                'type' => 'text',
+                'label' => 'Parents Levels',
+                'size' => 'small',
+                'name' => 'plugins.admin.pages.parents_levels',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pages.show_modular' => [
+                'type' => 'toggle',
+                'label' => 'Modular parents',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.admin.pages.show_modular',
+                'validation' => 'loose'
+            ],
             'plugins.admin.google_fonts' => [
                 'type' => 'toggle',
                 'label' => 'Use Google Fonts',
-                'highlight' => 1,
-                'default' => 1,
+                'highlight' => 0,
+                'default' => 0,
                 'options' => [
                     1 => 'PLUGIN_ADMIN.ENABLED',
                     0 => 'PLUGIN_ADMIN.DISABLED'
@@ -3404,6 +3472,107 @@ return [
                 'label' => 'Hide modular page types in Admin',
                 'value_only' => true,
                 'name' => 'plugins.admin.hide_modular_page_types',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.log_viewer_files' => [
+                'type' => 'selectize',
+                'size' => 'medium',
+                'label' => 'PLUGIN_ADMIN.LOG_VIEWER_FILES',
+                'classes' => 'fancy',
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'plugins.admin.log_viewer_files',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pagemedia' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin.pagemedia',
+                'form_field' => false
+            ],
+            'plugins.admin.pagemedia.resize_width' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'append' => 'pixels',
+                'label' => 'Resize Width',
+                'default' => 0,
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'plugins.admin.pagemedia.resize_width',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pagemedia.resize_height' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'append' => 'pixels',
+                'label' => 'Resize Height',
+                'default' => 0,
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'plugins.admin.pagemedia.resize_height',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pagemedia.res_min_width' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'append' => 'pixels',
+                'label' => 'Resolution Min Width',
+                'default' => 0,
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'plugins.admin.pagemedia.res_min_width',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pagemedia.res_min_height' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'append' => 'pixels',
+                'label' => 'Resolution Min Height',
+                'default' => 0,
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'plugins.admin.pagemedia.res_min_height',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pagemedia.res_max_width' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'append' => 'pixels',
+                'label' => 'Resolution Max Width',
+                'default' => 0,
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'plugins.admin.pagemedia.res_max_width',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pagemedia.res_max_height' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'append' => 'pixels',
+                'label' => 'Resolution Max Height',
+                'default' => 0,
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'plugins.admin.pagemedia.res_max_height',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pagemedia.resize_quality' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'append' => '0...1',
+                'label' => 'Resize Quality',
+                'default' => 0.8,
+                'validate' => [
+                    'type' => 'number',
+                    'step' => 0.01
+                ],
+                'name' => 'plugins.admin.pagemedia.resize_quality',
                 'validation' => 'loose'
             ],
             'plugins.admin.widgets' => [
@@ -3650,7 +3819,7 @@ return [
             ],
             'plugins.problems.built_in_css' => [
                 'type' => 'toggle',
-                'label' => 'Use built in CSS',
+                'label' => 'PLUGIN_PROBLEMS.BUILTIN_CSS',
                 'highlight' => 1,
                 'default' => 1,
                 'options' => [
@@ -3693,7 +3862,7 @@ return [
             'plugins.error.routes.404' => [
                 'type' => 'text',
                 'size' => 'medium',
-                'label' => '404 Route',
+                'label' => 'PLUGIN_ERROR.ROUTE_404',
                 'default' => '/error',
                 'name' => 'plugins.error.routes.404',
                 'validation' => 'strict'
@@ -3748,6 +3917,12 @@ return [
                 'name' => 'plugins.login.redirect_after_login',
                 'validation' => 'loose'
             ],
+            'plugins.login.redirect_after_logout' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LOGIN.REDIRECT_AFTER_LOGOUT',
+                'name' => 'plugins.login.redirect_after_logout',
+                'validation' => 'loose'
+            ],
             'plugins.login.route_forgot' => [
                 'type' => 'text',
                 'size' => 'medium',
@@ -3797,6 +3972,21 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.login.dynamic_page_visibility',
+                'validation' => 'loose'
+            ],
+            'plugins.login.twofa_enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_LOGIN.2FA_ENABLED',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.login.twofa_enabled',
                 'validation' => 'loose'
             ],
             'plugins.login.protect_protected_page_media' => [
@@ -3886,7 +4076,7 @@ return [
             'plugins.login.user_registration.enabled' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_ADMIN.ENABLED',
-                'highlight' => 1,
+                'highlight' => 0,
                 'options' => [
                     1 => 'PLUGIN_ADMIN.YES',
                     0 => 'PLUGIN_ADMIN.NO'
@@ -3959,7 +4149,7 @@ return [
             'plugins.login.user_registration.options.set_user_disabled' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_LOGIN.SET_USER_DISABLED',
-                'highlight' => 1,
+                'highlight' => 0,
                 'options' => [
                     1 => 'PLUGIN_ADMIN.YES',
                     0 => 'PLUGIN_ADMIN.NO'
@@ -3973,7 +4163,7 @@ return [
             'plugins.login.user_registration.options.login_after_registration' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_LOGIN.LOGIN_AFTER_REGISTRATION',
-                'highlight' => 1,
+                'highlight' => 0,
                 'options' => [
                     1 => 'PLUGIN_ADMIN.YES',
                     0 => 'PLUGIN_ADMIN.NO'
@@ -3987,7 +4177,7 @@ return [
             'plugins.login.user_registration.options.send_activation_email' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_LOGIN.SEND_ACTIVATION_EMAIL',
-                'highlight' => 1,
+                'highlight' => 0,
                 'options' => [
                     1 => 'PLUGIN_ADMIN.YES',
                     0 => 'PLUGIN_ADMIN.NO'
@@ -3998,10 +4188,24 @@ return [
                 'name' => 'plugins.login.user_registration.options.send_activation_email',
                 'validation' => 'loose'
             ],
+            'plugins.login.user_registration.options.manually_enable' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_LOGIN.MANUALLY_ENABLE',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.login.user_registration.options.manually_enable',
+                'validation' => 'loose'
+            ],
             'plugins.login.user_registration.options.send_notification_email' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_LOGIN.SEND_NOTIFICATION_EMAIL',
-                'highlight' => 1,
+                'highlight' => 0,
                 'options' => [
                     1 => 'PLUGIN_ADMIN.YES',
                     0 => 'PLUGIN_ADMIN.NO'
@@ -4015,10 +4219,13 @@ return [
             'plugins.login.user_registration.options.send_welcome_email' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_LOGIN.SEND_WELCOME_EMAIL',
-                'highlight' => 1,
+                'highlight' => 0,
                 'options' => [
                     1 => 'PLUGIN_ADMIN.YES',
                     0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
                 ],
                 'name' => 'plugins.login.user_registration.options.send_welcome_email',
                 'validation' => 'loose'
@@ -4039,7 +4246,7 @@ return [
                 'type' => 'number',
                 'size' => 'x-small',
                 'label' => 'PLUGIN_LOGIN.MAX_RESETS_INTERVAL',
-                'append' => 'PLUGIN_LOGIN.SECONDS',
+                'append' => 'PLUGIN_LOGIN.MINUTES',
                 'validate' => [
                     'type' => 'number',
                     'min' => 1
@@ -4063,12 +4270,24 @@ return [
                 'type' => 'number',
                 'size' => 'x-small',
                 'label' => 'PLUGIN_LOGIN.MAX_LOGINS_INTERVAL',
-                'append' => 'PLUGIN_LOGIN.SECONDS',
+                'append' => 'PLUGIN_LOGIN.MINUTES',
                 'validate' => [
                     'type' => 'number',
                     'min' => 1
                 ],
                 'name' => 'plugins.login.max_login_interval',
+                'validation' => 'loose'
+            ],
+            'plugins.login.ipv6_subnet_size' => [
+                'type' => 'number',
+                'size' => 'x-small',
+                'label' => 'PLUGIN_LOGIN.IPV6_SUBNET_SIZE',
+                'append' => 'PLUGIN_LOGIN.MINUTES',
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 1
+                ],
+                'name' => 'plugins.login.ipv6_subnet_size',
                 'validation' => 'loose'
             ]
         ],
@@ -4362,6 +4581,12 @@ return [
                     'reply_to' => 'plugins.email.reply_to',
                     'reply_to_name' => 'plugins.email.reply_to_name',
                     'body' => 'plugins.email.body',
+                    'queue' => [
+                        'enabled' => 'plugins.email.queue.enabled',
+                        'flush_frequency' => 'plugins.email.queue.flush_frequency',
+                        'flush_msg_limit' => 'plugins.email.queue.flush_msg_limit',
+                        'flush_time_limit' => 'plugins.email.queue.flush_time_limit'
+                    ],
                     'debug' => 'plugins.email.debug'
                 ],
                 'markdown-notices' => [
@@ -4435,9 +4660,11 @@ return [
                     ],
                     'theme' => 'plugins.admin.theme',
                     'edit_mode' => 'plugins.admin.edit_mode',
-                    'frontend_pages_target' => 'plugins.admin.frontend_pages_target',
+                    'frontend_preview_target' => 'plugins.admin.frontend_preview_target',
                     'pages' => [
-                        'show_parents' => 'plugins.admin.pages.show_parents'
+                        'show_parents' => 'plugins.admin.pages.show_parents',
+                        'parents_levels' => 'plugins.admin.pages.parents_levels',
+                        'show_modular' => 'plugins.admin.pages.show_modular'
                     ],
                     'google_fonts' => 'plugins.admin.google_fonts',
                     'show_beta_msg' => 'plugins.admin.show_beta_msg',
@@ -4452,6 +4679,16 @@ return [
                     ],
                     'hide_page_types' => 'plugins.admin.hide_page_types',
                     'hide_modular_page_types' => 'plugins.admin.hide_modular_page_types',
+                    'log_viewer_files' => 'plugins.admin.log_viewer_files',
+                    'pagemedia' => [
+                        'resize_width' => 'plugins.admin.pagemedia.resize_width',
+                        'resize_height' => 'plugins.admin.pagemedia.resize_height',
+                        'res_min_width' => 'plugins.admin.pagemedia.res_min_width',
+                        'res_min_height' => 'plugins.admin.pagemedia.res_min_height',
+                        'res_max_width' => 'plugins.admin.pagemedia.res_max_width',
+                        'res_max_height' => 'plugins.admin.pagemedia.res_max_height',
+                        'resize_quality' => 'plugins.admin.pagemedia.resize_quality'
+                    ],
                     'widgets' => [
                         'dashboard-maintenance' => 'plugins.admin.widgets.dashboard-maintenance',
                         'dashboard-statistics' => 'plugins.admin.widgets.dashboard-statistics',
@@ -4493,11 +4730,13 @@ return [
                     'built_in_css' => 'plugins.login.built_in_css',
                     'route' => 'plugins.login.route',
                     'redirect_after_login' => 'plugins.login.redirect_after_login',
+                    'redirect_after_logout' => 'plugins.login.redirect_after_logout',
                     'route_forgot' => 'plugins.login.route_forgot',
                     'route_reset' => 'plugins.login.route_reset',
                     'route_profile' => 'plugins.login.route_profile',
                     'parent_acl' => 'plugins.login.parent_acl',
                     'dynamic_page_visibility' => 'plugins.login.dynamic_page_visibility',
+                    'twofa_enabled' => 'plugins.login.twofa_enabled',
                     'protect_protected_page_media' => 'plugins.login.protect_protected_page_media',
                     'route_activate' => 'plugins.login.route_activate',
                     'route_register' => 'plugins.login.route_register',
@@ -4516,6 +4755,7 @@ return [
                             'set_user_disabled' => 'plugins.login.user_registration.options.set_user_disabled',
                             'login_after_registration' => 'plugins.login.user_registration.options.login_after_registration',
                             'send_activation_email' => 'plugins.login.user_registration.options.send_activation_email',
+                            'manually_enable' => 'plugins.login.user_registration.options.manually_enable',
                             'send_notification_email' => 'plugins.login.user_registration.options.send_notification_email',
                             'send_welcome_email' => 'plugins.login.user_registration.options.send_welcome_email'
                         ]
@@ -4528,7 +4768,8 @@ return [
                     'max_pw_resets_count' => 'plugins.login.max_pw_resets_count',
                     'max_pw_resets_interval' => 'plugins.login.max_pw_resets_interval',
                     'max_login_count' => 'plugins.login.max_login_count',
-                    'max_login_interval' => 'plugins.login.max_login_interval'
+                    'max_login_interval' => 'plugins.login.max_login_interval',
+                    'ipv6_subnet_size' => 'plugins.login.ipv6_subnet_size'
                 ]
             ]
         ],

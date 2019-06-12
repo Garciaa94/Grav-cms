@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/admin/languages/th.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321762,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'นี่เป็นรุ่นทดลอง หากคุณใช้บนเว็บจริงคุณต้องยอมรับในความเสี่ยงนั้นเอง',
@@ -36,6 +36,8 @@ return [
             'THEMES' => 'ธีม',
             'LOGOUT' => 'ออกจากระบบ',
             'BACK' => 'ย้อนกลับ',
+            'NEXT' => 'ถัดไป',
+            'PREVIOUS' => 'ก่อนหน้านี้',
             'ADD_PAGE' => 'เพิ่มหน้า',
             'ADD_MODULAR' => 'เพิ่มโมดูล',
             'MOVE' => 'ย้าย',
@@ -327,6 +329,7 @@ return [
             'HTTP_HEADERS' => 'ส่วนหัว HTTP',
             'EXPIRES' => 'หมดอายุ',
             'EXPIRES_HELP' => 'ชุดหมดอายุส่วนหัว ค่าเป็นวินาที',
+            'CACHE_CONTROL' => 'HTTP Cache-Control',
             'LAST_MODIFIED' => 'แก้ไขล่าสุด',
             'LAST_MODIFIED_HELP' => 'ชุดของการแก้ไขล่าสุดในส่วนหัวจะช่วยให้การทำงานกับพร็อกซี่และแคชเบราว์เซอร์ดีขึ้น',
             'ETAG' => 'ETag',
@@ -543,7 +546,6 @@ return [
             'FRONTMATTER_IGNORE_FIELDS' => 'ละเว้น  frontmatter ฟิลด์',
             'FRONTMATTER_IGNORE_FIELDS_HELP' => 'ฟิลด์บางฟิลด์ frontmatter อาจประกอบด้วย Twig แต่จะไม่สามารถประมวล ผล เช่น \'forms\'',
             'PACKAGE_X_INSTALLED_SUCCESSFULLY' => 'แพคเกจ %s ที่ติดตั้งเสร็จเรียบร้อยแล้ว',
-            'NEEDS_GRAV_1_1' => '<i class="fa fa-exclamation-triangle"></i> <strong>คุณกำลังใช้ Grav v%s</strong>คุณจะต้องอัพเดดใช้เวอร์ชั่นล่าสุด <strong>Grav v1.1.x</strong> เพื่อความแน่ใจในการเข้ากันได้นี้ บางทีจำเป็นต้องสลับไปใช้ <strong>รุ่นทดสอบ GPM </strong> ในการตั้งค่าระบบ',
             'ORDERING_DISABLED_BECAUSE_PARENT_SETTING_ORDER' => 'การตั้งค่าการเรียงในตัวหลัก ปิดการเรียงลำดับ',
             'ORDERING_DISABLED_BECAUSE_PAGE_NOT_VISIBLE' => 'เพจไม่เปิดให้เห็น, ปิดการเรียงลำดับ',
             'ORDERING_DISABLED_BECAUSE_TOO_MANY_SIBLINGS' => 'การจัดเรียงผ่านทางผู้ดูแลไม่รองรับเนื่องจากมีส่วนที่เกี่ยวข้องมากกว่า 200',
@@ -594,6 +596,7 @@ return [
             'REDIS_SERVER_HELP' => 'ที่อยู่ Redis เซิร์ฟเวอร์',
             'REDIS_PORT' => 'Redis port',
             'REDIS_PORT_HELP' => 'Redis เซิร์ฟเวอร์พอร์ต',
+            'REDIS_PASSWORD' => 'Redis รหัสผ่าน/คำลับ',
             'ALL' => 'ทั้งหมด',
             'FROM' => 'จาก',
             'TO' => 'ถึง',
@@ -665,7 +668,6 @@ return [
             'GPM_OFFICIAL_ONLY_HELP' => 'อนุญาตให้ติดตั้งโดยตรงจาก GPM อย่างเป็นทางการเท่านั้น',
             'NO_CHILD_TYPE' => 'ไม่มีชนิดเด็กสำหรับ rawroute นี้',
             'SORTABLE_PAGES' => 'เรียงหน้า:',
-            'UNSORTABLE_PAGES' => 'ไม่เรียงหน้า:',
             'ADMIN_SPECIFIC_OVERRIDES' => 'เฉพาะผู้ดูแลแทน',
             'ADMIN_CHILDREN_DISPLAY_ORDER' => 'เด็กแสดงลำดับ',
             'ADMIN_CHILDREN_DISPLAY_ORDER_HELP' => 'สั่งว่า เด็กของหน้านี้ควรถูกแสดงในมุมมอง \'เพจ\' ของปลั๊กอินของ Admin',
@@ -676,7 +678,21 @@ return [
             'USERNAME_REGEX' => 'ชื่อผู้ใช้ Regex',
             'USERNAME_REGEX_HELP' => 'โดยค่าเริ่มต้น: ตัวอักษรพิมพ์เล็กเท่านั้น ตัวเลข, เส้นประ และขีด 3 - 16 ตัวอักษร',
             'CONTENT_PADDING' => 'ขยายเนื้อหา',
-            'CONTENT_PADDING_HELP' => 'เปิด/ปิด ใช้งานเนื้อหาขยายทั่วพื้นที่เนื้อหาเพื่อให้พื้นที่มากขึ้น'
+            'CONTENT_PADDING_HELP' => 'เปิด/ปิด ใช้งานเนื้อหาขยายทั่วพื้นที่เนื้อหาเพื่อให้พื้นที่มากขึ้น',
+            '2FA_TITLE' => '2-Factor Authentication',
+            '2FA_ENABLED' => 'เปิดใช้งาน 2FA',
+            '2FA_CODE_INPUT' => '000000',
+            '2FA_SECRET' => '2FA คำลับ',
+            '2FA_REGENERATE' => 'สร้างใหม่',
+            'FORCE_LOWERCASE_URLS' => 'บังคับ URLs เป็นตัวเล็ก',
+            'FORCE_LOWERCASE_URLS_HELP' => 'โดยค่าเริ่มต้น Grav จะกำหนด slugs และเส้นทางให้เป็นตัวเล็กทั้งหมด หากกำหนดค่านี้เป็น False จะสามารถใช้ตัวอักษรตัวใหญ่ได้',
+            'VIEW_SITE_TIP' => 'ชมเว็บ',
+            'TOOLS_DIRECT_INSTALL_TITLE' => 'ติดตั้งแพคเกจ Grav โดยตรง',
+            'TOOLS_DIRECT_INSTALL_UPLOAD_BUTTON' => 'อัปโหลดและติดตั้ง',
+            'ROUTE_OVERRIDES' => 'Route Overrides',
+            'ROUTE_DEFAULT' => 'เส้นทางเริ่มต้น',
+            'ROUTE_CANONICAL' => 'เส้นทาง Canonical',
+            'ROUTE_ALIASES' => 'นามแฝงเส้นทาง'
         ]
     ]
 ];

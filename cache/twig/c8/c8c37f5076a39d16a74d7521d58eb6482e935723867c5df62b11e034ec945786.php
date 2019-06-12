@@ -307,7 +307,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             <div class=\"totop\">
                 <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
             </div>
-            <p><a href=\"https://www.facebook.com/garciaa94\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a>peter.garcia@pucese.edu.ec</a>.</p>
+            <p><a href=\"https://www.facebook.com/garciaa94\">@garciaa94</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a>peter.garcia@pucese.edu.ec</a>.</p>
         </footer>
         ";
     }
@@ -449,7 +449,7 @@ class __TwigTemplate_762935374e5a55b02d0ba1158ed1ba69d72883658064e8b7537484e40b3
             <div class=\"totop\">
                 <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
             </div>
-            <p><a href=\"https://www.facebook.com/garciaa94\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a>peter.garcia@pucese.edu.ec</a>.</p>
+            <p><a href=\"https://www.facebook.com/garciaa94\">@garciaa94</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a>peter.garcia@pucese.edu.ec</a>.</p>
         </footer>
         {% endblock %}
     </div>

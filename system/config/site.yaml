@@ -1,14 +1,14 @@
-title: Grav                                 # Name of the site
+title: Adrian Garcia                                 # Name of the site
 default_lang: en                            # Default language for site (potentially used by theme)
 
 author:
-  name: John Appleseed                      # Default author name
-  email: 'john@example.com'                 # Default author email
+  name: Adrian Garcia                       # Default author name
+  email: 'adrian1994215@gmail.com'          # Default author email
 
 taxonomies: [category,tag]                  # Arbitrary list of taxonomy types
 
 metadata:
-  description: 'My Grav Site'               # Site description
+  description: 'Materia Grafica y Animacion' # Site description
 
 summary:
   enabled: true                             # enable or disable summary of page
@@ -27,9 +27,11 @@ routes:
 blog:
   route: '/blog'                            # Custom value added (accessible via system.blog.route)
 
-#menu:                                      # Menu Example
-#    - text: Source
-#      icon: github
-#      url: https://github.com/getgrav/grav
-#    - icon: twitter
-#      url: http://twitter.com/getgrav
+menu:                                      # Menu Example
+    #- text: Source
+    - icon: github
+      url: https://github.com/garciaa94
+    - icon: twitter
+      url: https://twitter.com/adrian94garcia
+    - icon: facebook
+      url: https://facebook.com/garciaa94

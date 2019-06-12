@@ -2,12 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/error/languages.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321764,
     'data' => [
         'en' => [
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Error',
-                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
+                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.',
+                'ROUTE_404' => '404 Route'
             ]
         ],
         'de' => [
@@ -43,7 +44,15 @@ return [
         'ru' => [
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Ошибка',
-                'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.'
+                'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.',
+                'ROUTE_404' => 'Маршрут 404'
+            ]
+        ],
+        'uk' => [
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Помилка',
+                'ERROR_MESSAGE' => 'Упс. Схоже, цієї сторінки не існує.',
+                'ROUTE_404' => 'Маршрут 404'
             ]
         ],
         'da' => [
@@ -56,6 +65,24 @@ return [
             'PLUGIN_ERROR' => [
                 'ERROR' => '错误',
                 'ERROR_MESSAGE' => '呃，似乎这个页面不存在。'
+            ]
+        ],
+        'cs' => [
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Chyba',
+                'ERROR_MESSAGE' => 'A jéje. Vypadá to, že hledaná stránka tu není.'
+            ]
+        ],
+        'pl' => [
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Błąd',
+                'ERROR_MESSAGE' => 'Ups. Wygląda na to, że ta strona nie istnieje.'
+            ]
+        ],
+        'ca' => [
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Error',
+                'ERROR_MESSAGE' => 'Ups. Sembla que aquesta pàgina no existeix.'
             ]
         ]
     ]

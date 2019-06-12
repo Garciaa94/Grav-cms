@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/markdown-notices/blueprints.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321765,
     'data' => [
         'name' => 'Markdown Notices',
-        'version' => '1.0.0',
+        'version' => '1.0.1',
         'description' => 'Adds the ability to render notices blocks in Markdown',
         'icon' => 'asterisk',
         'author' => [
@@ -13,6 +13,7 @@ return [
             'email' => 'devs@getgrav.org',
             'url' => 'http://getgrav.org'
         ],
+        'homepage' => 'https://github.com/getgrav/grav-plugin-markdown-notices',
         'license' => 'MIT',
         'form' => [
             'validation' => 'strict',

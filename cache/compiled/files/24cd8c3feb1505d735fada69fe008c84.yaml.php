@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/admin/languages/ca.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321762,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Aquesta és una versió beta! Utilitza-la en producció sota el teu propi risc...',
@@ -12,8 +12,8 @@ return [
             'LOGIN_BTN_FORGOT' => 'Ho he oblidat',
             'LOGIN_BTN_RESET' => 'Restablir contrasenya',
             'LOGIN_BTN_SEND_INSTRUCTIONS' => 'Envia instruccions pel reset',
-            'LOGIN_BTN_CLEAR' => 'Neteja el formulari',
-            'LOGIN_BTN_CREATE_USER' => 'Crea usuari',
+            'LOGIN_BTN_CLEAR' => 'Netejar formulari',
+            'LOGIN_BTN_CREATE_USER' => 'Crear usuari',
             'LOGIN_LOGGED_IN' => 'S\'ha iniciat sessió correctament',
             'LOGIN_FAILED' => 'No s\'ha pogut iniciar sessió',
             'LOGGED_OUT' => 'S\'ha tancat la sessió',
@@ -541,7 +541,6 @@ return [
             'FRONTMATTER_IGNORE_FIELDS' => 'Ignora camps frontmatter',
             'FRONTMATTER_IGNORE_FIELDS_HELP' => 'Certs camps de frontmatter poden contenir Twig però no han de ser processats, com ara els formularis',
             'PACKAGE_X_INSTALLED_SUCCESSFULLY' => 'Paquet %s instal·lat correctament',
-            'NEEDS_GRAV_1_1' => '<i class="fa fa-exclamation-triangle"></i> <strong>Estàs utilitzant Grav v%s</strong>. Has d\'actualitzar a l\'última versió <strong>Grav v1.1.x</strong> disponible per tal d\'assegurar la compatibilitat. Això pot requerir canviar a <strong>Versions GPM de prova</strong> en la configuració del sistema.',
             'ORDERING_DISABLED_BECAUSE_PARENT_SETTING_ORDER' => 'L\'ordre està definit pel pare, l\'ordenament està deshabilitat',
             'ORDERING_DISABLED_BECAUSE_PAGE_NOT_VISIBLE' => 'La pàgina no és visible, l\'ordenament està deshabilitat',
             'ORDERING_DISABLED_BECAUSE_TOO_MANY_SIBLINGS' => 'L\'ordre a través de l\'administrador no està suportat degut a que hi ha més de 200 elements',
@@ -635,7 +634,16 @@ return [
             'NOT_SET' => 'No establert',
             'PERMISSIONS' => 'Permisos',
             'ALLOW_WEBSERVER_GZIP' => 'Permetre WebServer Gzip',
-            'OFFLINE_WARNING' => 'La connexió a la GPM no es pot establir'
+            'OFFLINE_WARNING' => 'La connexió a la GPM no es pot establir',
+            'CONFIRM_REINSTALL' => 'Segur que vols re-instal·lar %s?',
+            'REINSTALLED_SUCCESSFULLY' => '%s re-instal·lat correctament',
+            'TOOLS' => 'Eines',
+            'GPM_OFFICIAL_ONLY' => 'Només GPM oficial',
+            'SORTABLE_PAGES' => 'Pàgines ordenables:',
+            'ADMIN_CHILDREN_DISPLAY_ORDER' => 'Ordre de visualització de descendents',
+            'PWD_PLACEHOLDER' => 'cadena complexa de al menys 8 caràcters',
+            'PWD_REGEX' => 'Regex clau',
+            'USERNAME_REGEX' => 'RegEx nom d\'usuari'
         ]
     ]
 ];

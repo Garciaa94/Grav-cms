@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1559801980,
-    'checksum' => '3e31020ee94e82b603ea7b71f390ec9e',
+    'timestamp' => 1560325225,
+    'checksum' => 'c4c6097dc2c7e520568319cac16e5cf1',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -31,7 +31,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1559720242
+                'modified' => 1560320490
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -39,11 +39,19 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1559800825
+                'modified' => 1560321884
             ],
             'themes/antimatter' => [
                 'file' => 'user/config/themes/antimatter.yaml',
-                'modified' => 1559801980
+                'modified' => 1560321396
+            ],
+            'themes/cardstack' => [
+                'file' => 'user/config/themes/cardstack.yaml',
+                'modified' => 1560321304
+            ],
+            'themes/portfolio' => [
+                'file' => 'user/config/themes/portfolio.yaml',
+                'modified' => 1560321849
             ]
         ],
         'system/config' => [
@@ -61,7 +69,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1559704223
+                'modified' => 1560325211
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
@@ -75,11 +83,11 @@ return [
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321763
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321765
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
@@ -91,19 +99,19 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321762
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321766
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1512568072
+                'modified' => 1560321764
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1512568073
+                'modified' => 1560321765
             ]
         ]
     ],
@@ -115,6 +123,12 @@ return [
                 'from_name' => NULL,
                 'to' => NULL,
                 'to_name' => NULL,
+                'queue' => [
+                    'enabled' => false,
+                    'flush_frequency' => '* * * * *',
+                    'flush_msg_limit' => 10,
+                    'flush_time_limit' => 100
+                ],
                 'mailer' => [
                     'engine' => 'sendmail',
                     'smtp' => [
@@ -194,6 +208,10 @@ return [
                 'body_classes' => '',
                 'content_padding' => true,
                 'twofa_enabled' => true,
+                'log_viewer_files' => [
+                    0 => 'grav',
+                    1 => 'email'
+                ],
                 'sidebar' => [
                     'activate' => 'tab',
                     'hover_delay' => 100,
@@ -210,7 +228,8 @@ return [
                     'dashboard-pages' => true
                 ],
                 'pages' => [
-                    'show_parents' => 'both'
+                    'show_parents' => 'both',
+                    'show_modular' => true
                 ],
                 'session' => [
                     'timeout' => 1800
@@ -219,10 +238,11 @@ return [
                     'delete_page' => true
                 ],
                 'edit_mode' => 'normal',
-                'frontend_pages_target' => '_blank',
+                'frontend_preview_target' => 'inline',
                 'show_github_msg' => true,
                 'pages_list_display_field' => 'title',
-                'google_fonts' => true,
+                'google_fonts' => false,
+                'admin_icons' => 'line-awesome',
                 'enable_auto_updates_check' => true,
                 'notifications' => [
                     'feed' => true,
@@ -259,12 +279,14 @@ return [
                 'route' => NULL,
                 'redirect_to_login' => true,
                 'redirect_after_login' => NULL,
+                'redirect_after_logout' => '/',
                 'route_activate' => '/activate_user',
                 'route_forgot' => '/forgot_password',
                 'route_reset' => '/reset_password',
                 'route_profile' => '/user_profile',
                 'route_register' => '/user_register',
                 'route_unauthorized' => '/user_unauthorized',
+                'twofa_enabled' => false,
                 'dynamic_page_visibility' => false,
                 'parent_acl' => false,
                 'protect_protected_page_media' => false,
@@ -273,19 +295,21 @@ return [
                     'timeout' => 604800,
                     'name' => 'grav-rememberme'
                 ],
-                'max_pw_resets_count' => 0,
+                'max_pw_resets_count' => 2,
                 'max_pw_resets_interval' => 60,
-                'max_login_count' => 0,
-                'max_login_interval' => 2,
+                'max_login_count' => 5,
+                'max_login_interval' => 10,
+                'ipv6_subnet_size' => 64,
                 'user_registration' => [
-                    'enabled' => true,
+                    'enabled' => false,
                     'fields' => [
                         0 => 'username',
                         1 => 'password',
                         2 => 'email',
                         3 => 'fullname',
                         4 => 'title',
-                        5 => 'level'
+                        5 => 'level',
+                        6 => 'twofa_enabled'
                     ],
                     'default_values' => [
                         'level' => 'Newbie'
@@ -299,8 +323,9 @@ return [
                     'options' => [
                         'validate_password1_and_password2' => true,
                         'set_user_disabled' => false,
-                        'login_after_registration' => true,
+                        'login_after_registration' => false,
                         'send_activation_email' => false,
+                        'manually_enable' => false,
                         'send_notification_email' => false,
                         'send_welcome_email' => false
                     ]
@@ -660,7 +685,7 @@ node_modules'
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Materia Graficacion y animacion 6to Pucese'
             ],
             'summary' => [
                 'enabled' => true,
@@ -672,6 +697,20 @@ node_modules'
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
+            ],
+            'menu' => [
+                0 => [
+                    'icon' => 'github',
+                    'url' => 'https://github.com/garciaa94'
+                ],
+                1 => [
+                    'icon' => 'twitter',
+                    'url' => 'https://twitter.com/adrian94garcia'
+                ],
+                2 => [
+                    'icon' => 'facebook',
+                    'url' => 'https://facebook.com/garciaa94'
+                ]
             ]
         ],
         'streams' => [
@@ -875,7 +914,8 @@ node_modules'
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 8388608
             ],
             'session' => [
                 'enabled' => true,
@@ -910,6 +950,36 @@ node_modules'
         'themes' => [
             'antimatter' => [
                 'enabled' => true,
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ],
+            'cardstack' => [
+                'enabled' => true,
+                'cardstack_route' => '/cards',
+                'default_lang' => 'en',
+                'continueLinkIcon' => 'exclamation-circle',
+                'cardview' => [
+                    'columns' => [
+                        'small' => '1',
+                        'medium' => '2',
+                        'large' => '3',
+                        'xlarge' => '3'
+                    ]
+                ],
+                'streams' => [
+                    'schemes' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'paths' => [
+                                0 => 'user/themes/cardstack'
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'portfolio' => [
+                'enabled' => false,
                 'dropdown' => [
                     'enabled' => true
                 ]

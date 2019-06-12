@@ -1,6 +1,5 @@
 ---
 title: contacto
-media_order: 'main.js,style.css'
 ---
 
 <html lang="es">

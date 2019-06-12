@@ -2,10 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/login/blueprints.yaml',
-    'modified' => 1512568073,
+    'modified' => 1560321765,
     'data' => [
         'name' => 'Login',
-        'version' => '2.5.0',
+        'version' => '3.0.2',
+        'testing' => false,
         'description' => 'Enables user authentication and login screen.',
         'icon' => 'sign-in',
         'author' => [
@@ -13,22 +14,22 @@ return [
             'email' => 'devs@getgrav.org',
             'url' => 'http://getgrav.org'
         ],
-        'keywords' => 'admin, plugin, login',
         'homepage' => 'https://github.com/getgrav/grav-plugin-login',
+        'keywords' => 'login, authentication, admin, security',
         'bugs' => 'https://github.com/getgrav/grav-plugin-login/issues',
         'license' => 'MIT',
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.3.9'
+                'version' => '>=1.6.7'
             ],
             1 => [
                 'name' => 'form',
-                'version' => '>=2.4.0'
+                'version' => '>=3.0.0'
             ],
             2 => [
                 'name' => 'email',
-                'version' => '~2.0'
+                'version' => '>=3.0.0'
             ]
         ],
         'form' => [
@@ -83,6 +84,12 @@ return [
                                     'help' => 'PLUGIN_LOGIN.REDIRECT_AFTER_LOGIN_HELP',
                                     'placeholder' => '/my-page'
                                 ],
+                                'redirect_after_logout' => [
+                                    'type' => 'text',
+                                    'label' => 'PLUGIN_LOGIN.REDIRECT_AFTER_LOGOUT',
+                                    'help' => 'PLUGIN_LOGIN.REDIRECT_AFTER_LOGOUT_HELP',
+                                    'placeholder' => '/'
+                                ],
                                 'route_forgot' => [
                                     'type' => 'text',
                                     'size' => 'medium',
@@ -121,6 +128,20 @@ return [
                                     'highlight' => 0,
                                     'default' => 0,
                                     'help' => 'PLUGIN_LOGIN.DYNAMIC_VISIBILITY_HELP',
+                                    'options' => [
+                                        1 => 'PLUGIN_ADMIN.ENABLED',
+                                        0 => 'PLUGIN_ADMIN.DISABLED'
+                                    ],
+                                    'validate' => [
+                                        'type' => 'bool'
+                                    ]
+                                ],
+                                'twofa_enabled' => [
+                                    'type' => 'toggle',
+                                    'label' => 'PLUGIN_LOGIN.2FA_ENABLED',
+                                    'highlight' => 0,
+                                    'default' => 0,
+                                    'help' => 'PLUGIN_LOGIN.2FA_ENABLED_HELP',
                                     'options' => [
                                         1 => 'PLUGIN_ADMIN.ENABLED',
                                         0 => 'PLUGIN_ADMIN.DISABLED'
@@ -238,7 +259,7 @@ return [
                                     'type' => 'toggle',
                                     'label' => 'PLUGIN_ADMIN.ENABLED',
                                     'help' => 'PLUGIN_LOGIN.USER_REGISTRATION_ENABLED_HELP',
-                                    'highlight' => 1,
+                                    'highlight' => 0,
                                     'options' => [
                                         1 => 'PLUGIN_ADMIN.YES',
                                         0 => 'PLUGIN_ADMIN.NO'
@@ -257,7 +278,7 @@ return [
                                             'label' => 'PLUGIN_LOGIN.REGISTRATION_FIELDS',
                                             'help' => 'PLUGIN_LOGIN.REGISTRATION_FIELDS_HELP',
                                             'placeholder_key' => 'PLUGIN_LOGIN.REGISTRATION_FIELD_KEY',
-                                            'placeholder_value' => 'PLUGIN_LOGIN.REGISTRATION_FIELD_VALUE'
+                                            'placeholder_value' => 'PLUGIN_LOGIN.ADDITIONAL_PARAM_VALUE'
                                         ],
                                         'user_registration.default_values' => [
                                             'type' => 'array',
@@ -316,7 +337,7 @@ return [
                                             'type' => 'toggle',
                                             'label' => 'PLUGIN_LOGIN.SET_USER_DISABLED',
                                             'help' => 'PLUGIN_LOGIN.SET_USER_DISABLED_HELP',
-                                            'highlight' => 1,
+                                            'highlight' => 0,
                                             'options' => [
                                                 1 => 'PLUGIN_ADMIN.YES',
                                                 0 => 'PLUGIN_ADMIN.NO'
@@ -329,7 +350,7 @@ return [
                                             'type' => 'toggle',
                                             'label' => 'PLUGIN_LOGIN.LOGIN_AFTER_REGISTRATION',
                                             'help' => 'PLUGIN_LOGIN.LOGIN_AFTER_REGISTRATION_HELP',
-                                            'highlight' => 1,
+                                            'highlight' => 0,
                                             'options' => [
                                                 1 => 'PLUGIN_ADMIN.YES',
                                                 0 => 'PLUGIN_ADMIN.NO'
@@ -342,7 +363,20 @@ return [
                                             'type' => 'toggle',
                                             'label' => 'PLUGIN_LOGIN.SEND_ACTIVATION_EMAIL',
                                             'help' => 'PLUGIN_LOGIN.SEND_ACTIVATION_EMAIL_HELP',
-                                            'highlight' => 1,
+                                            'highlight' => 0,
+                                            'options' => [
+                                                1 => 'PLUGIN_ADMIN.YES',
+                                                0 => 'PLUGIN_ADMIN.NO'
+                                            ],
+                                            'validate' => [
+                                                'type' => 'bool'
+                                            ]
+                                        ],
+                                        'user_registration.options.manually_enable' => [
+                                            'type' => 'toggle',
+                                            'label' => 'PLUGIN_LOGIN.MANUALLY_ENABLE',
+                                            'help' => 'PLUGIN_LOGIN.MANUALLY_ENABLE_HELP',
+                                            'highlight' => 0,
                                             'options' => [
                                                 1 => 'PLUGIN_ADMIN.YES',
                                                 0 => 'PLUGIN_ADMIN.NO'
@@ -355,7 +389,7 @@ return [
                                             'type' => 'toggle',
                                             'label' => 'PLUGIN_LOGIN.SEND_NOTIFICATION_EMAIL',
                                             'help' => 'PLUGIN_LOGIN.SEND_NOTIFICATION_EMAIL_HELP',
-                                            'highlight' => 1,
+                                            'highlight' => 0,
                                             'options' => [
                                                 1 => 'PLUGIN_ADMIN.YES',
                                                 0 => 'PLUGIN_ADMIN.NO'
@@ -368,10 +402,13 @@ return [
                                             'type' => 'toggle',
                                             'label' => 'PLUGIN_LOGIN.SEND_WELCOME_EMAIL',
                                             'help' => 'PLUGIN_LOGIN.SEND_WELCOME_EMAIL_HELP',
-                                            'highlight' => 1,
+                                            'highlight' => 0,
                                             'options' => [
                                                 1 => 'PLUGIN_ADMIN.YES',
                                                 0 => 'PLUGIN_ADMIN.NO'
+                                            ],
+                                            'validate' => [
+                                                'type' => 'bool'
                                             ]
                                         ]
                                     ]
@@ -398,7 +435,7 @@ return [
                                     'size' => 'x-small',
                                     'label' => 'PLUGIN_LOGIN.MAX_RESETS_INTERVAL',
                                     'help' => 'PLUGIN_LOGIN.MAX_RESETS_INTERVAL_HELP',
-                                    'append' => 'PLUGIN_LOGIN.SECONDS',
+                                    'append' => 'PLUGIN_LOGIN.MINUTES',
                                     'validate' => [
                                         'type' => 'number',
                                         'min' => 1
@@ -420,7 +457,18 @@ return [
                                     'size' => 'x-small',
                                     'label' => 'PLUGIN_LOGIN.MAX_LOGINS_INTERVAL',
                                     'help' => 'PLUGIN_LOGIN.MAX_LOGINS_INTERVAL_HELP',
-                                    'append' => 'PLUGIN_LOGIN.SECONDS',
+                                    'append' => 'PLUGIN_LOGIN.MINUTES',
+                                    'validate' => [
+                                        'type' => 'number',
+                                        'min' => 1
+                                    ]
+                                ],
+                                'ipv6_subnet_size' => [
+                                    'type' => 'number',
+                                    'size' => 'x-small',
+                                    'label' => 'PLUGIN_LOGIN.IPV6_SUBNET_SIZE',
+                                    'help' => 'PLUGIN_LOGIN.IPV6_SUBNET_SIZE_HELP',
+                                    'append' => 'PLUGIN_LOGIN.MINUTES',
                                     'validate' => [
                                         'type' => 'number',
                                         'min' => 1

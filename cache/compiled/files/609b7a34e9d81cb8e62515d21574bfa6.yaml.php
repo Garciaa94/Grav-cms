@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/admin/languages/no.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321762,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Dette er en betaversjon! Bruk denne i produksjon på egen risiko...',
@@ -329,12 +329,15 @@ return [
             'HTTP_HEADERS' => 'HTTP-topptekst',
             'EXPIRES' => 'Utløper',
             'EXPIRES_HELP' => 'Angir utløpt-topptekst. Verdien er i sekunder.',
+            'CACHE_CONTROL' => 'HTTP Cache-kontroll',
+            'CACHE_CONTROL_HELP' => 'Angi en gyldig bufferstyrings verdi som "ingen-cache, ingen-lagring, må re-validere"',
             'LAST_MODIFIED' => 'Sist endret',
             'LAST_MODIFIED_HELP' => 'Angir sist-endret-topptekst som kan bidra til å optimalisere mellomtjener og nettleser-hurtiglager',
             'ETAG' => 'ETag',
             'ETAG_HELP' => 'Angir etag-topptekst for å identifisere når en side er endret',
             'VARY_ACCEPT_ENCODING' => 'Godta variert koding',
             'VARY_ACCEPT_ENCODING_HELP' => 'Angir `Vary: Accept Encoding`-topptekst til støtte for mellomtjener og CDN-hurtiglager',
+            'MARKDOWN_EXTRA' => 'Markdown ekstra',
             'MARKDOWN_EXTRA_HELP' => 'Aktivere standardstøtte for Markdown Extra - https://michelf.ca/projects/php-markdown/extra/',
             'AUTO_LINE_BREAKS' => 'Automatisk linjeskift',
             'AUTO_LINE_BREAKS_HELP' => 'Aktivere støtte for automatisk linjeskift i markdown',
@@ -545,7 +548,6 @@ return [
             'FRONTMATTER_IGNORE_FIELDS' => 'Ignorer startfelter',
             'FRONTMATTER_IGNORE_FIELDS_HELP' => 'Visse startfelter kan inneholde Twig men bør ikke bli prosessert, som f.eks. \'forms\'.',
             'PACKAGE_X_INSTALLED_SUCCESSFULLY' => 'Installasjon av pakken %s var vellykket.',
-            'NEEDS_GRAV_1_1' => '<i class="fa fa-exclamation-triangle"></i> <strong>Du kjører Grav v%s</strong>. Du må oppdatere til den siste <strong>Grav v1.1.x</strong> utgivelsen for å sikre kompatibilitet. Dette kan kreve at du bytter til <strong>GPM test-utgivelser</strong> i system-konfigurasjonen.',
             'ORDERING_DISABLED_BECAUSE_PARENT_SETTING_ORDER' => 'Rekkefølge for `parent`-innstillinger, sortering inaktivert.',
             'ORDERING_DISABLED_BECAUSE_PAGE_NOT_VISIBLE' => 'Siden er ikke synlig, sortering inaktivert.',
             'ORDERING_DISABLED_BECAUSE_TOO_MANY_SIBLINGS' => 'Sortering via admin er ikke støttet fordi det er mer enn 200 elementer på samme nivå.',
@@ -667,7 +669,6 @@ return [
             'GPM_OFFICIAL_ONLY_HELP' => 'Bare tillat direkte installering fra det ofisielle GPM-oppbevaringssted.',
             'NO_CHILD_TYPE' => 'Ingen `barne`-type for denne ruten.',
             'SORTABLE_PAGES' => 'Sorterbare sider:',
-            'UNSORTABLE_PAGES' => 'Ikke sorterbare sider:',
             'ADMIN_SPECIFIC_OVERRIDES' => 'Admin-spesifikke overstyringer',
             'ADMIN_CHILDREN_DISPLAY_ORDER' => 'Rekkefølge på `barne`-visning',
             'ADMIN_CHILDREN_DISPLAY_ORDER_HELP' => 'Rekkefølgen som `barn` av denne siden skal bli vist i sidevisningen til Admin-utvidelsen.',
@@ -683,13 +684,11 @@ return [
             '2FA_TITLE' => 'To-faktor autentisering',
             '2FA_INSTRUCTIONS' => '### To-faktor autentisering
 Du har **2FA** aktivert på denne kontoen. Bruk din **2FA** app for å angi gjeldende **6-sifret kode** for å fullføre påloggingsprosessen.',
-            '2FA_REGEN_HINT' => 'når du oppretter ny hemmelig nøkkel, må du også huske å oppdatere autentiseringsappen din',
             '2FA_LABEL' => 'Admin-tilgang',
             '2FA_FAILED' => 'Ugyldig 2-faktor autentiseringskode. Vennligst prøv igjen...',
             '2FA_ENABLED' => '2FA aktivert',
             '2FA_CODE_INPUT' => '000000',
             '2FA_SECRET' => '2FA hemmelig nøkkel',
-            '2FA_SECRET_HELP' => 'Skanne QR koden inn i [Autentiseringsappen] (https://learn.getgrav.org/admin-panel/2fa#apps). Det er også lurt å sikkerhetskopiere den hemmelige nøkkelen på et trygt sted i tilfelle du må re-installere appen.  Sjekk [Gravs dokumentasjon] (https://learn.getgrav.org/admin-panel/2fa) for mer info ',
             '2FA_REGENERATE' => 'Opprett ny'
         ]
     ]

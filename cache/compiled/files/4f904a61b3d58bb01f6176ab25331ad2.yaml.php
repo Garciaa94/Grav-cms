@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/admin/languages/ja.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321762,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'これはベータリリースです。稼働中サイトでは、自己責任においてご利用ください。',
@@ -447,6 +447,7 @@ return [
             'REDIRECT_TRAILING_SLASH_HELP' => '透過的に URL 末尾のスラッシュを処理するのではなく、301 リダイレクトを実行します。',
             'DEFAULT_DATE_FORMAT' => 'ページの日付フォーマット',
             'DEFAULT_DATE_FORMAT_HELP' => 'Grav で使用されるページの日付フォーマットです。デフォルトでは自動的に日付フォーマットを推測しますが、PHP の date 関数で使用されるフォーマット (例 Y-m-d H:i) を指定することもできます。',
+            'DEFAULT_DATE_FORMAT_PLACEHOLDER' => '自動的に推測する',
             'IGNORE_FILES' => '無視するファイル',
             'IGNORE_FILES_HELP' => 'ページの処理中に無視する特定のファイルです。',
             'IGNORE_FOLDERS' => '無視するフォルダー',
@@ -508,8 +509,10 @@ return [
             'FILE_ERROR_UPLOAD' => 'ファイルのアップロード中にエラーが発生しました。',
             'FILE_UNSUPPORTED' => '対応していないファイルタイプ',
             'ADD_ITEM' => 'アイテムを追加',
+            'FILE_TOO_LARGE' => 'このファイルは大きすぎるためアップロードできません。PHP 設定によると最大サイズ<br>は %s です。PHP 設定にて `post_max_size` を大きくしてください。',
             'INSTALLING' => 'インストール中',
             'LOADING' => '読み込み中...',
+            'DEPENDENCIES_NOT_MET_MESSAGE' => '以下の依存関係を先に満たすことが必要です:',
             'ERROR_INSTALLING_PACKAGES' => 'パッケージのインストール中に生じたエラー',
             'INSTALLING_DEPENDENCIES' => '依存関係のインストール...',
             'INSTALLING_PACKAGES' => 'パッケージをインストール中',
@@ -631,7 +634,6 @@ return [
             'GPM_OFFICIAL_ONLY' => '公式の GPM のみ',
             'GPM_OFFICIAL_ONLY_HELP' => '公式の GPM のみリポジトリから直接インストールをできます',
             'SORTABLE_PAGES' => '並べ替え可能なページ:',
-            'UNSORTABLE_PAGES' => '並べ替え不可能なページ:',
             'ADMIN_CHILDREN_DISPLAY_ORDER' => '子ページの表示順序',
             'PWD_PLACEHOLDER' => '最短 8 文字で複雑な文字列にしてください',
             'PWD_REGEX' => 'パスワードの正規表現',

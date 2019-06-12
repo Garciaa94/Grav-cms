@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/admin/blueprints/admin/pages/move.yaml',
-    'modified' => 1512568072,
+    'modified' => 1560321762,
     'data' => [
         'form' => [
             'validation' => 'loose',
