@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/system/languages/ja.yaml',
-    'modified' => 1559704223,
+    'modified' => 1560668438,
     'data' => [
         'GRAV' => [
             'INFLECTOR_IRREGULAR' => [

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/system/config/backups.yaml',
-    'modified' => 1559704223,
+    'modified' => 1560668438,
     'data' => [
         'purge' => [
             'trigger' => 'space',

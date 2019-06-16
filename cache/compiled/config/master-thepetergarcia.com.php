@@ -1,25 +1,29 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560328015,
-    'checksum' => '5f0003cdfdca2bcda5056be2cc58872f',
+    'timestamp' => 1560668513,
+    'checksum' => '518b8acfbc88212b8263af48cf8891ff',
     'files' => [
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1559704315
+                'modified' => 1560536646
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1559703075
             ],
+            'plugins/admin' => [
+                'file' => 'user/config/plugins/admin.yaml',
+                'modified' => 1560668513
+            ],
             'plugins/facebook' => [
                 'file' => 'user/config/plugins/facebook.yaml',
-                'modified' => 1559719937
+                'modified' => 1560536671
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
-                'modified' => 1559720368
+                'modified' => 1560668448
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -39,7 +43,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1560326302
+                'modified' => 1560668438
+            ],
+            'themes/alpha' => [
+                'file' => 'user/config/themes/alpha.yaml',
+                'modified' => 1560537452
             ],
             'themes/antimatter' => [
                 'file' => 'user/config/themes/antimatter.yaml',
@@ -57,27 +65,27 @@ return [
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1559704223
+                'modified' => 1560668438
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1559704223
+                'modified' => 1560668438
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1559704223
+                'modified' => 1560668438
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1560325211
+                'modified' => 1560668438
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1559704223
+                'modified' => 1560668438
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1559704223
+                'modified' => 1560668438
             ]
         ],
         'user/plugins' => [
@@ -91,7 +99,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1559720365
+                'modified' => 1560668429
             ],
             'plugins/facebook' => [
                 'file' => 'user/plugins/facebook/facebook.yaml',
@@ -99,7 +107,7 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1560321762
+                'modified' => 1560668506
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -185,7 +193,7 @@ return [
                 ]
             ],
             'facebook' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'use_unitegallery_plugin' => true,
                 'facebook_page_settings' => [
@@ -261,10 +269,19 @@ return [
                         1 => '/modular'
                     ],
                     'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
+                        'daily' => '30',
+                        'monthly' => '12',
+                        'visitors' => '20'
                     ]
+                ],
+                'pagemedia' => [
+                    'resize_width' => 0,
+                    'resize_height' => 0,
+                    'res_min_width' => 0,
+                    'res_min_height' => 0,
+                    'res_max_width' => 0,
+                    'res_max_height' => 0,
+                    'resize_quality' => 0.8
                 ]
             ],
             'problems' => [
@@ -365,8 +382,6 @@ return [
                 0 => [
                     'name' => 'Default Site Backup',
                     'root' => '/',
-                    'schedule' => false,
-                    'schedule_at' => '0 3 * * *',
                     'exclude_paths' => '/backup
 /cache
 /images
@@ -378,7 +393,9 @@ return [
 .hg
 .idea
 .vscode
-node_modules'
+node_modules',
+                    'schedule' => false,
+                    'schedule_at' => '0 3 * * *'
                 ]
             ]
         ],
@@ -719,20 +736,6 @@ node_modules'
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
-            ],
-            'menu' => [
-                0 => [
-                    'icon' => 'github',
-                    'url' => 'https://github.com/garciaa94'
-                ],
-                1 => [
-                    'icon' => 'twitter',
-                    'url' => 'https://twitter.com/adrian94garcia'
-                ],
-                2 => [
-                    'icon' => 'facebook',
-                    'url' => 'https://facebook.com/garciaa94'
-                ]
             ]
         ],
         'streams' => [
@@ -970,6 +973,51 @@ node_modules'
             
         ],
         'themes' => [
+            'alpha' => [
+                'enabled' => true,
+                'social_links' => [
+                    0 => [
+                        'title' => 'Twitter',
+                        'icon' => 'twitter',
+                        'url' => '#'
+                    ],
+                    1 => [
+                        'title' => 'Facebook',
+                        'icon' => 'facebook',
+                        'url' => '#'
+                    ],
+                    2 => [
+                        'title' => 'Instagram',
+                        'icon' => 'instagram',
+                        'url' => '#'
+                    ],
+                    3 => [
+                        'title' => 'Github',
+                        'icon' => 'github',
+                        'url' => '#'
+                    ],
+                    4 => [
+                        'title' => 'Dribbble',
+                        'icon' => 'dribbble',
+                        'url' => '#'
+                    ],
+                    5 => [
+                        'title' => 'Google+',
+                        'icon' => 'google-plus',
+                        'url' => '#'
+                    ]
+                ],
+                'streams' => [
+                    'schemes' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'paths' => [
+                                0 => 'user/themes/alpha'
+                            ]
+                        ]
+                    ]
+                ]
+            ],
             'antimatter' => [
                 'enabled' => true,
                 'dropdown' => [

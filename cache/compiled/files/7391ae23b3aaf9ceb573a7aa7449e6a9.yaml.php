@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/admin/languages/en.yaml',
-    'modified' => 1560321762,
+    'modified' => 1560668506,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -824,7 +824,11 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
             'COMMAND' => 'Command',
             'EXTRA_ARGUMENTS' => 'Extra Arguments',
             'DEFAULT_LANG' => 'Override Default Language',
-            'DEFAULT_LANG_HELP' => 'Default is the first supported language. This can be overridden by setting this option but it must be one of the supported languages'
+            'DEFAULT_LANG_HELP' => 'Default is the first supported language. This can be overridden by setting this option but it must be one of the supported languages',
+            'DEBUGGER_PROVIDER' => 'Debugger Provider',
+            'DEBUGGER_PROVIDER_HELP' => 'Default is PHP Debug Bar, but Clockwork browser extension provides for a less intrusive approach',
+            'DEBUGGER_DEBUGBAR' => 'PHP Debug Bar',
+            'DEBUGGER_CLOCKWORK' => 'Clockwork Browser Extension'
         ]
     ]
 ];
