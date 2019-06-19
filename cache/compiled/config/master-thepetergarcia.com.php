@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560668513,
-    'checksum' => '518b8acfbc88212b8263af48cf8891ff',
+    'timestamp' => 1560759072,
+    'checksum' => '8b9123c5bbfc6acf875d42dbdca65204',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -19,7 +19,7 @@ return [
             ],
             'plugins/facebook' => [
                 'file' => 'user/config/plugins/facebook.yaml',
-                'modified' => 1560536671
+                'modified' => 1560757334
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
@@ -43,7 +43,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1560668438
+                'modified' => 1560758660
             ],
             'themes/alpha' => [
                 'file' => 'user/config/themes/alpha.yaml',
@@ -51,7 +51,7 @@ return [
             ],
             'themes/antimatter' => [
                 'file' => 'user/config/themes/antimatter.yaml',
-                'modified' => 1560321396
+                'modified' => 1560759062
             ],
             'themes/cardstack' => [
                 'file' => 'user/config/themes/cardstack.yaml',
@@ -60,6 +60,10 @@ return [
             'themes/portfolio' => [
                 'file' => 'user/config/themes/portfolio.yaml',
                 'modified' => 1560321849
+            ],
+            'themes/qbee' => [
+                'file' => 'user/config/themes/qbee.yaml',
+                'modified' => 1560758022
             ]
         ],
         'system/config' => [
@@ -193,7 +197,7 @@ return [
                 ]
             ],
             'facebook' => [
-                'enabled' => false,
+                'enabled' => true,
                 'built_in_css' => true,
                 'use_unitegallery_plugin' => true,
                 'facebook_page_settings' => [
@@ -1022,6 +1026,18 @@ node_modules',
                 'enabled' => true,
                 'dropdown' => [
                     'enabled' => true
+                ],
+                'social_links' => [
+                    0 => [
+                        'title' => 'Twitter',
+                        'icon' => 'twitter',
+                        'url' => '#'
+                    ],
+                    1 => [
+                        'title' => 'Facebook',
+                        'icon' => 'facebook',
+                        'url' => '#'
+                    ]
                 ]
             ],
             'cardstack' => [
@@ -1053,6 +1069,13 @@ node_modules',
                 'dropdown' => [
                     'enabled' => true
                 ]
+            ],
+            'qbee' => [
+                'enabled' => true,
+                'production_mode' => true,
+                'header_sticky' => true,
+                'show_site_name' => true,
+                'show_site_logo' => true
             ]
         ]
     ]

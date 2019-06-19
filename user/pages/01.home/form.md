@@ -1,11 +1,6 @@
 ---
 title: HOME
 media_order: 'main.js,style.css,google tag.jpg'
-content:
-    items: '@self.modular'
-    order:
-        by: ''
-        dir: ''
 ---
 
 <html lang="en">
