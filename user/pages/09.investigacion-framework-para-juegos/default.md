@@ -10,8 +10,7 @@ title: 'Investigacion-Framework para juegos'
     <title>Game basic pixi</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body>   
     <table class="egt" border="1">
 	 <tr>	
 
@@ -33,7 +32,7 @@ title: 'Investigacion-Framework para juegos'
   	<td>Definicion</td>
     <td><p>Phaser es un marco de juego 2D de software gratuito para hacer juegos HTML5 para computadoras de escritorio y móviles.Es desarrollado por Photon Storm.</p></td>
     <td><p>Pixi.js es una biblioteca de gráficos de código abierto 2D WebGL de JavaScript de código abierto con respaldo de lienzo.</p></td>
-    <td><p></p></td>
+    <!-- <td><p></p></td> -->
   </tr>
   <tr>
     <td>Funcionalidad</td>
@@ -58,6 +57,7 @@ title: 'Investigacion-Framework para juegos'
     <td>Desventajas</td>
     <td><p> La capacidad de la memoria de juego pequeño se alcanza fácilmente a más de 100 mb</p></td>
     <td><p>No es para alguien que no tiene conocimientos básicos de JavaScript y HTML5</p> </td>
+        <td><p>kiwi ya no esta en uso lo cual es una desbentaja para los desarrolladores</p></td>
   	</tr>
   	<td>Distribucion delsoftware</td>
     <td><p>Codigo abierto</p></td>
