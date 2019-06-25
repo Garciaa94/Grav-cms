@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/plugins/facebook.yaml',
-    'modified' => 1560757334,
+    'modified' => 1561259664,
     'data' => [
-        'enabled' => true,
+        'enabled' => false,
         'built_in_css' => true,
         'use_unitegallery_plugin' => true,
         'facebook_page_settings' => [

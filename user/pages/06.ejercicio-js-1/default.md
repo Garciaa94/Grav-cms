@@ -44,7 +44,7 @@ published: true
             }
     }
 </script>
-            <p><label for="valor">Ingrese un número:</label><br><input type="text" id="valor" onkeyup="myFunction()"><script>.sleep(50000);</script><br><br><code id="figura" class="fig"></code></p>
+            <p><label for="valor">Ingrese un número:</label><br><input type="text" style="width:80px;height:30px" id="valor" onkeyup="myFunction()"><script>.sleep(50000);</script><br><br><code id="figura" class="fig"></code></p>
 			<script>//sleep(2000);</script>
     </center> 
 </body>

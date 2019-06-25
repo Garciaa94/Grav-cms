@@ -1,7 +1,6 @@
 enabled: true
 dropdown:
   enabled: true
-  enabled: true
 social_links:
   -
     title: Twitter

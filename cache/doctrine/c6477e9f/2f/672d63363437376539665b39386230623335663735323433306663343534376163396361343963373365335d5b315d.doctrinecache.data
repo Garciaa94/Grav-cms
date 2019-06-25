@@ -1,0 +1,70 @@
+1562003329
+a:2:{s:7:"content";s:3112:"<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game basic pixi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <table class="egt" border="1">
+     <tr>   
+
+    <td>Framework</td>
+
+    <td><a href="http://phaser.io/">phaser</a></td>
+
+    <td><a href="https://www.pixijs.com"> pixijs</a></td>
+
+    <td><a href="http://phaser.io/">melonjs</a></td>
+
+    <td><a href="http://www.kiwijs.org/">kiwijs</a></td>
+
+    <td><a href="https://gdevelop-app.com/">gdevelop-app</a></td>
+
+    <td><a href="https://www.babylonjs.com/">babylonjs</a></td>
+  </tr>
+  <tr>
+    <td>Definicion</td>
+    <td><p>Phaser es un marco de juego 2D de software gratuito para hacer juegos HTML5 para computadoras de escritorio y móviles.Es desarrollado por Photon Storm.</p></td>
+    <td><p>Pixi.js es una biblioteca de gráficos de código abierto 2D WebGL de JavaScript de código abierto con respaldo de lienzo.</p></td>
+    <!-- <td><p></p></td> -->
+  </tr>
+  <tr>
+    <td>Funcionalidad</td>
+    <td><p>Se recomienda tener conocimientos básicos de JavaScript para sacar mayor provecho a este tutorial.</p></td>
+    <td><p>La fuerza de PixiJS es la velocidad. Cuando se trata de renderización 2D, PixiJS es rapido.</p></td>
+  </tr>
+  <tr>
+    <td>Confiabilidad</td>
+    <td><p>Phaser es muy confiable ya que  en esta nueva versión  la cual es la 3 nos ayuda a tener un código mucho más modular logrando así tener un código final mucho más ordenado.</p></td>
+    <td><p>Es muy confiable ya que cuenta con una gran comunidad lo cual ayudan con el aprendisaje y el desarrollo de juegos.</p></td>
+  </tr>
+  <tr>
+    <td> Usabilidad</td>
+    <td><p>Si eres desarrollador y tienes conocimientos de programación básica se prodra sacar muchas bentajas de este Framework.</p></td>
+    <td><p>Pixi es una tecnología inclusiva y todo el contenido puede hacerse para que sea accesible al lector de pantalla con facilidad. El único renderizador WebGL que existe</p></td>
+  </tr>
+  <tr>
+    <td>Eficiencia</td>
+    <td><p>Phaser tiene alta eficiencia de desarrollo un paquete excelente y muchas herramientas que pueden ayudar a completar el desarrollo del juego de manera extremadamente rápida.</p></td>
+    <td><p>Pixi nos ayuda a tener optimizacion de los proyectos ademas de tener una buena practica al momento de codificar.</p></td>
+    <tr>
+    <td>Desventajas</td>
+    <td><p> La capacidad de la memoria de juego pequeño se alcanza fácilmente a más de 100 mb</p></td>
+    <td><p>No es para alguien que no tiene conocimientos básicos de JavaScript y HTML5</p> </td>
+        <td><p>kiwi ya no esta en uso lo cual es una desbentaja para los desarrolladores</p></td>
+    </tr>
+    <td>Distribucion delsoftware</td>
+    <td><p>Codigo abierto</p></td>
+    <td><p>Codigo abierto</p></td>
+  </tr>
+</table>
+
+    <div id="juego"></div>
+    <script src="pixi.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="init.js"></script>
+</body>
+</html>";s:12:"content_meta";N;}

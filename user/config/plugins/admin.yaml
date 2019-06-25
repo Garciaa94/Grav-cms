@@ -1,6 +1,6 @@
 enabled: true
 route: /admin
-cache_enabled: false
+cache_enabled: true
 theme: grav
 content_padding: true
 twofa_enabled: true

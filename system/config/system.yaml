@@ -78,7 +78,7 @@ cache:
   check:
     method: file                                 # Method to check for updates in pages: file|folder|hash|none
   driver: auto                                   # One of: auto|file|apcu|memcache|wincache
-  prefix: 'g'                                    # Cache prefix string (prevents cache conflicts)
+  prefix: g                                    # Cache prefix string (prevents cache conflicts)
   purge_at: '0 4 * * *'                          # How often to purge old file cache (using new scheduler)
   clear_at: '0 3 * * *'                           # How often to clear cache (using new scheduler)
   clear_job_type: 'standard'                     # Type to clear when processing the scheduled clear job `standard`|`all`

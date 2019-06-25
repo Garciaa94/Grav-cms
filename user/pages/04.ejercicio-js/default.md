@@ -6,7 +6,7 @@ title: 'Ejercicio JS'
 <head>
 </head>
 <body>
-Ingrese un numero: <input type="text" id="valor" onkeyup="myFunction()" >
+Ingrese un numero: <input type="text" style="width:100px;height:30px" id="valor" onkeyup="myFunction()" >
 <p id="nombre" style="color:Tomato;"></p>
 <script type="text/javascript">
     function myFunction() {

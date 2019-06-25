@@ -1,13 +1,13 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560775142,
-    'checksum' => '8b9123c5bbfc6acf875d42dbdca65204',
+    'timestamp' => 1561431173,
+    'checksum' => '860443d4819f67f9608bed2d61c11cd2',
     'files' => [
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1560536646
+                'modified' => 1561396129
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
@@ -15,15 +15,27 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/config/plugins/admin.yaml',
-                'modified' => 1560668513
+                'modified' => 1561395654
+            ],
+            'plugins/error' => [
+                'file' => 'user/config/plugins/error.yaml',
+                'modified' => 1561259660
             ],
             'plugins/facebook' => [
                 'file' => 'user/config/plugins/facebook.yaml',
-                'modified' => 1560757334
+                'modified' => 1561259664
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
                 'modified' => 1560668448
+            ],
+            'plugins/markdown-notices' => [
+                'file' => 'user/config/plugins/markdown-notices.yaml',
+                'modified' => 1561398412
+            ],
+            'plugins/problems' => [
+                'file' => 'user/config/plugins/problems.yaml',
+                'modified' => 1561259689
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -43,7 +55,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1560758660
+                'modified' => 1561394749
             ],
             'themes/alpha' => [
                 'file' => 'user/config/themes/alpha.yaml',
@@ -51,7 +63,7 @@ return [
             ],
             'themes/antimatter' => [
                 'file' => 'user/config/themes/antimatter.yaml',
-                'modified' => 1560759062
+                'modified' => 1561267239
             ],
             'themes/cardstack' => [
                 'file' => 'user/config/themes/cardstack.yaml',
@@ -59,7 +71,7 @@ return [
             ],
             'themes/portfolio' => [
                 'file' => 'user/config/themes/portfolio.yaml',
-                'modified' => 1560321849
+                'modified' => 1561259312
             ],
             'themes/qbee' => [
                 'file' => 'user/config/themes/qbee.yaml',
@@ -69,27 +81,27 @@ return [
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1560668438
+                'modified' => 1561248031
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1560668438
+                'modified' => 1561248031
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1560668438
+                'modified' => 1561248031
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1560668438
+                'modified' => 1561248031
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1560668438
+                'modified' => 1561248031
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1560668438
+                'modified' => 1561396954
             ]
         ],
         'user/plugins' => [
@@ -103,7 +115,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1560668429
+                'modified' => 1561394749
             ],
             'plugins/facebook' => [
                 'file' => 'user/plugins/facebook/facebook.yaml',
@@ -111,7 +123,7 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1560668506
+                'modified' => 1561394749
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -162,7 +174,7 @@ return [
                 'debug' => false
             ],
             'markdown-notices' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'level_classes' => [
                     0 => 'yellow',
@@ -197,7 +209,7 @@ return [
                 ]
             ],
             'facebook' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'use_unitegallery_plugin' => true,
                 'facebook_page_settings' => [
@@ -218,7 +230,7 @@ return [
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',
-                'cache_enabled' => false,
+                'cache_enabled' => true,
                 'theme' => 'grav',
                 'logo_text' => '',
                 'body_classes' => '',
@@ -289,11 +301,11 @@ return [
                 ]
             ],
             'problems' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true
             ],
             'error' => [
-                'enabled' => true,
+                'enabled' => false,
                 'routes' => [
                     404 => '/error'
                 ]
@@ -398,7 +410,7 @@ return [
 .idea
 .vscode
 node_modules',
-                    'schedule' => false,
+                    'schedule' => true,
                     'schedule_at' => '0 3 * * *'
                 ]
             ]
@@ -886,7 +898,7 @@ node_modules',
                 ]
             ],
             'twig' => [
-                'cache' => true,
+                'cache' => false,
                 'debug' => true,
                 'auto_reload' => true,
                 'autoescape' => false,
@@ -1067,7 +1079,7 @@ node_modules',
             'portfolio' => [
                 'enabled' => false,
                 'dropdown' => [
-                    'enabled' => true
+                    'enabled' => false
                 ]
             ],
             'qbee' => [

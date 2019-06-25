@@ -8,7 +8,7 @@ function scrollHeader() {
     else
         $("#header").removeClass("scrolled");
 }
-
+/*
 jQuery(document).ready(function($){
 
     // ON SCROLL EVENTS
@@ -16,10 +16,10 @@ jQuery(document).ready(function($){
         $(document).scroll(function() {
             scrollHeader();
         });
-    };
+    };*/ 
 
     // TOUCH SCROLL
-    $(document).on({
+    $(document).on({ 
         'touchmove': function(e) {
             scrollHeader(); // Replace this with your code.
         }

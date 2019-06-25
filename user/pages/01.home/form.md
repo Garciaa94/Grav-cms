@@ -8,7 +8,7 @@ media_order: 'main.js,style.css,google tag.jpg'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menú Responsive</title>
+    <title>Inicio Blog Adrian Garcia</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -67,17 +67,23 @@ media_order: 'main.js,style.css,google tag.jpg'
             <li><a href="https://www.facebook.com/garciaa94">FaceBook</a></li>
         </center></ul>
     </div>
-    <br>
-   Bandera Jamaica
-	<br>
-    <svg width="600" height="300"> 
-<rect width="100%" height="100%" style="fill:rgb(254,223,0);"></rect><!-- Color base bandera -->
-<path d="M300 110 L20 0 L580 0 Z " style="fill:rgb(0,155,58);"></path> <!-- triangulo arriba-->
-<path d="M300 190 L20 300 L580 300 Z " style="fill:rgb(0,155,58);"></path><!-- triangulo abajo -->
-<path d="M330 150 L600 270 L600 30 Z " style="fill:rgb(0,0,0);"></path><!-- triangulo derecho -->
-<path d="M270 150 L0 270 L0 30 Z " style="fill:rgb(0,0,0);"></path><!-- tringulo Izquierdo -->
-</svg>
+
+        
+    <table  style="border: hidden">
+  <tr style="border: hidden">
+    <td style="border: hidden"><a href="https://thepetergarcia.com/home/ejercicio-css-html"> <br> Ejercicios HTML-CSS</a></td>
+    <td style="border: hidden"><a href="https://thepetergarcia.com/documentacion-grav"> <br>Documentacion de Grav</a></td>
+    <td style="border: hidden"><a href="https://thepetergarcia.com/home/bandera-de-jamaica"> <br> Bandera Jamaica </a></td>
+  </tr>
+
+  <tr>
+      <td style="border: hidden"><a href="https://thepetergarcia.com/reloj"> <br> Reloj </a></td>
+      <td style="border: hidden"><a href="https://thepetergarcia.com/juego"> <br> Juego </a></td>
+      <td style="border: hidden"><a href="https://thepetergarcia.com/home/juego-gravedad"> <br> Juego modificado </a></td>
+
+  </tr>
+
+</table>
 </body>
 </html>
-    Google tag    
-   ![](google%20tag.jpg)
+

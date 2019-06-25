@@ -86,7 +86,7 @@ cache:
   check:
     method: file
   driver: auto
-  prefix: g
+  prefix: 'g'
   purge_at: '0 4 * * *'
   clear_at: '0 3 * * *'
   clear_job_type: standard
@@ -98,7 +98,7 @@ cache:
   redis:
     socket: false
 twig:
-  cache: true
+  cache: false
   debug: true
   auto_reload: true
   autoescape: false

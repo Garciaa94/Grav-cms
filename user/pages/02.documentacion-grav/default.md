@@ -5,7 +5,7 @@ title: Documentacion-Grav
 <h3>Assets</h3>
 <ul>
 <li>Es la carpeta donde se guarda  las hojas de estilo CSS, los archivos JavaScript y las imágenes que se utilizan en el frontend de las aplicaciones para que tengan un buen aspecto.
-<h3>Backers</h3></li>
+<h3>Backers</h3></li> 
 <li>Para cualquier persona que haga un sitio web siempre es recomendable hacer copias de seguridad o backups por cualquier problema que se presente como, ataque de hackers o crackers, caídas del servidor, o cualquier tipo de error que pueda suceder, hay formas de hacer copias de seguridad a través de PHPAdmin pero para algunos sería muy complicado o tendrían temor en manipular esas herramientas.
 <h3>Bin</h3></li>
 <li>Es un directorio estático y es donde se almacenan todos los binarios necesarios para garantizar las funciones básicas a nivel de usuario. Solo almacena los ejecutables de usuario, ya que los binarios necesarios para tareas administrativas gestionadas por el usuario root.

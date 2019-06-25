@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/backups.yaml',
-    'modified' => 1560536646,
+    'modified' => 1561396129,
     'data' => [
         'purge' => [
             'trigger' => 'space',
@@ -26,7 +26,7 @@ return [
 .idea
 .vscode
 node_modules',
-                'schedule' => false,
+                'schedule' => true,
                 'schedule_at' => '0 3 * * *'
             ]
         ]
