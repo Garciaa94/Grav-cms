@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/themes/bootstrap-blog.yaml',
-    'modified' => 1561701951,
+    'modified' => 1561702868,
     'data' => [
         'enabled' => true,
-        'cdn_enabled' => true,
-        'back_to_top_button' => true,
+        'cdn_enabled' => false,
+        'back_to_top_button' => false,
         'fluid_container' => false,
         'favicon' => [
             'user/themes/quark/images/logo.png' => [
@@ -25,14 +25,15 @@ return [
                     'path' => 'user/themes/quark/images/logo.png'
                 ]
             ],
+            'icon' => 'AdrianBlog',
             'style' => 'light',
-            'override_page_style' => true,
+            'override_page_style' => false,
             'dropdown' => true,
-            'sticky' => true,
-            'display_site_name' => true
+            'sticky' => false,
+            'display_site_name' => false
         ],
         'sidebar' => [
-            'enabled' => true,
+            'enabled' => false,
             'align' => 'left',
             'twitter' => [
                 'enabled' => false,
@@ -48,14 +49,14 @@ return [
             ]
         ],
         'item' => [
-            'featured_image' => '1',
-            'show_prev_next' => true,
+            'featured_image' => '0',
+            'show_prev_next' => false,
             'related_pages' => true,
             'category' => 'category',
             'tag' => 'tag'
         ],
         'comments' => [
-            'enabled' => true
+            'enabled' => false
         ],
         'footer' => [
             'style' => 'dark',

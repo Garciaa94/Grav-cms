@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1561702868,
-    'checksum' => 'f5a51cbac9b9826f25beba119c48e604',
+    'timestamp' => 1561709612,
+    'checksum' => '9ce62cc40dcf4b0ef05f75cef3d81d22',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -59,7 +59,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1561696789
+                'modified' => 1561707220
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -67,7 +67,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1561702583
+                'modified' => 1561709612
             ],
             'themes/alpha' => [
                 'file' => 'user/config/themes/alpha.yaml',
@@ -1012,18 +1012,18 @@ node_modules'
             'salt' => 'XYQWIePhlaUmKc'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'GarciaBlog',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@example.com'
+                'name' => 'Adrian Garcia',
+                'email' => 'adrian1994215@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Estudio y Desarrollo practico de la materia Graficacion y Animacion'
             ],
             'summary' => [
                 'enabled' => true,
@@ -1088,10 +1088,10 @@ node_modules'
             ],
             'home' => [
                 'alias' => '/home',
-                'hide_in_urls' => false
+                'hide_in_urls' => true
             ],
             'pages' => [
-                'theme' => 'bootstrap-blog',
+                'theme' => 'antimatter',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -1141,7 +1141,7 @@ node_modules'
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -1206,7 +1206,7 @@ node_modules'
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 1,
                 'log' => true
             ],
             'log' => [

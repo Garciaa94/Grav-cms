@@ -1,6 +1,7 @@
 ---
 title: juego-de-examen
 ---
+
 <html>
     <head>
         <title>PIXI Concentration</title>
@@ -21,7 +22,7 @@ title: juego-de-examen
             // can the player pick up a tile?
             var canPick=true;
             // create an new instance of a pixi stage with a grey background
-            var stage = new PIXI.Stage(0x888888);
+            var stage = new PIXI.Stage(0xffffff);
             // create a renderer instance width=640 height=480
             var renderer = PIXI.autoDetectRenderer(640,480);
             // importing a texture atlas created with texturepacker

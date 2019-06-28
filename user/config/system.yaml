@@ -22,9 +22,9 @@ languages:
   override_locale: false
 home:
   alias: /home
-  hide_in_urls: false
+  hide_in_urls: true
 pages:
-  theme: bootstrap-blog
+  theme: antimatter
   order:
     by: default
     dir: asc
@@ -66,7 +66,7 @@ pages:
   etag: false
   vary_accept_encoding: false
   redirect_default_route: false
-  redirect_default_code: 302
+  redirect_default_code: '302'
   redirect_trailing_slash: true
   ignore_files:
     - .DS_Store
@@ -120,7 +120,7 @@ assets:
   collections:
     jquery: 'system://assets/jquery/jquery-2.x.min.js'
 errors:
-  display: true
+  display: 1
   log: true
 log:
   handler: file
