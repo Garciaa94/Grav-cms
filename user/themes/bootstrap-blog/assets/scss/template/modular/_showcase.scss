@@ -1,0 +1,78 @@
+.showcase {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: $spacer * 7 !important;
+    padding-bottom: $spacer * 7 !important;
+}
+
+.showcase-text {
+    padding-top: $spacer * 5 !important;
+    padding-bottom: $spacer * 5 !important;
+}
+
+.showcase-text, .showcase {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .buttons > .btn {
+        margin-bottom: $spacer *.2;
+    }
+}
+
+@each $color, $value in $theme-colors {
+
+    .showcase-text.bg-#{$color},
+    .showcase.bg-#{$color} {
+
+        .content {
+            color: color-yiq($value);
+            @if($color != 'light') {
+                a {
+                    font-weight: 600;
+                    color: color-yiq($value);
+                    &:hover {
+                        color: $gray-200;
+                    }
+
+                    @if(theme-style-inverse($color) != 'light') {
+                        color: theme-color-level($color, 6);
+                        &:hover {
+                            color: theme-color-level($color, 4);
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            padding-top: $spacer;
+    
+            .btn.btn-outline-#{$color} {
+                @if($color != 'light') {
+                    $inversedShowcaseOutlineButton: theme-style-inverse($color);
+                    @extend .btn-outline-#{$inversedShowcaseOutlineButton};
+                }
+            }
+    
+            .btn.btn-#{$color} {
+                @if($color != 'light') {
+                    $inversedShowcaseButton: theme-style-inverse($color);
+                    @extend .btn-outline-#{$inversedShowcaseButton};
+                }
+            }
+        }
+
+    }
+}

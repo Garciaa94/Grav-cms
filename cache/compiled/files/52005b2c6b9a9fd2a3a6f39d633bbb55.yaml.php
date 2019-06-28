@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/security.yaml',
-    'modified' => 1559703075,
+    'modified' => 1561696824,
     'data' => [
-        'salt' => '5BXaNuynC1wYHU'
+        'salt' => 'XYQWIePhlaUmKc'
     ]
 ];

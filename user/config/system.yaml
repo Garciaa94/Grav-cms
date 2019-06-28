@@ -24,7 +24,7 @@ home:
   alias: /home
   hide_in_urls: false
 pages:
-  theme: antimatter
+  theme: bootstrap-blog
   order:
     by: default
     dir: asc
@@ -86,7 +86,7 @@ cache:
   check:
     method: file
   driver: auto
-  prefix: 'g'
+  prefix: g
   purge_at: '0 4 * * *'
   clear_at: '0 3 * * *'
   clear_job_type: standard
@@ -98,7 +98,7 @@ cache:
   redis:
     socket: false
 twig:
-  cache: false
+  cache: true
   debug: true
   auto_reload: true
   autoescape: false

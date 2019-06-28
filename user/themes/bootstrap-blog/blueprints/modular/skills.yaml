@@ -1,0 +1,77 @@
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                bootstrap-blog:
+                    type: tab
+                    title: BOOTSTRAP_BLOG.ADMIN.MODULAR.SKILLS
+                    fields:
+                        header.style:
+                            type: select
+                            size: medium
+                            label: BOOTSTRAP_BLOG.ADMIN.STYLE
+                            help: BOOTSTRAP_BLOG.ADMIN.STYLE_HELP
+                            toggleable: true
+                            options:
+                                dark: Dark
+                                light: Light
+                                primary: Primary
+                                secondary: Secondary
+                                info: Info
+                                success: Success
+                                warning: Warning
+                                danger: Danger
+                                blue: Blue
+                                orange: Orange
+                                green: Green
+                                red: Red
+                                indigo: Indigo
+                                pink: Pink
+                                purple: Purple
+                                yellow: Yellow
+                                teal: Teal
+                                cyan: Cyan
+                        header.skills:
+                            type: list
+                            label: BOOTSTRAP_BLOG.ADMIN.MODULAR.SKILLS_LIST
+                            help: BOOTSTRAP_BLOG.ADMIN.MODULAR.SKILLS_LIST_HELP
+                            style: vertical
+                            fields:
+                                .text:
+                                    type: text
+                                    label: BOOTSTRAP_BLOG.ADMIN.TEXT
+                                .style:
+                                    type: select
+                                    size: medium
+                                    label: BOOTSTRAP_BLOG.ADMIN.STYLE
+                                    help: BOOTSTRAP_BLOG.ADMIN.STYLE_HELP
+                                    toggleable: true
+                                    novalidate: true
+                                    options:
+                                        dark: Dark
+                                        light: Light
+                                        primary: Primary
+                                        secondary: Secondary
+                                        info: Info
+                                        success: Success
+                                        warning: Warning
+                                        danger: Danger
+                                        blue: Blue
+                                        orange: Orange
+                                        green: Green
+                                        red: Red
+                                        indigo: Indigo
+                                        pink: Pink
+                                        purple: Purple
+                                        yellow: Yellow
+                                        teal: Teal
+                                        cyan: Cyan
+                                .value:
+                                    type: text
+                                    label: BOOTSTRAP_BLOG.ADMIN.VALUE

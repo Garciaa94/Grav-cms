@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/themes/alpha.yaml',
-    'modified' => 1560537452,
+    'modified' => 1561613471,
     'data' => [
         'enabled' => true,
         'social_links' => [

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/themes/qbee.yaml',
-    'modified' => 1560758022,
+    'modified' => 1561613471,
     'data' => [
         'enabled' => true,
         'production_mode' => true,

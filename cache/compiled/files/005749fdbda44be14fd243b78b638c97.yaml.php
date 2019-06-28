@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/accounts/adriangarcia.yaml',
-    'modified' => 1560127344,
+    'modified' => 1561697483,
     'data' => [
-        'email' => 'adrian1994215@gmail.com',
-        'fullname' => 'Adrian Garcia',
-        'title' => 'Administrador',
         'state' => 'enabled',
+        'email' => 'adrian1994215@gmail.com',
+        'fullname' => 'Adrian Garvia',
+        'title' => 'Administrador',
         'access' => [
             'admin' => [
                 'login' => true,
@@ -17,11 +17,6 @@ return [
                 'login' => true
             ]
         ],
-        'hashed_password' => '$2y$10$D.owjPmLqu09mOXnkwqgKuRfQwk3HxPrDxCcRyclLBTLX3NnPtKv2',
-        'twofa_secret' => 'JUU53YUGVI7Z2PAVC46FDG3T6NYFFI7L',
-        'language' => 'en',
-        'login_attempts' => [
-            
-        ]
+        'hashed_password' => '$2y$10$DaunmlIuWBy0yLoNJHGOG.3d5hBzylaJOuy.qzw248JmkqZMYAgnu'
     ]
 ];

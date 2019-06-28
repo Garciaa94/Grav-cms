@@ -1,0 +1,34 @@
+{% set header_image_file = page.header.image_file %}
+{% if header_image_file %}
+    {% set header_image_media = page.media.images[header_image_file] %}
+{% else %}
+    {% set header_image_media = page.media.images|first %}
+{% endif %}
+
+<div class="item-masonry col-12 col-md-6 col-lg-{{ page.header.size|defined('4') }}">
+  <div class="card text-{{ page.header.page_text_align|default('center') }}">
+      {{ header_image_media.html(page.title, '', 'card-img card-raised') }}
+    <div
+        class="rounded {{ 'bg-'~ page.header.style|defined('light') }}{% if header_image_media %} card-img-overlay masonry-overlay{% else %} masonry-no-overlay{% endif %}">
+      <div class="h-100 d-flex flex-wrap justify-content-center align-items-center">
+        <div class="my-auto">
+          <a href="{{ page.url }}" class="stretched-link">
+          <h2 class="card-title">{{ page.title }}</h2>
+          <p class="categories">
+            {% for category in page.taxonomy.category %}
+              {{ category|upper }}{{ not loop.last ? ',' }}
+            {% endfor %}
+          </p>
+          {% if page.taxonomy.tag|length > 0 %}
+            <p class="tags"><i class="fas fa-tags"></i>
+              {% for tag in page.taxonomy.tag %}
+                <span>{{ tag }}</span>{{ not loop.last ? ',' }}
+              {% endfor %}
+            </p>
+          {% endif %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

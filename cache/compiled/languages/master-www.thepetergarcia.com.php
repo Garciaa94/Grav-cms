@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1561396767,
-    'checksum' => 'a2fb740f867cba9b866775601620ef65',
+    'timestamp' => 1561651009,
+    'checksum' => '730950014337aceed8edd274bbd1a976',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -163,239 +163,263 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/tntsearch' => [
+                'file' => 'user/plugins/tntsearch/languages.yaml',
+                'modified' => 1561605433
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1560321763
+                'modified' => 1561613472
+            ],
+            'plugins/presentation-deckset' => [
+                'file' => 'user/plugins/presentation-deckset/languages.yaml',
+                'modified' => 1561605429
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1561394749
+                'modified' => 1561614050
+            ],
+            'plugins/presentation' => [
+                'file' => 'user/plugins/presentation/languages.yaml',
+                'modified' => 1561605429
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/languages.yaml',
+                'modified' => 1561605427
+            ],
+            'plugins/external_links' => [
+                'file' => 'user/plugins/external_links/languages.yaml',
+                'modified' => 1561605424
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/languages.yaml',
-                'modified' => 1560321766
+                'modified' => 1561613472
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1560321764
+                'modified' => 1561613472
+            ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/languages.yaml',
+                'modified' => 1561605430
             ]
         ],
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'bg' => [
                 'file' => 'user/plugins/admin/languages/bg.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'br' => [
                 'file' => 'user/plugins/admin/languages/br.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'et' => [
                 'file' => 'user/plugins/admin/languages/et.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'eu' => [
                 'file' => 'user/plugins/admin/languages/eu.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'he' => [
                 'file' => 'user/plugins/admin/languages/he.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'id' => [
                 'file' => 'user/plugins/admin/languages/id.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'sl' => [
                 'file' => 'user/plugins/admin/languages/sl.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'sr' => [
                 'file' => 'user/plugins/admin/languages/sr.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'vi' => [
                 'file' => 'user/plugins/admin/languages/vi.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ],
             'zh-tw' => [
                 'file' => 'user/plugins/admin/languages/zh-tw.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
             ]
         ],
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'en' => [
                 'file' => 'user/plugins/login/languages/en.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'es' => [
                 'file' => 'user/plugins/login/languages/es.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'fr' => [
                 'file' => 'user/plugins/login/languages/fr.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'hr' => [
                 'file' => 'user/plugins/login/languages/hr.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'hu' => [
                 'file' => 'user/plugins/login/languages/hu.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'no' => [
                 'file' => 'user/plugins/login/languages/no.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'ro' => [
                 'file' => 'user/plugins/login/languages/ro.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'ru' => [
                 'file' => 'user/plugins/login/languages/ru.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ],
             'uk' => [
                 'file' => 'user/plugins/login/languages/uk.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
             ]
         ],
         'user/plugins/ganalytics/languages' => [
             'de' => [
                 'file' => 'user/plugins/ganalytics/languages/de.yaml',
-                'modified' => 1560326302
+                'modified' => 1561613472
             ],
             'en' => [
                 'file' => 'user/plugins/ganalytics/languages/en.yaml',
-                'modified' => 1560326302
+                'modified' => 1561613472
             ]
         ]
     ],
@@ -1396,9 +1420,59 @@ Sie haben **2FA** für dieses Konto aktiviert. Bitte benutzen Sie Ihre **2FA** A
                 'INVALID_MIME_TYPE' => 'Der MIME-Type %s für die Datei %s ist nicht erlaubt.',
                 'INVALID_FILE_EXTENSION' => 'Die Dateiendung %s ist nicht erlaubt.'
             ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'External Links',
+                    'PLUGIN_STATUS' => 'Plugin Status',
+                    'PLUGIN_STATUS_HELP' => 'Aktiviere das Plugin oder schalte es komplett ab.',
+                    'BUILTIN_CSS' => 'Verwende mitgeliefertes CSS',
+                    'WEIGHT' => 'Ausführungsreihenfolge',
+                    'SETTINGS' => 'Einstellungen',
+                    'CONTENT' => 'Inhalt',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Ausnahmen',
+                        'SECTION_HELP' => 'Setzt Links mit bestimmten Klassen oder Links von bestimmten Domains immer als intern.',
+                        'CLASSES' => 'Ignoriere Links mit diesen Klassen',
+                        'CLASSES_HELP' => 'Komma getrennte Liste',
+                        'DOMAINS' => 'Eine Liste von auszuschließenden Domains',
+                        'DOMAINS_HELP' => 'Komma getrennte Liste von Domains z.B. _localhost/*_ (jeder regulärer Ausdruck kann verwendet werden)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Links',
+                        'SECTION_HELP' => 'Sieht Links beginnend mit <code>www.</code> oder mit als extern markierten Protokollen als extern an.',
+                        'WWW' => 'Verlinkung (WWW)',
+                        'WWW_HELP' => 'Verlinke auch Links, die mit \'www.\' beginnen als extern',
+                        'REDIRECTS' => 'Folge Seiten-Weiterleitungen',
+                        'REDIRECTS_HELP' => 'Links zu Seiten, die zu einer externen URL weiterleiten werden auch als extern markiert',
+                        'SCHEMES' => 'Erlaubte Protokolle',
+                        'SCHEMES_HELP' => 'Liste von erlaubten Protokollen'
+                    ],
+                    'PROCESS' => 'Aktiviere <code>External Links</code> auf Seite',
+                    'TITLE' => 'Zeige Standardtexttitel für externe Links',
+                    'TITLE_MESSAGE' => 'Dieser Link führt auf eine externe Webseite für deren Inhalt wir nicht verantwortlich sind.',
+                    'NO_FOLLOW' => 'Fügt <code>rel="nofollow"</code> zu allen externen Links',
+                    'TARGET' => 'Setze "target" Attribut des Links.',
+                    'TARGET_BLANK' => '_blank - Öffne Link im neuen Fenster',
+                    'TARGET_SELF' => '_self - Öffne Link im gleichen Tab oder Seite',
+                    'TARGET_PARENT' => '_parent - Öffne Link im Elternfenster',
+                    'TARGET_TOP' => '_top - Öffne Link im ganzen Fenster',
+                    'MODE' => 'Modus',
+                    'MODE_HELP' => 'active = Zeichne externe Links aus; passive = Zeichne externe Links aus ohne entsprechende CSS-Klassen zu setzen',
+                    'MODE_ACTIVE' => 'Aktiv - Zeichne externe Links aus',
+                    'MODE_PASSIVE' => 'Passiv - Zeichne externe Links aus ohne entsprechende CSS-Klassen zu setzen'
+                ]
+            ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Fehler',
                 'ERROR_MESSAGE' => 'Uuups. Sieht aus als ob diese Seite nicht existiert.'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Suche …',
+                'SEARCH_RESULTS' => 'Suchergebnisse',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Suche: <strong>%s</strong> fand ein Ergebnis',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Suche: <strong>%s</strong> fand %s Ergebnisse',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Bitte geben Sie mindestens %s Zeichen ein',
+                'SEARCH_VALUE' => 'Suchen'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -2571,6 +2645,10 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'DEBUGGER_DEBUGBAR' => 'PHP Debug Bar',
                 'DEBUGGER_CLOCKWORK' => 'Clockwork Browser Extension'
             ],
+            'PLUGIN_TNTSEARCH' => [
+                'FOUND_RESULTS' => 'Found %s results',
+                'FOUND_IN' => 'in <span>%s</span>'
+            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Mail Engine',
                 'MAIL_ENGINE_DISABLED' => 'Disabled',
@@ -2626,6 +2704,10 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'QUEUE_FLUSH_MSG_LIMIT_APPEND' => 'Messages',
                 'QUEUE_FLUSH_TIME_LIMIT' => 'Flush time limit',
                 'QUEUE_FLUSH_TIME_LIMIT_APPEND' => 'Seconds'
+            ],
+            'PLUGIN_PRESENTATION_PLUGIN_DECKSET' => [
+                'TEXT_VARIABLE' => 'Text Variable',
+                'TEXT_VARIABLE_HELP' => 'Text to add to the top of a page'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Form not validated. One or more required fields are missing.',
@@ -2692,6 +2774,338 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'INVALID_MIME_TYPE' => 'The MIME type %s for the file %s is not an accepted.',
                 'INVALID_FILE_EXTENSION' => 'The File Extension for the file %s is not an accepted.'
             ],
+            'PLUGIN_PRESENTATION' => [
+                'ADMIN' => [
+                    'COMMON' => [
+                        'TITLE' => 'Presentation',
+                        'INITIAL' => 'Initial',
+                        'INHERIT' => 'Inherit',
+                        'NONE' => 'None',
+                        'KEY' => 'Key',
+                        'VALUE' => 'Value',
+                        'ORDER' => [
+                            'BY' => [
+                                'LABEL' => 'Order By',
+                                'HELP' => 'Type to order pages by',
+                                'OPTIONS' => [
+                                    'DEFAULT' => 'Default - based on folder name',
+                                    'FOLDER' => 'Folder - based on prefix-less folder name',
+                                    'TITLE' => 'Title - based on title field in header',
+                                    'DATE' => 'Date - based on date field in header'
+                                ]
+                            ],
+                            'DIR' => [
+                                'LABEL' => 'Order Direction',
+                                'HELP' => 'Direction to order pages',
+                                'OPTIONS' => [
+                                    'ASC' => 'Ascending',
+                                    'DESC' => 'Descending'
+                                ]
+                            ]
+                        ]
+                    ],
+                    'TABS' => [
+                        'OPTIONS' => 'Options'
+                    ],
+                    'LINKS' => [
+                        'VIEW' => 'Present',
+                        'VIEW_NOTES' => 'Present with Notes',
+                        'SPEAKER' => 'Speaker View',
+                        'SPEAKER_NOTES' => 'Speaker View with Notes',
+                        'PRINT' => 'Print',
+                        'PRINT_NOTES' => 'Print with Notes',
+                        'PRINT_STYLED' => 'Print with Theme',
+                        'PRINT_STYLED_NOTES' => 'Print with Theme and Notes'
+                    ],
+                    'OPTIONS' => [
+                        'CLASS' => [
+                            'LABEL' => 'Class(es)',
+                            'HELP' => 'Classes to add to the Slide'
+                        ],
+                        'HORIZONTAL' => [
+                            'LABEL' => 'Stack slides',
+                            'HELP' => 'Transform slides from vertical to horizontal layout',
+                            'DESCRIPTION' => 'Stack slides horizontally or vertically (default), on thematic breaks.',
+                            'OPTIONS' => [
+                                'HORIZONTAL' => 'Horizontally',
+                                'VERTICAL' => 'Vertically'
+                            ]
+                        ],
+                        'ASSETS' => [
+                            'ALL' => [
+                                'LABEL' => 'Load all assets',
+                                'DESCRIPTION' => 'Load all registered CSS and JS from Grav into presentation.html.twig\'s assets'
+                            ],
+                            'THEME' => [
+                                'LABEL' => 'Theme',
+                                'DESCRIPTION' => 'Reveal.js theme to use.'
+                            ],
+                            'THEME_CSS' => [
+                                'LABEL' => 'Use Theme\'s CSS',
+                                'DESCRIPTION' => 'Import current theme\'s /css/custom.css into presentation.html.twig\'s assets'
+                            ],
+                            'BUILTIN_CSS' => [
+                                'LABEL' => 'Use Plugin\'s CSS'
+                            ],
+                            'BUILTIN_JS' => [
+                                'LABEL' => 'Use Plugin\'s JS'
+                            ]
+                        ],
+                        'TEXTSIZE' => [
+                            'TITLE' => 'Font Sizing',
+                            'SCALE' => [
+                                'LABEL' => 'Font scale',
+                                'DESCRIPTION' => 'Use a modular, harmonious, scale to proportionally determine the size of header elements from the calculated base font size (derived from breakpoints).'
+                            ],
+                            'MODIFIER' => [
+                                'LABEL' => 'Font size modifier',
+                                'DESCRIPTION' => 'Multiplies the calculated font size by this amount, lower numbers yield smaller base font sizes, and vice versa.'
+                            ]
+                        ]
+                    ],
+                    'DEFAULTS' => [
+                        'TITLE' => 'Style Defaults'
+                    ],
+                    'SYNC' => [
+                        'TITLE' => 'Synchronization',
+                        'SYNC' => [
+                            'LABEL' => 'Sync',
+                            'DESCRIPTION' => 'Sync locally using browser, or remotely using API.',
+                            'OPTIONS' => [
+                                'NONE' => 'None (disabled)',
+                                'BROWSER' => 'Locally (Browser)',
+                                'API' => 'Remotely (API)'
+                            ]
+                        ],
+                        'API_ROUTE' => [
+                            'LABEL' => 'API Route',
+                            'DESCRIPTION' => 'Route for API-access.'
+                        ],
+                        'POLL_TIMEOUT' => [
+                            'LABEL' => 'Poll Timeout',
+                            'DESCRIPTION' => 'Milliseconds to wait between each API-query.'
+                        ],
+                        'POLL_RETRY_LIMIT' => [
+                            'LABEL' => 'Poll Retry Limit',
+                            'DESCRIPTION' => 'Number of times to retry on error before cancelling API-querying.'
+                        ],
+                        'TOKEN_AUTH' => [
+                            'LABEL' => 'Token Auth',
+                            'DESCRIPTION' => 'Require a token for Admin-access.'
+                        ],
+                        'TOKEN' => [
+                            'LABEL' => 'Token',
+                            'DESCRIPTION' => 'Token to use for authorization.'
+                        ]
+                    ],
+                    'STYLE' => [
+                        'TITLE' => 'Design',
+                        'FONT' => [
+                            'HEADER' => [
+                                'LABEL' => 'Heading Font-Family',
+                                'DESCRIPTION' => 'CSS Font-Family to use for headings.'
+                            ],
+                            'HEADER_COLOR' => [
+                                'LABEL' => 'Heading Text Color',
+                                'DESCRIPTION' => 'CSS Color to use for headings.'
+                            ],
+                            'BLOCK' => [
+                                'LABEL' => 'Block Font-Family',
+                                'DESCRIPTION' => 'CSS Font-Family to use for block-text.'
+                            ],
+                            'BLOCK_COLOR' => [
+                                'LABEL' => 'Block Text Color',
+                                'DESCRIPTION' => 'CSS Color to use for block-text.'
+                            ]
+                        ],
+                        'BACKGROUND-COLOR' => [
+                            'LABEL' => 'Background Color'
+                        ],
+                        'BACKGROUND-IMAGE' => [
+                            'LABEL' => 'Background Image',
+                            'DESCRIPTION' => 'Image from user/pages/images to use as default.'
+                        ],
+                        'BACKGROUND-SIZE' => [
+                            'LABEL' => 'Background Size',
+                            'OPTIONS' => [
+                                'AUTO' => 'Auto',
+                                'COVER' => 'Cover',
+                                'CONTAIN' => 'Contain'
+                            ]
+                        ],
+                        'BACKGROUND-REPEAT' => [
+                            'LABEL' => 'Background Repeat',
+                            'OPTIONS' => [
+                                'NO-REPEAT' => 'No repeat',
+                                'REPEAT' => 'Repeat both',
+                                'REPEAT-X' => 'Repeat horizontally',
+                                'REPEAT-Y' => 'Repeat vertically',
+                                'SPACE' => 'Repeat without clipping',
+                                'ROUND' => 'Repeat and stretch'
+                            ]
+                        ],
+                        'JUSTIFY-CONTENT' => [
+                            'LABEL' => 'Vertical Alignment',
+                            'HELP' => 'Vertical alignment of elements in slide (using justify-content)',
+                            'OPTIONS' => [
+                                'CENTER' => 'Center',
+                                'START' => 'Start',
+                                'END' => 'End',
+                                'FLEX-START' => 'Flex-start',
+                                'FLEX-END' => 'Flex-end',
+                                'LEFT' => 'Left',
+                                'RIGHT' => 'Right',
+                                'NORMAL' => 'Normal',
+                                'SPACE-BETWEEN' => 'Space-between',
+                                'SPACE-AROUND' => 'Space-around',
+                                'SPACE-EVENLY' => 'Space-evenly',
+                                'STRETCH' => 'Stretch'
+                            ]
+                        ],
+                        'ALIGN-ITEMS' => [
+                            'LABEL' => 'Horizontal Alignment',
+                            'HELP' => 'Horizontal alignment of elements in slide (using align-items)',
+                            'OPTIONS' => [
+                                'CENTER' => 'Center',
+                                'START' => 'Start',
+                                'END' => 'End',
+                                'FLEX-START' => 'Flex-start',
+                                'FLEX-END' => 'Flex-end',
+                                'SELF-START' => 'Self-start',
+                                'SELF-END' => 'Self-end',
+                                'NORMAL' => 'Normal',
+                                'BASELINE' => 'Baseline',
+                                'FIRST-BASELINE' => 'First Baseline',
+                                'LAST-BASELINE' => 'Last Baseline'
+                            ]
+                        ]
+                    ],
+                    'ADVANCED' => [
+                        'TITLE' => 'Advanced',
+                        'TAB_TITLE' => 'Presentation Plugin API Options',
+                        'SAVE' => [
+                            'PREFIX' => 'Last Saved',
+                            'ASYNC' => [
+                                'LABEL' => 'Save Presentation',
+                                'DESCRIPTION' => 'Enable Save Presentation button.'
+                            ],
+                            'TYPING' => [
+                                'LABEL' => 'Save Content while typing',
+                                'DESCRIPTION' => 'Automatically save Presentation when typing.'
+                            ]
+                        ],
+                        'FOOTER' => [
+                            'LABEL' => 'Inject Twig-footer',
+                            'DESCRIPTION' => 'Render a theme\'s Twig-template and append it to each section, eg. \'partials/presentation_footer.html.twig\'.'
+                        ],
+                        'TEXTSIZING' => [
+                            'LABEL' => 'Enable Textsizing'
+                        ],
+                        'BREAKPOINTS' => [
+                            'LABEL' => 'Breakpoints',
+                            'DESCRIPTION' => 'Each breakpoint has an associated Width, at which the Font Size is applied to the Slide.',
+                            'WIDTH' => [
+                                'LABEL' => 'Width'
+                            ],
+                            'FONT_SIZE' => [
+                                'LABEL' => 'Font Size'
+                            ]
+                        ],
+                        'SHORTCODES' => [
+                            'LABEL' => 'Shortcodes',
+                            'DESCRIPTION' => 'Enables internal shortcode-processing.'
+                        ],
+                        'SHORTCODE_CLASSES' => [
+                            'LABEL' => 'Shortcode Classes',
+                            'DESCRIPTION' => 'Default Classes to use with Presentation-shortcodes, each separated by a space.'
+                        ],
+                        'SHORTCODE_PARSER' => [
+                            'LABEL' => 'Shortcode Parser',
+                            'DESCRIPTION' => 'Processor to use for Shortcode parsing: RegularParser, RegexParser, or WordpressParser',
+                            'OPTIONS' => [
+                                'REGULAR' => 'RegularParser',
+                                'REGEX' => 'RegexParser',
+                                'WORDPRESS' => 'WordpressParser'
+                            ]
+                        ],
+                        'TRANSITION' => [
+                            'LABEL' => 'OnLoad Transition',
+                            'DESCRIPTION' => 'Fade in from white when page (DOM-structure) is ready.'
+                        ],
+                        'UNWRAP_IMAGES' => [
+                            'LABEL' => 'Unwrap Images',
+                            'DESCRIPTION' => 'Unwrap images from paragraphs.'
+                        ],
+                        'CONTENT' => [
+                            'LABEL' => 'Content',
+                            'DESCRIPTION' => 'Use a custom aggregator for content.'
+                        ],
+                        'PARSER' => [
+                            'LABEL' => 'Parser',
+                            'DESCRIPTION' => 'Use a custom parser for content.'
+                        ],
+                        'STYLES' => [
+                            'LABEL' => 'Transport',
+                            'DESCRIPTION' => 'Use a custom getter/setter for transporting data.'
+                        ],
+                        'REVEAL' => [
+                            'TITLE' => 'Reveal.js Options',
+                            'LABEL' => 'Settings to pass to Reveal.js.'
+                        ]
+                    ]
+                ]
+            ],
+            'PLUGIN_LANGSWITCHER' => [
+                'BUILTIN_CSS' => 'Use built in CSS',
+                'BUILTIN_CSS_HELP' => 'Include the CSS provided by the LangSwitcher plugin.',
+                'UNTRANSLATED_PAGES_BEHAVIOR' => 'Untranslated pages behavior',
+                'UNTRANSLATED_PAGES_BEHAVIOR_HELP' => 'Determine what to do with a language link when the current page doesn\'t exist in that language or it exists but it\'s not published.',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE' => 'Show language (default)',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT' => 'Show language, link to home route',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE' => 'Hide language'
+            ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'External Links',
+                    'PLUGIN_STATUS' => 'Plugin status',
+                    'STATUS_HELP' => 'Set to false to disable this plugin completely.',
+                    'BUILTIN_CSS' => 'Use built in CSS',
+                    'WEIGHT' => 'Order of execution',
+                    'SETTINGS' => 'Settings',
+                    'CONTENT' => 'Content',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Exclusion',
+                        'SECTION_HELP' => 'Exclude links with a specific class or domains from being recognized as external links.',
+                        'CLASSES' => 'Exclude all links with this class',
+                        'CLASSES_HELP' => 'Comma separated list.',
+                        'DOMAINS' => 'A list of domains to be excluded',
+                        'DOMAINS_HELP' => 'Comma separated list of domains e.g. _localhost/*_  (any regular expression can be used)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Links',
+                        'SECTION_HELP' => 'Set links starting with <code>www.</code> and within the list of allowed schemes as external.',
+                        'WWW' => 'Link WWW',
+                        'WWW_HELP' => 'Automatically link any hostname that starts with \'www.\' as external',
+                        'REDIRECTS' => 'Follow Page redirects',
+                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
+                        'SCHEMES' => 'Allowed schemes',
+                        'SCHEMES_HELP' => 'List of allowed schemes'
+                    ],
+                    'PROCESS' => 'Filter external links on the page',
+                    'TITLE' => 'Show default title for external links',
+                    'TITLE_MESSAGE' => 'This link will take you to an external web site. We are not responsible for their content.',
+                    'NO_FOLLOW' => 'Add <code>rel="nofollow"</code> to all external links',
+                    'TARGET' => 'Set target attribute of the link.',
+                    'TARGET_BLANK' => '_blank | Load in a new window',
+                    'TARGET_SELF' => '_self | Load in the same frame as it was clicked',
+                    'TARGET_PARENT' => '_parent | Load in the parent frameset',
+                    'TARGET_TOP' => '_top | Load in the full body of the window',
+                    'MODE' => 'Mode',
+                    'MODE_HELP' => 'active = process and parse all links; passive = parse links, but don\'t set CSS classes',
+                    'MODE_ACTIVE' => 'Active - Process and parse all links',
+                    'MODE_PASSIVE' => 'Passive - Parse links, but don\'t set CSS classes'
+                ]
+            ],
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Use built in CSS',
                 'BUILTIN_CSS_HELP' => 'Include the CSS provided by the Problems plugin'
@@ -2700,6 +3114,13 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'ERROR' => 'Error',
                 'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.',
                 'ROUTE_404' => '404 Route'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Search …',
+                'SEARCH_RESULTS' => 'Search Results',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Query: <strong>%s</strong> found one result',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Query: <strong>%s</strong> found %s results',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Please add at least %s characters'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -3806,6 +4227,12 @@ Tienes **2FA** habilitado en esta cuenta. Por favor usa tu aplicación **2FA** p
                 'RESOLUTION_MIN' => '{{attr}} fué menor que el mínimo {{min}}px <br />',
                 'RESOLUTION_MAX' => '{{attr}} fué mayor que el máximo {{max}}px <br />'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Buscar …',
+                'SEARCH_RESULTS' => 'Resultados de la búsqueda',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Consulta: <strong>%s</strong> se encontró 1 resultado',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Consulta: <strong>%s</strong> se encontraron %s resultados'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 título: %1$s
@@ -4875,9 +5302,58 @@ L\'**authentification à deux facteurs** est activée sur ce compte. Veuillez ut
                 'DROPZONE_REMOVE_FILE_CONFIRMATION' => 'Êtes-vous sûr de vouloir supprimer ce fichier ?',
                 'DROPZONE_RESPONSE_ERROR' => 'Le serveur a répondu avec le code {{statusCode}}.'
             ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'Liens externes',
+                    'PLUGIN_STATUS' => 'Statut du plugin',
+                    'STATUS_HELP' => 'Régler sur false pour désactiver complètement le plugin.',
+                    'BUILTIN_CSS' => 'Utiliser les CSS intégrés',
+                    'WEIGHT' => 'Ordre d’exécution',
+                    'SETTINGS' => 'Configuration',
+                    'CONTENT' => 'Contenu',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Exclusion',
+                        'SECTION_HELP' => 'Exclure les liens avec des classes spécifiques ou des domaines comme étant reconnus comme liens externes.',
+                        'CLASSES' => 'Exclure tous les liens avec cette classe',
+                        'CLASSES_HELP' => 'Liste des classes séparées par des virgules.',
+                        'DOMAINS' => 'Une liste des domaines à exclure',
+                        'DOMAINS_HELP' => 'Liste des domaines séparés par des virgules ex : _localhost/*_  (les expressions régulières peuvent être utilisées)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Liens',
+                        'SECTION_HELP' => 'Définir les liens commençant par <code>www.</code> et ceux de la liste des schémas définis comme étant des liens externes.',
+                        'WWW' => 'Liens WWW',
+                        'WWW_HELP' => 'Reconnaître automatiquement tout lien commencant par \'www.\' comme étant un lien externe.',
+                        'REDIRECTS' => 'Follow Page redirects',
+                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
+                        'SCHEMES' => 'Schémas autorisés',
+                        'SCHEMES_HELP' => 'Liste des schémas autorisés'
+                    ],
+                    'PROCESS' => 'Filtrer les liens externes de la page',
+                    'TITLE' => 'Afficher le titre par défaut pour les liens externes',
+                    'TITLE_MESSAGE' => 'Ce lien va vous diriger vers un site externe. Nous ne sommes pas responsables de son contenu.',
+                    'NO_FOLLOW' => 'Ajouter <code>rel="nofollow"</code> à tous les liens externes',
+                    'TARGET' => 'Spécifier la cible dans laquelle le contenu du lien doit s\'afficher.',
+                    'TARGET_BLANK' => '_blank | Afficher dans une nouvelle fenêtre',
+                    'TARGET_SELF' => '_self | Afficher dans la même fenêtre',
+                    'TARGET_PARENT' => '_parent | Afficher dans le cadre parent (frame)',
+                    'TARGET_TOP' => '_top | Afficher dans le cadre racine',
+                    'MODE' => 'Mode',
+                    'MODE_HELP' => 'actif = analyser et procéder pour tous les liens; passif = analyser les liens mais ne pas appliquer les classes CSS',
+                    'MODE_ACTIVE' => 'Actif - Analyser et procéder pour tous les liens',
+                    'MODE_PASSIVE' => 'Passif - Analyser les liens mais ne pas appliquer les classes CSS'
+                ]
+            ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Erreur',
                 'ERROR_MESSAGE' => 'Oups. Il semble que cette page n’existe pas.'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Recherche …',
+                'SEARCH_RESULTS' => 'Résultats de la recherche',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Recherche : Un résultat trouvé pour <strong>%s</strong>',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Recherche : %2$s résultats trouvés pour <strong>%1$s</strong>',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Veuillez ajouter au moins %s caractères'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -5696,6 +6172,12 @@ Chemin: `%2$s`
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Greška',
                 'ERROR_MESSAGE' => 'Uups. Izgleda da ova stranica ne postoji.'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Traži …',
+                'SEARCH_RESULTS' => 'Rezultati pretrage',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Upit: <strong>%s</strong> je pronašao jedan rezultat',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Upit: <strong>%s</strong> je pronašao %s rezultata'
             ],
             'GRAV' => [
                 'INFLECTOR_UNCOUNTABLE' => [
@@ -8476,6 +8958,12 @@ Aveți **2FA** activată pentru acest cont. Vă rugăm folosiți aplicația pent
                 'ERROR' => 'Eroare',
                 'ERROR_MESSAGE' => 'Ooops. Se pare că pagina nu există.'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Caută …',
+                'SEARCH_RESULTS' => 'Rezultatele căutării',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Căutarea: <strong>%s</strong> a găsit un rezultat',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Căutarea: <strong>%s</strong> a găsit %s rezultate'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 Titlu: %1$s
@@ -9661,6 +10149,57 @@ Calea: `%2$s`
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не принимается.',
                 'INVALID_FILE_EXTENSION' => 'Расширение файла %s не является допустимым для файла.'
             ],
+            'PLUGIN_LANGSWITCHER' => [
+                'BUILTIN_CSS' => 'Использовать встроенный CSS',
+                'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином LangSwitcher.',
+                'UNTRANSLATED_PAGES_BEHAVIOR' => 'Поведение непереведенных страниц',
+                'UNTRANSLATED_PAGES_BEHAVIOR_HELP' => 'Определяет что делать с языковой ссылкой, если текущая страница не существует на этом языке или существует, но не опубликована.',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE' => 'Показать язык (по умолчанию)',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT' => 'Показать язык, ссылка на домашнюю страницу',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE' => 'Скрыть язык'
+            ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'Внешние ссылки',
+                    'PLUGIN_STATUS' => 'Статус плагина',
+                    'STATUS_HELP' => 'Установите нет, чтобы отключить этот плагин полностью.',
+                    'BUILTIN_CSS' => 'Использовать встроенные CSS',
+                    'WEIGHT' => 'Порядок выполнения',
+                    'SETTINGS' => 'Настройки',
+                    'CONTENT' => 'Контент',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Исключения',
+                        'SECTION_HELP' => 'Исключить ссылки с определенным классом или домены, которые не признаются в качестве внешних ссылок.',
+                        'CLASSES' => 'Исключить все ссылки с этим классом',
+                        'CLASSES_HELP' => 'Список разделенных запятыми.',
+                        'DOMAINS' => 'Список доменов, которые будут исключены',
+                        'DOMAINS_HELP' => 'Разделенный запятыми список доменов, например, _localhost / * _ (любое регулярное выражение может быть использовано)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Ссылки',
+                        'SECTION_HELP' => 'Установить ссылки, начинающиеся с <code>www.</code>? и список разрешенных схем, как внешние.',
+                        'WWW' => 'Ссылка WWW',
+                        'WWW_HELP' => 'Автоматически связывать любое имя хоста, которое начинается с \'www\'. как внешние',
+                        'REDIRECTS' => 'Follow Page redirects',
+                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
+                        'SCHEMES' => 'Допустимые схемы',
+                        'SCHEMES_HELP' => 'Список допустимых схем'
+                    ],
+                    'PROCESS' => 'Фильтр внешних ссылок на странице',
+                    'TITLE' => 'Показать название по умолчанию для внешних ссылок',
+                    'TITLE_MESSAGE' => 'Эта ссылка приведет вас на внешний веб-сайт. Мы не несем ответственности за его содержание.',
+                    'NO_FOLLOW' => 'Добавить <code>rel="nofollow"</code> ко всем внешним ссылкам',
+                    'TARGET' => 'Установить целевой атрибут ссылки.',
+                    'TARGET_BLANK' => '_blank | Загрузка в новом окне',
+                    'TARGET_SELF' => '_self | Загрузка в том же фрейме где и был сделан клик',
+                    'TARGET_PARENT' => '_parent | Загрузка в родительском наборе фреймов',
+                    'TARGET_TOP' => '_top | Загрузка в отдельном окне браузера',
+                    'MODE' => 'Режим',
+                    'MODE_HELP' => 'активный = обработка и разбор всех ссылок; пассивный = вставлять ссылки, но не устанавливать для них CSS',
+                    'MODE_ACTIVE' => 'Активный = обработка и разбор всех ссылок',
+                    'MODE_PASSIVE' => 'Пассивный = вставлять ссылки, но не устанавливать для них CSS'
+                ]
+            ],
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Использовать встроенный CSS',
                 'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином Problems'
@@ -9669,6 +10208,13 @@ Calea: `%2$s`
                 'ERROR' => 'Ошибка',
                 'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.',
                 'ROUTE_404' => 'Маршрут 404'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Найти …',
+                'SEARCH_RESULTS' => 'Результат поиска',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'По запросу: <strong>%s</strong> результатов найдено 1',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'По запросу: <strong>%s</strong> результатов найдено %s',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Добавьте не менее %s символов'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -10547,6 +11093,15 @@ title: %1$s
                 'DESTINATION_NOT_SPECIFIED' => 'Призначення не вказано',
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не приймається.',
                 'INVALID_FILE_EXTENSION' => 'Розширення файлу %s не є допустимим для файлу.'
+            ],
+            'PLUGIN_LANGSWITCHER' => [
+                'BUILTIN_CSS' => 'Використовувати вбудований CSS',
+                'BUILTIN_CSS_HELP' => 'Використовувати CSS, наданий плагіном LangSwitcher.',
+                'UNTRANSLATED_PAGES_BEHAVIOR' => 'Поведінка неперекладених сторінок',
+                'UNTRANSLATED_PAGES_BEHAVIOR_HELP' => 'Визначає що робити з посиланням на мову, якщо поточна сторінка не існує на цій мові або існує, але не опублікована.',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE' => 'Показати мову (за умовчанням)',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT' => 'Показати мову, посилання на домашню сторінку',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE' => 'Приховати мову'
             ],
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Використовувати вбудований CSS',
@@ -13644,6 +14199,12 @@ Máte na svém účtu aktivováno **dvoufaktorové ověřování**. Pro dokonče
                 'ERROR' => 'Chyba',
                 'ERROR_MESSAGE' => 'A jéje. Vypadá to, že hledaná stránka tu není.'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Vyhledat …',
+                'SEARCH_RESULTS' => 'Výsledky hledání',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Hledání výrazu \'<strong>%s</strong>\' našlo jeden výsledek',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Hledání výrazu \'<strong>%s</strong>\' našlo %s výsledků'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -14707,6 +15268,12 @@ Du har **2FA** aktiveret for denne konto. Benyt venligst din **2FA**-app til at 
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Fejl',
                 'ERROR_MESSAGE' => 'Ups. Det ser ud til at siden ikke eksisterer.'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Søg …',
+                'SEARCH_RESULTS' => 'Søgeresultat',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Søgning: <strong>%s</strong> fandt et resultat',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Søgning: <strong>%s</strong> fandt %s resultater'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -17440,6 +18007,12 @@ asukoht: `%2$s`
                 'SECURITY' => 'امنیت',
                 'REPORTS' => 'گزارش‌ها'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'جستجو …',
+                'SEARCH_RESULTS' => 'نتایج جستجو',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'جستار: <strong>%s</strong> یک نتیجه یافت شد',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'جستار: <strong>%s</strong> %s نتیجه یافت شد'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 عنوان: %1$s
@@ -19995,6 +20568,13 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 'ERROR' => 'Errore',
                 'ERROR_MESSAGE' => 'Ooops. A quanto pare, questa pagina non esiste.'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Cerca …',
+                'SEARCH_RESULTS' => 'Risultati della ricerca',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Ricerca: <strong>%s</strong>. Trovato un risultato',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Ricerca: <strong>%s</strong>. Trovati %s risultati',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Inserisci almeno %s caratteri'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---Titolo: %1$s---# Errore: Frontmatter non valido: \'%2$s\' * *%3$s * * \' \'%4$s \' \'',
                 'INFLECTOR_UNCOUNTABLE' => [
@@ -20750,6 +21330,12 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 '2FA_CODE_INPUT' => '000000',
                 '2FA_SECRET' => '二段階認証',
                 '2FA_REGENERATE' => '再生成'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => '検索する …',
+                'SEARCH_RESULTS' => '検索結果',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '検索 : <strong>%s</strong> に一つの結果があります。',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => '検索 : <strong>%s</strong> に %s の結果があります。'
             ],
             'GRAV' => [
                 'INFLECTOR_IRREGULAR' => [
@@ -22260,6 +22846,13 @@ Je hebt **2FA** aanstaan op dit account. Gebruik je **2FA** App om de huidige **
                 'RANDOM_NAME' => 'Willekeurige naam',
                 'RANDOM_NAME_HELP' => 'Genereer een willekeurige naam van 15 karakters voor de geuploade bestanden'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Zoeken …',
+                'SEARCH_RESULTS' => 'Zoek resultaten',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Query: <strong>%s</strong> is 1 keer gevonden',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Query: <strong>%s</strong> is %s keer gevonden',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Geef minstens %s tekens in'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 titel: %1$s
@@ -23160,6 +23753,13 @@ Masz na tym koncie włączone **2FA**. Użyj aplikacji od **2FA** i wprowadź ak
                 'ERROR' => 'Błąd',
                 'ERROR_MESSAGE' => 'Ups. Wygląda na to, że ta strona nie istnieje.'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Szukaj…',
+                'SEARCH_RESULTS' => 'Wyniki wyszukiwania',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Znaleziono jeden wynik dla frazy <strong>%s</strong>.',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Znaleziono %2$s wyników dla frazy <strong>%1$s</strong>.',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Fraza musi składać się z minimum %s znaków.'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -23844,6 +24444,12 @@ Path: `%2$s`
                 'INLINE_ERRORS_HELP' => 'Útil se a validação no cliente estiver desabilitada. Mostra os erros próximo aos respectivos campos',
                 'RESOLUTION_MIN' => 'A {{attr}} é menor que o mínimo de {{min}}px <br />',
                 'RESOLUTION_MAX' => 'A {{attr}} é maior que o máximo de {{max}}px <br />'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'O que você procura?',
+                'SEARCH_RESULTS' => 'Resultados da pesquisa',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Pesquisa: <strong>%s</strong>. Foram encontrados 1 resultados',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Pesquisa: <strong>%s</strong>. Foram encontrados %s resultados'
             ],
             'GRAV' => [
                 'NICETIME' => [
@@ -26398,6 +27004,12 @@ Path: `%2$s`
                 'ALLOW_WEBSERVER_GZIP' => 'Tillåt WebServer Gzip',
                 'OFFLINE_WARNING' => 'Anslutningen till GPM inte kan fastställas',
                 'CLI_COMPATIBILITY' => 'CLI kompatibilitet'
+            ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'Sök …',
+                'SEARCH_RESULTS' => 'Sökresultat',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Sökning: <strong>%s</strong> hittade ett resultat',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Sökning: <strong>%s</strong> hittade %s resultat'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '--- titel: %1$s --- # Fel: Ogiltig Frontmatter-sökväg: `%2$s` **%3$s** ``` %4$s ```',
@@ -29031,6 +29643,12 @@ tiêu đề: %1$s
                 'ERROR' => '错误',
                 'ERROR_MESSAGE' => '呃，似乎这个页面不存在。'
             ],
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => '搜索 …',
+                'SEARCH_RESULTS' => '搜索结果',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '查询: <strong>%s</strong> 找到 1 个结果',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => '查询: <strong>%s</strong> 找到 %s 个结果'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 标题: %1$s
@@ -29983,6 +30601,15 @@ title: %1$s
                     5 => '星期六',
                     6 => '星期日'
                 ]
+            ]
+        ],
+        'kk' => [
+            'PLUGIN_SIMPLESEARCH' => [
+                'SEARCH_PLACEHOLDER' => 'іздеу …',
+                'SEARCH_RESULTS' => 'Іздеу нәтижесі',
+                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Сұраныс бойынша: <strong>%s</strong> табылды 1',
+                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Сұраныс бойынша: <strong>%s</strong> табылды %s',
+                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Кемінде %s таңба қосу'
             ]
         ],
         'is' => [

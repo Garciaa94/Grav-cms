@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/error/languages.yaml',
-    'modified' => 1560321764,
+    'modified' => 1561696825,
     'data' => [
         'en' => [
             'PLUGIN_ERROR' => [

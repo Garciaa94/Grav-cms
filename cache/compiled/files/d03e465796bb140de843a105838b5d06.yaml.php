@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/themes/cardstack.yaml',
-    'modified' => 1560321304,
+    'modified' => 1561613471,
     'data' => [
         'enabled' => true,
         'cardstack_route' => '/cards',

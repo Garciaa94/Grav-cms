@@ -1,0 +1,13 @@
+$colors: map-merge(
+    (
+    "magenta": #F4405C,
+    "wood": #f7b96c,
+    "gold": #fbbf4c,
+    "chocolate": #5b1a18,
+    "sapphire": #92cdff,
+    "sea": #17577e,
+    "seaweed": #3f9f7f,
+    "pastel": #ffe4e1,
+    "silver": #c0c5ce
+    ), $colors
+);

@@ -1,81 +1,101 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1561415616,
-    'checksum' => '860443d4819f67f9608bed2d61c11cd2',
+    'timestamp' => 1561696099,
+    'checksum' => 'da04aa8259bae46bd22afb822ecd8b1e',
     'files' => [
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1561396129
+                'modified' => 1561613471
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1559703075
+                'modified' => 1561613471
             ],
             'plugins/admin' => [
                 'file' => 'user/config/plugins/admin.yaml',
-                'modified' => 1561395654
+                'modified' => 1561658176
             ],
             'plugins/error' => [
                 'file' => 'user/config/plugins/error.yaml',
-                'modified' => 1561259660
+                'modified' => 1561616040
+            ],
+            'plugins/external_links' => [
+                'file' => 'user/config/plugins/external_links.yaml',
+                'modified' => 1561658244
             ],
             'plugins/facebook' => [
                 'file' => 'user/config/plugins/facebook.yaml',
-                'modified' => 1561259664
+                'modified' => 1561616044
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
-                'modified' => 1560668448
+                'modified' => 1561613471
+            ],
+            'plugins/login' => [
+                'file' => 'user/config/plugins/login.yaml',
+                'modified' => 1561658386
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/config/plugins/markdown-notices.yaml',
-                'modified' => 1561398412
+                'modified' => 1561658134
             ],
             'plugins/problems' => [
                 'file' => 'user/config/plugins/problems.yaml',
-                'modified' => 1561259689
+                'modified' => 1561613471
+            ],
+            'plugins/tntsearch' => [
+                'file' => 'user/config/plugins/tntsearch.yaml',
+                'modified' => 1561606167
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
-                'modified' => 1559704315
+                'modified' => 1561613471
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1559703075
+                'modified' => 1561613471
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1560320490
+                'modified' => 1561613471
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1559703075
+                'modified' => 1561613471
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1561394749
+                'modified' => 1561617100
             ],
             'themes/alpha' => [
                 'file' => 'user/config/themes/alpha.yaml',
-                'modified' => 1560537452
+                'modified' => 1561613471
             ],
             'themes/antimatter' => [
                 'file' => 'user/config/themes/antimatter.yaml',
-                'modified' => 1561267239
+                'modified' => 1561613471
             ],
             'themes/cardstack' => [
                 'file' => 'user/config/themes/cardstack.yaml',
-                'modified' => 1560321304
+                'modified' => 1561613471
+            ],
+            'themes/learn2' => [
+                'file' => 'user/config/themes/learn2.yaml',
+                'modified' => 1561605559
+            ],
+            'themes/learn2-git-sync' => [
+                'file' => 'user/config/themes/learn2-git-sync.yaml',
+                'modified' => 1561691782
             ],
             'themes/portfolio' => [
                 'file' => 'user/config/themes/portfolio.yaml',
-                'modified' => 1561259312
+                'modified' => 1561613471
             ],
             'themes/qbee' => [
                 'file' => 'user/config/themes/qbee.yaml',
-                'modified' => 1560758022
+                'modified' => 1561613471
             ]
         ],
         'system/config' => [
@@ -93,7 +113,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1561248031
+                'modified' => 1561648064
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
@@ -105,46 +125,145 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/feed' => [
+                'file' => 'user/plugins/feed/feed.yaml',
+                'modified' => 1561605425
+            ],
+            'plugins/tntsearch' => [
+                'file' => 'user/plugins/tntsearch/tntsearch.yaml',
+                'modified' => 1561605433
+            ],
+            'plugins/breadcrumbs' => [
+                'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
+                'modified' => 1561605422
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1560321763
+                'modified' => 1561613472
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
+            ],
+            'plugins/presentation-deckset' => [
+                'file' => 'user/plugins/presentation-deckset/presentation-deckset.yaml',
+                'modified' => 1561605429
+            ],
+            'plugins/git-sync' => [
+                'file' => 'user/plugins/git-sync/git-sync.yaml',
+                'modified' => 1561605426
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1561394749
+                'modified' => 1561614050
+            ],
+            'plugins/highlight' => [
+                'file' => 'user/plugins/highlight/highlight.yaml',
+                'modified' => 1561605427
             ],
             'plugins/facebook' => [
                 'file' => 'user/plugins/facebook/facebook.yaml',
-                'modified' => 1559719082
+                'modified' => 1561613472
+            ],
+            'plugins/presentation' => [
+                'file' => 'user/plugins/presentation/presentation.yaml',
+                'modified' => 1561605429
+            ],
+            'plugins/youtube' => [
+                'file' => 'user/plugins/youtube/youtube.yaml',
+                'modified' => 1561605433
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1561394749
+                'modified' => 1561613471
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/langswitcher.yaml',
+                'modified' => 1561605427
+            ],
+            'plugins/external_links' => [
+                'file' => 'user/plugins/external_links/external_links.yaml',
+                'modified' => 1561605424
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1560321766
+                'modified' => 1561613472
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
+                'modified' => 1561605431
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1560321764
+                'modified' => 1561613472
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1560321765
+                'modified' => 1561613472
+            ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
+                'modified' => 1561605430
             ],
             'plugins/ganalytics' => [
                 'file' => 'user/plugins/ganalytics/ganalytics.yaml',
-                'modified' => 1560327988
+                'modified' => 1561613472
             ]
         ]
     ],
     'data' => [
         'plugins' => [
+            'feed' => [
+                'enabled' => true,
+                'limit' => 10,
+                'description' => 'My Feed Description',
+                'lang' => 'en-us',
+                'length' => 500,
+                'enable_json_feed' => false
+            ],
+            'tntsearch' => [
+                'enabled' => false,
+                'search_route' => '/search',
+                'query_route' => '/s',
+                'built_in_css' => true,
+                'built_in_js' => true,
+                'built_in_search_page' => true,
+                'enable_admin_page_events' => true,
+                'search_type' => 'auto',
+                'fuzzy' => false,
+                'phrases' => true,
+                'stemmer' => 'default',
+                'display_route' => true,
+                'display_hits' => true,
+                'display_time' => true,
+                'live_uri_update' => true,
+                'limit' => '20',
+                'min' => '3',
+                'snippet' => '300',
+                'index_page_by_default' => true,
+                'scheduled_index' => [
+                    'enabled' => false,
+                    'at' => '0 */3 * * *',
+                    'logs' => 'logs/tntsearch-index.out'
+                ],
+                'filter' => [
+                    'items' => [
+                        0 => 'root@.descendants'
+                    ]
+                ],
+                'powered_by' => true,
+                'search_object_type' => 'Grav'
+            ],
+            'breadcrumbs' => [
+                'enabled' => true,
+                'show_all' => true,
+                'built_in_css' => true,
+                'include_home' => true,
+                'include_current' => true,
+                'icon_home' => '',
+                'icon_divider_classes' => 'fa fa-angle-right',
+                'link_trailing' => false
+            ],
             'email' => [
                 'enabled' => true,
                 'from' => NULL,
@@ -174,7 +293,7 @@ return [
                 'debug' => false
             ],
             'markdown-notices' => [
-                'enabled' => false,
+                'enabled' => true,
                 'built_in_css' => true,
                 'level_classes' => [
                     0 => 'yellow',
@@ -182,6 +301,12 @@ return [
                     2 => 'blue',
                     3 => 'green'
                 ]
+            ],
+            'presentation-deckset' => [
+                'enabled' => true
+            ],
+            'git-sync' => [
+                'enabled' => true
             ],
             'form' => [
                 'enabled' => true,
@@ -208,8 +333,13 @@ return [
                     'secret_key' => 'admin'
                 ]
             ],
+            'highlight' => [
+                'enabled' => true,
+                'theme' => 'default',
+                'lines' => false
+            ],
             'facebook' => [
-                'enabled' => false,
+                'enabled' => true,
                 'built_in_css' => true,
                 'use_unitegallery_plugin' => true,
                 'facebook_page_settings' => [
@@ -227,12 +357,89 @@ return [
                     'unitegallery_theme' => 'default'
                 ]
             ],
+            'presentation' => [
+                'enabled' => true,
+                'theme' => 'moon',
+                'order' => [
+                    'by' => 'folder',
+                    'dir' => 'asc'
+                ],
+                'all_assets' => false,
+                'theme_css' => true,
+                'builtin_css' => true,
+                'builtin_js' => true,
+                'plugin_css' => true,
+                'plugin_js' => true,
+                'textsizing' => true,
+                'sync' => 'none',
+                'api_route' => 'presentationapi',
+                'poll_timeout' => 2000,
+                'poll_retry_limit' => 10,
+                'token_auth' => false,
+                'token' => 'Hd4HFdPvbpKzTqz',
+                'admin_async_save' => false,
+                'admin_async_save_typing' => false,
+                'footer' => '',
+                'transition' => true,
+                'shortcodes' => true,
+                'shortcode_classes' => 'presentation-iframe',
+                'shortcode_parser' => 'RegularParser',
+                'unwrap_images' => true,
+                'content' => 'Content',
+                'parser' => 'Parser',
+                'transport' => 'Transport',
+                'breakpoints' => [
+                    240 => '16',
+                    320 => '20',
+                    576 => '24',
+                    768 => '28',
+                    992 => '32',
+                    1200 => '36',
+                    1600 => '40'
+                ],
+                'options' => [
+                    'width' => '100%',
+                    'height' => '100%',
+                    'margin' => '0',
+                    'minScale' => '1',
+                    'maxScale' => '1',
+                    'transition' => 'fade',
+                    'controlsTutorial' => 'false',
+                    'history' => 'true',
+                    'display' => 'flex',
+                    'pdfSeparateFragments' => false
+                ]
+            ],
+            'youtube' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'add_editor_button' => true,
+                'player_parameters' => [
+                    'autoplay' => 0,
+                    'cc_load_policy' => 0,
+                    'color' => 'red',
+                    'controls' => 1,
+                    'disablekb' => 0,
+                    'enablejsapi' => 0,
+                    'fs' => 1,
+                    'hl' => '',
+                    'iv_load_policy' => 1,
+                    'loop' => 0,
+                    'modestbranding' => 0,
+                    'origin' => '',
+                    'playsinline' => 0,
+                    'rel' => 1,
+                    'showinfo' => 1,
+                    'vq' => 'default'
+                ],
+                'privacy_enhanced_mode' => false
+            ],
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',
-                'cache_enabled' => true,
+                'cache_enabled' => false,
                 'theme' => 'grav',
-                'logo_text' => '',
+                'logo_text' => 'Garcia',
                 'body_classes' => '',
                 'content_padding' => true,
                 'twofa_enabled' => true,
@@ -300,12 +507,65 @@ return [
                     'resize_quality' => 0.8
                 ]
             ],
+            'langswitcher' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'untranslated_pages_behavior' => 'none'
+            ],
+            'external_links' => [
+                'enabled' => false,
+                'built_in_css' => true,
+                'weight' => 0,
+                'exclude' => [
+                    'classes' => [
+                        0 => 'exclude'
+                    ],
+                    'domains' => NULL
+                ],
+                'links' => [
+                    'www' => false,
+                    'redirects' => false,
+                    'schemes' => [
+                        0 => 'http',
+                        1 => 'https',
+                        2 => 'ftp',
+                        3 => 'irc',
+                        4 => 'mailto',
+                        5 => 'news',
+                        6 => 'nntp',
+                        7 => 'rtsp',
+                        8 => 'sftp',
+                        9 => 'ssh',
+                        10 => 'tel',
+                        11 => 'telnet',
+                        12 => 'webcal'
+                    ]
+                ],
+                'process' => true,
+                'title' => false,
+                'no_follow' => true,
+                'target' => '_blank',
+                'mode' => 'active'
+            ],
             'problems' => [
                 'enabled' => false,
                 'built_in_css' => true
             ],
+            'shortcode-core' => [
+                'enabled' => true,
+                'active' => true,
+                'active_admin' => true,
+                'admin_pages_only' => true,
+                'parser' => 'regular',
+                'custom_shortcodes' => NULL,
+                'fontawesome' => [
+                    'load' => true,
+                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css',
+                    'v5' => false
+                ]
+            ],
             'error' => [
-                'enabled' => false,
+                'enabled' => true,
                 'routes' => [
                     404 => '/error'
                 ]
@@ -323,10 +583,10 @@ return [
                 'route_profile' => '/user_profile',
                 'route_register' => '/user_register',
                 'route_unauthorized' => '/user_unauthorized',
-                'twofa_enabled' => false,
-                'dynamic_page_visibility' => false,
-                'parent_acl' => false,
-                'protect_protected_page_media' => false,
+                'twofa_enabled' => true,
+                'dynamic_page_visibility' => true,
+                'parent_acl' => true,
+                'protect_protected_page_media' => true,
                 'rememberme' => [
                     'enabled' => true,
                     'timeout' => 604800,
@@ -366,6 +626,25 @@ return [
                         'send_notification_email' => false,
                         'send_welcome_email' => false
                     ]
+                ]
+            ],
+            'simplesearch' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'built_in_js' => true,
+                'display_button' => false,
+                'min_query_length' => 3,
+                'route' => '/search',
+                'search_content' => 'rendered',
+                'template' => 'simplesearch_results',
+                'filters' => [
+                    'category' => NULL
+                ],
+                'filter_combinator' => 'and',
+                'ignore_accented_characters' => false,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
                 ]
             ],
             'ganalytics' => [
@@ -752,6 +1031,17 @@ node_modules',
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
+            ],
+            'menu' => [
+                0 => [
+                    'text' => 'Source',
+                    'icon' => 'github',
+                    'url' => 'https://github.com/getgrav/grav'
+                ],
+                1 => [
+                    'icon' => 'twitter',
+                    'url' => 'http://twitter.com/getgrav'
+                ]
             ]
         ],
         'streams' => [
@@ -808,7 +1098,7 @@ node_modules',
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'antimatter',
+                'theme' => 'learn2-git-sync',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -817,7 +1107,7 @@ node_modules',
                     'count' => 20
                 ],
                 'dateformat' => [
-                    'default' => NULL,
+                    'default' => 'd-m-Y H:i',
                     'short' => 'jS M Y',
                     'long' => 'F jS \\a\\t g:ia'
                 ],
@@ -858,7 +1148,7 @@ node_modules',
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -867,7 +1157,7 @@ node_modules',
                     0 => '.git',
                     1 => '.idea'
                 ],
-                'ignore_hidden' => true,
+                'ignore_hidden' => NULL,
                 'hide_empty_folders' => false,
                 'url_taxonomy_filters' => true,
                 'frontmatter' => [
@@ -898,7 +1188,7 @@ node_modules',
                 ]
             ],
             'twig' => [
-                'cache' => false,
+                'cache' => true,
                 'debug' => true,
                 'auto_reload' => true,
                 'autoescape' => false,
@@ -923,7 +1213,7 @@ node_modules',
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 1,
                 'log' => true
             ],
             'log' => [
@@ -1075,6 +1365,41 @@ node_modules',
                         ]
                     ]
                 ]
+            ],
+            'learn2' => [
+                'enabled' => true,
+                'top_level_version' => true,
+                'show_all_pages' => false,
+                'github' => [
+                    'position' => 'top',
+                    'tree' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/',
+                    'commits' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/'
+                ]
+            ],
+            'learn2-git-sync' => [
+                'enabled' => true,
+                'top_level_version' => false,
+                'github' => [
+                    'position' => 'off',
+                    'icon' => 'Adrian Garcia'
+                ],
+                'default_taxonomy_category' => 'docs',
+                'style' => 'default',
+                'streams' => [
+                    'schemes' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'prefixes' => [
+                                '' => [
+                                    0 => 'user/themes/learn2-git-sync',
+                                    1 => 'user/themes/learn2'
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                'enable_doc_versioning' => false,
+                'hide_site_title' => false
             ],
             'portfolio' => [
                 'enabled' => false,

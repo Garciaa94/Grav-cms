@@ -1,6 +1,26 @@
 ---
 title: HOME
 media_order: 'main.js,style.css,google tag.jpg'
+textsize:
+    scale: ''
+    modifier: ''
+style:
+    header-font-family: ''
+    header-color: ''
+    block-font-family: ''
+    block-color: ''
+    background-color: ''
+    background-image: ''
+    background-size: ''
+    background-repeat: ''
+    justify-content: ''
+    align-items: ''
+class: ''
+footer: ''
+presentation:
+    content: ''
+    parser: ''
+    styles: ''
 ---
 
 <html lang="en">

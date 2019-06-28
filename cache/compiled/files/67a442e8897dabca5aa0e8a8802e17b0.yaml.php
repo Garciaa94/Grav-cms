@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/plugins/facebook/blueprints.yaml',
-    'modified' => 1559719082,
+    'modified' => 1561613472,
     'data' => [
         'name' => 'Facebook',
         'version' => '1.7.1',

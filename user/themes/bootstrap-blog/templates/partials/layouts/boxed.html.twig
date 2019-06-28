@@ -1,0 +1,75 @@
+{% set header_image_file = page.header.image_file %}
+{% if header_image_file %}
+    {% set header_image_media = page.media.images[header_image_file] %}
+{% else %}
+    {% set header_image_media = page.media.images|first %}
+{% endif %}
+
+<div class="col-12">
+    <div class="card item-boxed">
+        {% if header_image_media %}
+            <a href="{{ page.url }}">{{ header_image_media.html }}</a>
+        {% endif %}
+        <div class="card-body">
+            <div class="card-title">
+                <h3 class="title">
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                    {% if config.plugins.readingtime.enabled %}
+                        <span class="readingtime text-secondary"><i class="fas fa-book-reader"></i> {{ page.content|readingtime }}</span>
+                    {% endif %}
+                </h3>
+                <div class="categories">
+                    {% for category in page.taxonomy.category %}
+                        <a class="badge badge-pill badge-{{ page.header.style|defined('secondary') }} text-uppercase font-weight-normal"
+                           href="{{ parent.url|rtrim('/') }}/category{{ config.system.param_sep }}{{ category }}">{{ category }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card-text summary">
+                {{ page.summary }}
+            </div>
+            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Item Links">
+                <div class="btn-group main" role="group" aria-label="Links">
+                    <a href="{{ page.url}}" class="btn btn-outline-{{ page.header.style|defined('primary') }}">
+                    {{ 'BOOTSTRAP_BLOG.ITEM.CONTINUE_READING'|t }}
+                    </a>
+                    {% if page.header.link %}
+                    <a href="{{ page.header.link}}" class="btn btn-outline-secondary">
+                        <i class="fas fa-link"></i>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="btn-group" role="group" aria-label="Extra Links">
+                    {% for button in page.header.buttons %}
+                        <a href="{{ button.url }}" 
+                           class="btn btn-outline-{{ button.style|defined(page.header.style|defined('dark')) }}">
+                            {% if button.icon %}
+                                <i class="fas fa-{{ button.icon }}"></i>
+                            {% endif %}
+                            {{ button.text }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            {% if page.taxonomy.tag %}
+                <div class="d-inline tags">
+                    <span data-toggle="tooltip" data-placement="top" title="{{ 'BOOTSTRAP_BLOG.TAXONOMY.TAGS'|t }}" class="text-{{ page.header.style|defined('primary') }}">
+                        <i class="fas fa-tags"></i>
+                    </span>
+                    {% for tag in page.taxonomy.tag %}
+                        <a class="text-{{ page.header.style|defined('primary') }}"
+                            href="{{ parent.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}{{ not loop.last ? ',' }}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <div class="float-right">
+                <i class="far fa-clock text-{{ page.header.style|defined('primary') }}"></i>
+                <small data-toggle="tooltip" title="{{ page.date|date(config.system.pages.dateformat.long) }}" class="text-secondary">
+                    {{ page.date|date(config.system.pages.dateformat.short) }}
+                </small>
+            </div>
+        </div>
+    </div>
+</div>

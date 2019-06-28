@@ -1,0 +1,77 @@
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                bootstrap-blog:
+                    type: tab
+                    title: BOOTSTRAP_BLOG.ADMIN.MODULAR.FEATURES
+                    fields:
+                        header.style:
+                            type: select
+                            size: medium
+                            label: BOOTSTRAP_BLOG.ADMIN.STYLE
+                            help: BOOTSTRAP_BLOG.ADMIN.STYLE_HELP
+                            toggleable: true
+                            novalidate: true
+                            options:
+                                dark: Dark
+                                light: Light
+                                primary: Primary
+                                secondary: Secondary
+                                info: Info
+                                success: Success
+                                warning: Warning
+                                danger: Danger
+                        header.text_align:
+                            type: select
+                            size: medium
+                            label: BOOTSTRAP_BLOG.ADMIN.TEXT_ALIGN
+                            default: center
+                            options:
+                                left: BOOTSTRAP_BLOG.ADMIN.LEFT
+                                right: BOOTSTRAP_BLOG.ADMIN.RIGHT
+                                center: BOOTSTRAP_BLOG.ADMIN.CENTER
+                                justify: BOOTSTRAP_BLOG.ADMIN.JUSTIFY
+                            validate:
+                                pattern: (center|left|right|justify)
+                        header.features:
+                            type: list
+                            style: vertical
+                            label: BOOTSTRAP_BLOG.ADMIN.MODULAR.FEATURES_SETUP
+                            collapsed: true
+                            fields:
+                                .icon:
+                                    type: text
+                                    label: BOOTSTRAP_BLOG.ADMIN.ICON
+                                .title:
+                                    type: text
+                                    label: BOOTSTRAP_BLOG.ADMIN.TITLE
+                                .text:
+                                    type: text
+                                    label: BOOTSTRAP_BLOG.ADMIN.TEXT
+                                .style:
+                                    type: select
+                                    size: small
+                                    label: BOOTSTRAP_BLOG.ADMIN.MODULAR.ICON_STYLE
+                                    default: primary
+                                    novalidate: true
+                                    options:
+                                        primary: Primary
+                                        dark: Dark
+                                        light: Light
+                                        secondary: Secondary
+                                        info: Info
+                                        success: Success
+                                        warning: Warning
+                                        danger: Danger
+                                .color:
+                                    type: colorpicker
+                                    label: BOOTSTRAP_BLOG.ADMIN.MODULAR.CHOOSE_ICON_COLOR
+                                    help: BOOTSTRAP_BLOG.ADMIN.MODULAR.CHOOSE_ICON_COLOR_HELP
+                                    toggleable: true

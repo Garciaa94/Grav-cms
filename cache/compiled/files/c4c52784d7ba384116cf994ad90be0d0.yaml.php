@@ -2,29 +2,15 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/config/site.yaml',
-    'modified' => 1560320490,
+    'modified' => 1561696789,
     'data' => [
-        'title' => 'Blog',
-        'default_lang' => 'en ',
+        'title' => 'Grav',
         'author' => [
-            'name' => 'Adrian Garcia Bloggs',
-            'email' => 'adrian1994215@gmail.com'
-        ],
-        'taxonomies' => [
-            0 => 'category',
-            1 => 'tag'
+            'name' => 'Joe Bloggs',
+            'email' => 'joe@example.com'
         ],
         'metadata' => [
-            'description' => 'Materia Graficacion y animacion 6to Pucese'
-        ],
-        'summary' => [
-            'enabled' => true,
-            'format' => 'short',
-            'size' => 300,
-            'delimiter' => '==='
-        ],
-        'blog' => [
-            'route' => '/blog'
+            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
         ]
     ]
 ];
