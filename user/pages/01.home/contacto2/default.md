@@ -2,6 +2,7 @@
 title: contacto2
 ---
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -9,6 +10,7 @@ title: contacto2
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>contacto</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,24 +30,52 @@ title: contacto2
         <div class="alert">Your message has been sent</div>
         <form id="contactForm">
           <p>
-            <label>Name</label>
+            <label>Nombre</label>
             <input type="text" name="name" id="name" required>
           </p>
           <p>
-            <label>Company</label>
+            <label>Asunto</label>
             <input type="text" name="company" id="company">
           </p>
           <p>
-            <label>Email Address</label>
-            <input type="email" name="email" id="email" required>
+            <label>Email</label>
+            <input type="email" name="email" id="email" title="Un correo valido contiene, @,servidor de correo," required>
           </p>
           <p>
-            <label>Phone Number</label>
-            <input type="text" name="phone" id="phone">
+            <label>Numero de contacto</label>
+            <input type="text" name="phone" id="phone" pattern="[0-9]{10}" title="Un numero valido consta de 10 digitos, sin espacio,sin caracteres especiales" required>
+          </p>
+          <p>
+
+    <label for="fecha">Fecha de Nacimiento</label>
+    <input type="date" id="fecha" name="fecha" value="2050-05-01" min="1930-01-01" max="2005-12-31">
+    <span class="validity"></span>
+          </p>
+          <p>
+         
+            <label>Genero</label>
+        	<select  id="genero" name="genero"  required="required">
+            <option  value="" disabled selected>Seleccione</option>
+            <option  value="masculino">Masculino</option>
+			<option  value="femenino">Femenino</option>
+			<option  value="otros">Otros</option>
+			</select>
+    		
+          </p>
+          <p>
+            <label>Estado Sivil</label>
+        	<select  id="estado" name="estado" required="required">
+            <option  value="" disabled selected>Seleccione</option>
+            <option  value="Soltero">Soltero</option>
+			<option  value="Casado">Casado</option>
+			<option  value="Viudo">Viudo</option>
+			<option  value="Divorciado">Divorciado</option>
+			<option  value="Unión_libre">Unión libre</option>
+        	</select>
           </p>
           <p class="full">
             <label>Message</label>
-            <textarea name="message" rows="5" id="message"></textarea>
+            <textarea name="message" rows="5" id="message" required="required"></textarea>
           </p>
           <p class="full">
             <button type="submit">Submit</button>

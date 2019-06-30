@@ -6,6 +6,21 @@ taxonomy:
 twig_first: true
 never_cache_twig: true
 visible: true
+content:
+    items:
+        - '@self.children'
+    limit: 5
+    order:
+        by: default
+        dir: desc
+    pagination: true
+    url_taxonomy_filters: true
+feed:
+    limit: 10
+    description: 'Aprendizaje de la herramienta de la materia Animacion y Graficacion'
+process:
+    markdown: false
+    twig: false
 textsize:
     scale: ''
     modifier: ''
@@ -26,18 +41,6 @@ presentation:
     content: ''
     parser: ''
     styles: ''
-content:
-    items:
-        - '@self.children'
-    limit: 5
-    order:
-        by: default
-        dir: desc
-    pagination: true
-    url_taxonomy_filters: true
-feed:
-    limit: 10
-    description: 'Aprendizaje de la herramienta de la materia Animacion y Graficacion'
 layout: boxed
 ---
 
@@ -97,7 +100,7 @@ layout: boxed
     </style>
 </head>
 <body>
-<!-- <p><center>Graficas y Animaciones.</center></p>
+<!-- <p><center>Graficas y Animaciones.</center></p> -->
     <div id="menu">
         <ul><center>
             <li><a href="https://www.thepetergarcia.com">inicio</a></li>
@@ -105,7 +108,7 @@ layout: boxed
             <li><a href="https://www.facebook.com/garciaa94">FaceBook</a></li>
         </center></ul>
     </div>
-
+<!-- 
         
     <table  style="border: hidden">
   <tr style="border: hidden">
@@ -122,6 +125,8 @@ layout: boxed
   </tr>
 
 </table>  -->
+    
+    
 </body>
 </html>
 

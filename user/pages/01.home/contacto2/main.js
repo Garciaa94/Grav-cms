@@ -26,10 +26,17 @@ function submitForm(e){
   var company = getInputVal('company');
   var email = getInputVal('email');
   var phone = getInputVal('phone');
+  var fecha = getInputVal('fecha');
+  var genero = document.getElementById("genero");
+  var option = genero.options[genero.selectedIndex].text; // busqueda del dato qeu se encuentra en el select
+   genero = option; // dato del selec guardado y listo para enviar
+  var estado = document.getElementById("estado");
+  var optiones = estado.options[estado.selectedIndex].text; // busqueda del dato qeu se encuentra en el select
+   estado = optiones; // dato del selec guardado y listo para enviar
   var message = getInputVal('message');
 
   // Save message
-  saveMessage(name, company, email, phone, message);
+  saveMessage(name, company, email, phone,fecha,genero,estado, message);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -47,15 +54,18 @@ function submitForm(e){
 function getInputVal(id){
   return document.getElementById(id).value;
 }
-
+ 
 // Save message to firebase
-function saveMessage(name, company, email, phone, message){
+function saveMessage(name, company, email, phone,fecha,genero,estado,message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
     company:company,
     email:email,
     phone:phone,
+    fecha:fecha,
+    genero:genero,
+    estado:estado,
     message:message
   });
 }

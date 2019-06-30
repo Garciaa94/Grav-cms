@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1561701341,
-    'checksum' => '8000744a0d6e2a04130dcce59f6a56d2',
+    'timestamp' => 1561739201,
+    'checksum' => '4b59fb1ad68aaa5af38d2dd2de79aeee',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -124,6 +124,10 @@ return [
             'plugins/ganalytics' => [
                 'file' => 'user/plugins/ganalytics/blueprints.yaml',
                 'modified' => 1561613472
+            ],
+            'plugins/socialbuttons' => [
+                'file' => 'user/plugins/socialbuttons/blueprints.yaml',
+                'modified' => 1561739199
             ]
         ]
     ],
@@ -6833,6 +6837,396 @@ return [
                 ],
                 'name' => 'plugins.ganalytics.debugTrace',
                 'validation' => 'strict'
+            ],
+            'plugins.socialbuttons' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    
+                ]
+            ],
+            'plugins.socialbuttons.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.enabled'
+            ],
+            'plugins.socialbuttons.buttons' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.facebook' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.facebook',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.facebook.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Facebook button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.facebook.enabled'
+            ],
+            'plugins.socialbuttons.buttons.facebook.label' => [
+                'type' => 'text',
+                'label' => 'Facebook button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.facebook.label'
+            ],
+            'plugins.socialbuttons.buttons.twitter' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.twitter',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.twitter.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Twitter button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.twitter.enabled'
+            ],
+            'plugins.socialbuttons.buttons.twitter.label' => [
+                'type' => 'text',
+                'label' => 'Twitter button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.twitter.label'
+            ],
+            'plugins.socialbuttons.buttons.googleplus' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.googleplus',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.googleplus.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Google plus button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.googleplus.enabled'
+            ],
+            'plugins.socialbuttons.buttons.googleplus.label' => [
+                'type' => 'text',
+                'label' => 'Google plus button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.googleplus.label'
+            ],
+            'plugins.socialbuttons.buttons.linkedin' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.linkedin',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.linkedin.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Linkedin button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.linkedin.enabled'
+            ],
+            'plugins.socialbuttons.buttons.linkedin.label' => [
+                'type' => 'text',
+                'label' => 'Linkedin button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.linkedin.label'
+            ],
+            'plugins.socialbuttons.buttons.reddit' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.reddit',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.reddit.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Reddit button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.reddit.enabled'
+            ],
+            'plugins.socialbuttons.buttons.reddit.label' => [
+                'type' => 'text',
+                'label' => 'Reddit button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.reddit.label'
+            ],
+            'plugins.socialbuttons.buttons.youtube' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.youtube',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.youtube.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Youtube button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.youtube.enabled'
+            ],
+            'plugins.socialbuttons.buttons.youtube.label' => [
+                'type' => 'text',
+                'label' => 'Youtube button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.youtube.label'
+            ],
+            'plugins.socialbuttons.buttons.hackernews' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.hackernews',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.hackernews.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Hackernews button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.hackernews.enabled'
+            ],
+            'plugins.socialbuttons.buttons.hackernews.label' => [
+                'type' => 'text',
+                'label' => 'Hackernews button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.hackernews.label'
+            ],
+            'plugins.socialbuttons.buttons.pinterest' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.pinterest',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.pinterest.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Pinterest button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.pinterest.enabled'
+            ],
+            'plugins.socialbuttons.buttons.pinterest.label' => [
+                'type' => 'text',
+                'label' => 'Pinterest button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.pinterest.label'
+            ],
+            'plugins.socialbuttons.buttons.pocket' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.pocket',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.pocket.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Pocket button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.pocket.enabled'
+            ],
+            'plugins.socialbuttons.buttons.pocket.label' => [
+                'type' => 'text',
+                'label' => 'Pocket button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.pocket.label'
+            ],
+            'plugins.socialbuttons.buttons.tumblr' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.tumblr',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.tumblr.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Tumblr button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.tumblr.enabled'
+            ],
+            'plugins.socialbuttons.buttons.tumblr.label' => [
+                'type' => 'text',
+                'label' => 'Tumblr button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.tumblr.label'
+            ],
+            'plugins.socialbuttons.buttons.vk' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.vk',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.vk.enabled' => [
+                'type' => 'toggle',
+                'label' => 'VK button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.vk.enabled'
+            ],
+            'plugins.socialbuttons.buttons.vk.label' => [
+                'type' => 'text',
+                'label' => 'VK button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.vk.label'
+            ],
+            'plugins.socialbuttons.buttons.github' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.github',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.github.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Github button',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.github.enabled'
+            ],
+            'plugins.socialbuttons.buttons.github.label' => [
+                'type' => 'text',
+                'label' => 'Github button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.github.label'
+            ],
+            'plugins.socialbuttons.buttons.email' => [
+                'type' => '_parent',
+                'name' => 'plugins.socialbuttons.buttons.email',
+                'form_field' => false
+            ],
+            'plugins.socialbuttons.buttons.email.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Email button',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.email.enabled'
+            ],
+            'plugins.socialbuttons.buttons.email.label' => [
+                'type' => 'text',
+                'label' => 'Email button label',
+                'highlight' => 1,
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'plugins.socialbuttons.buttons.email.label'
             ]
         ],
         'rules' => [
@@ -7548,6 +7942,63 @@ return [
                     'cookieExpires' => 'plugins.ganalytics.cookieExpires',
                     'debugStatus' => 'plugins.ganalytics.debugStatus',
                     'debugTrace' => 'plugins.ganalytics.debugTrace'
+                ],
+                'socialbuttons' => [
+                    'enabled' => 'plugins.socialbuttons.enabled',
+                    'buttons' => [
+                        'facebook' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.facebook.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.facebook.label'
+                        ],
+                        'twitter' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.twitter.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.twitter.label'
+                        ],
+                        'googleplus' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.googleplus.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.googleplus.label'
+                        ],
+                        'linkedin' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.linkedin.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.linkedin.label'
+                        ],
+                        'reddit' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.reddit.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.reddit.label'
+                        ],
+                        'youtube' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.youtube.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.youtube.label'
+                        ],
+                        'hackernews' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.hackernews.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.hackernews.label'
+                        ],
+                        'pinterest' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.pinterest.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.pinterest.label'
+                        ],
+                        'pocket' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.pocket.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.pocket.label'
+                        ],
+                        'tumblr' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.tumblr.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.tumblr.label'
+                        ],
+                        'vk' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.vk.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.vk.label'
+                        ],
+                        'github' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.github.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.github.label'
+                        ],
+                        'email' => [
+                            'enabled' => 'plugins.socialbuttons.buttons.email.enabled',
+                            'label' => 'plugins.socialbuttons.buttons.email.label'
+                        ]
+                    ]
                 ]
             ]
         ],

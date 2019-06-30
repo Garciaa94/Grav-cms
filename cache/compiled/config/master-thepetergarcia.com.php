@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1561709612,
-    'checksum' => '9ce62cc40dcf4b0ef05f75cef3d81d22',
+    'timestamp' => 1561739281,
+    'checksum' => 'ba0966940f4936a1d8578e36e4160865',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -27,11 +27,15 @@ return [
             ],
             'plugins/facebook' => [
                 'file' => 'user/config/plugins/facebook.yaml',
-                'modified' => 1561616044
+                'modified' => 1561739063
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
                 'modified' => 1561613471
+            ],
+            'plugins/git-sync' => [
+                'file' => 'user/config/plugins/git-sync.yaml',
+                'modified' => 1561739077
             ],
             'plugins/login' => [
                 'file' => 'user/config/plugins/login.yaml',
@@ -45,9 +49,17 @@ return [
                 'file' => 'user/config/plugins/problems.yaml',
                 'modified' => 1561613471
             ],
+            'plugins/socialbuttons' => [
+                'file' => 'user/config/plugins/socialbuttons.yaml',
+                'modified' => 1561739281
+            ],
             'plugins/tntsearch' => [
                 'file' => 'user/config/plugins/tntsearch.yaml',
                 'modified' => 1561606167
+            ],
+            'plugins/youtube' => [
+                'file' => 'user/config/plugins/youtube.yaml',
+                'modified' => 1561739170
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -212,6 +224,10 @@ return [
             'plugins/ganalytics' => [
                 'file' => 'user/plugins/ganalytics/ganalytics.yaml',
                 'modified' => 1561613472
+            ],
+            'plugins/socialbuttons' => [
+                'file' => 'user/plugins/socialbuttons/socialbuttons.yaml',
+                'modified' => 1561739199
             ]
         ]
     ],
@@ -310,7 +326,7 @@ return [
                 'enabled' => true
             ],
             'git-sync' => [
-                'enabled' => true
+                'enabled' => false
             ],
             'form' => [
                 'enabled' => true,
@@ -343,7 +359,7 @@ return [
                 'lines' => false
             ],
             'facebook' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'use_unitegallery_plugin' => true,
                 'facebook_page_settings' => [
@@ -415,7 +431,7 @@ return [
                 ]
             ],
             'youtube' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'add_editor_button' => true,
                 'player_parameters' => [
@@ -668,6 +684,63 @@ return [
                 'cookieExpires' => 63072000,
                 'debugStatus' => false,
                 'debugTrace' => true
+            ],
+            'socialbuttons' => [
+                'enabled' => true,
+                'buttons' => [
+                    'facebook' => [
+                        'enabled' => true,
+                        'label' => 'Facebook'
+                    ],
+                    'twitter' => [
+                        'enabled' => true,
+                        'label' => 'Twitter'
+                    ],
+                    'googleplus' => [
+                        'enabled' => true,
+                        'label' => 'Google+'
+                    ],
+                    'linkedin' => [
+                        'enabled' => true,
+                        'label' => 'Linkedin'
+                    ],
+                    'reddit' => [
+                        'enabled' => true,
+                        'label' => 'Reddit'
+                    ],
+                    'youtube' => [
+                        'enabled' => false,
+                        'label' => 'Youtube'
+                    ],
+                    'hackernews' => [
+                        'enabled' => false,
+                        'label' => 'Hackernews'
+                    ],
+                    'pinterest' => [
+                        'enabled' => false,
+                        'label' => 'Pinterest'
+                    ],
+                    'pocket' => [
+                        'enabled' => false,
+                        'label' => 'Pocket'
+                    ],
+                    'tumblr' => [
+                        'enabled' => false,
+                        'label' => 'Tumblr'
+                    ],
+                    'vk' => [
+                        'enabled' => false,
+                        'label' => 'VK'
+                    ],
+                    'github' => [
+                        'enabled' => false,
+                        'label' => 'Github'
+                    ],
+                    'email' => [
+                        'enabled' => true,
+                        'label' => 'Email'
+                    ]
+                ]
             ]
         ],
         'backups' => [

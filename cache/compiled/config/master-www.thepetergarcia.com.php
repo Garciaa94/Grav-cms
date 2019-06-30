@@ -1,65 +1,85 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1561651009,
-    'checksum' => '24148664fc2da17f381f5bfbfaf37c01',
+    'timestamp' => 1561833260,
+    'checksum' => 'ba0966940f4936a1d8578e36e4160865',
     'files' => [
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1561613471
+                'modified' => 1561697399
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1561613471
+                'modified' => 1561697399
             ],
             'plugins/admin' => [
                 'file' => 'user/config/plugins/admin.yaml',
-                'modified' => 1561613471
+                'modified' => 1561658176
             ],
             'plugins/error' => [
                 'file' => 'user/config/plugins/error.yaml',
                 'modified' => 1561616040
             ],
+            'plugins/external_links' => [
+                'file' => 'user/config/plugins/external_links.yaml',
+                'modified' => 1561658244
+            ],
             'plugins/facebook' => [
                 'file' => 'user/config/plugins/facebook.yaml',
-                'modified' => 1561616044
+                'modified' => 1561739063
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
                 'modified' => 1561613471
             ],
+            'plugins/git-sync' => [
+                'file' => 'user/config/plugins/git-sync.yaml',
+                'modified' => 1561739077
+            ],
+            'plugins/login' => [
+                'file' => 'user/config/plugins/login.yaml',
+                'modified' => 1561658386
+            ],
             'plugins/markdown-notices' => [
                 'file' => 'user/config/plugins/markdown-notices.yaml',
-                'modified' => 1561613471
+                'modified' => 1561658134
             ],
             'plugins/problems' => [
                 'file' => 'user/config/plugins/problems.yaml',
                 'modified' => 1561613471
             ],
+            'plugins/socialbuttons' => [
+                'file' => 'user/config/plugins/socialbuttons.yaml',
+                'modified' => 1561739281
+            ],
             'plugins/tntsearch' => [
                 'file' => 'user/config/plugins/tntsearch.yaml',
                 'modified' => 1561606167
             ],
+            'plugins/youtube' => [
+                'file' => 'user/config/plugins/youtube.yaml',
+                'modified' => 1561739170
+            ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
-                'modified' => 1561613471
+                'modified' => 1561697399
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1561613471
+                'modified' => 1561696824
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1561613471
+                'modified' => 1561707220
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1561613471
+                'modified' => 1561697399
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1561617100
+                'modified' => 1561709612
             ],
             'themes/alpha' => [
                 'file' => 'user/config/themes/alpha.yaml',
@@ -69,17 +89,21 @@ return [
                 'file' => 'user/config/themes/antimatter.yaml',
                 'modified' => 1561613471
             ],
+            'themes/bootstrap-blog' => [
+                'file' => 'user/config/themes/bootstrap-blog.yaml',
+                'modified' => 1561702868
+            ],
             'themes/cardstack' => [
                 'file' => 'user/config/themes/cardstack.yaml',
                 'modified' => 1561613471
             ],
             'themes/learn2' => [
                 'file' => 'user/config/themes/learn2.yaml',
-                'modified' => 1561605559
+                'modified' => 1561702478
             ],
             'themes/learn2-git-sync' => [
                 'file' => 'user/config/themes/learn2-git-sync.yaml',
-                'modified' => 1561615404
+                'modified' => 1561702222
             ],
             'themes/portfolio' => [
                 'file' => 'user/config/themes/portfolio.yaml',
@@ -93,27 +117,27 @@ return [
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1561248031
+                'modified' => 1561696789
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1561248031
+                'modified' => 1561696789
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1561248031
+                'modified' => 1561696789
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1561648064
+                'modified' => 1561696789
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1561248031
+                'modified' => 1561696789
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1561396954
+                'modified' => 1561696789
             ]
         ],
         'user/plugins' => [
@@ -131,11 +155,11 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1561613472
+                'modified' => 1561696951
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1561613472
+                'modified' => 1561696825
             ],
             'plugins/presentation-deckset' => [
                 'file' => 'user/plugins/presentation-deckset/presentation-deckset.yaml',
@@ -147,7 +171,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1561614050
+                'modified' => 1561696949
             ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/highlight.yaml',
@@ -167,7 +191,7 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1561613471
+                'modified' => 1561696953
             ],
             'plugins/langswitcher' => [
                 'file' => 'user/plugins/langswitcher/langswitcher.yaml',
@@ -179,7 +203,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1561613472
+                'modified' => 1561696825
             ],
             'plugins/shortcode-core' => [
                 'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
@@ -187,11 +211,11 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1561613472
+                'modified' => 1561696825
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1561613472
+                'modified' => 1561696950
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
@@ -200,6 +224,10 @@ return [
             'plugins/ganalytics' => [
                 'file' => 'user/plugins/ganalytics/ganalytics.yaml',
                 'modified' => 1561613472
+            ],
+            'plugins/socialbuttons' => [
+                'file' => 'user/plugins/socialbuttons/socialbuttons.yaml',
+                'modified' => 1561739199
             ]
         ]
     ],
@@ -285,7 +313,7 @@ return [
                 'debug' => false
             ],
             'markdown-notices' => [
-                'enabled' => false,
+                'enabled' => true,
                 'built_in_css' => true,
                 'level_classes' => [
                     0 => 'yellow',
@@ -298,7 +326,7 @@ return [
                 'enabled' => true
             ],
             'git-sync' => [
-                'enabled' => true
+                'enabled' => false
             ],
             'form' => [
                 'enabled' => true,
@@ -331,7 +359,7 @@ return [
                 'lines' => false
             ],
             'facebook' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'use_unitegallery_plugin' => true,
                 'facebook_page_settings' => [
@@ -403,7 +431,7 @@ return [
                 ]
             ],
             'youtube' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'add_editor_button' => true,
                 'player_parameters' => [
@@ -429,9 +457,9 @@ return [
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',
-                'cache_enabled' => true,
+                'cache_enabled' => false,
                 'theme' => 'grav',
-                'logo_text' => '',
+                'logo_text' => 'Garcia',
                 'body_classes' => '',
                 'content_padding' => true,
                 'twofa_enabled' => true,
@@ -505,7 +533,7 @@ return [
                 'untranslated_pages_behavior' => 'none'
             ],
             'external_links' => [
-                'enabled' => true,
+                'enabled' => false,
                 'built_in_css' => true,
                 'weight' => 0,
                 'exclude' => [
@@ -575,10 +603,10 @@ return [
                 'route_profile' => '/user_profile',
                 'route_register' => '/user_register',
                 'route_unauthorized' => '/user_unauthorized',
-                'twofa_enabled' => false,
-                'dynamic_page_visibility' => false,
-                'parent_acl' => false,
-                'protect_protected_page_media' => false,
+                'twofa_enabled' => true,
+                'dynamic_page_visibility' => true,
+                'parent_acl' => true,
+                'protect_protected_page_media' => true,
                 'rememberme' => [
                     'enabled' => true,
                     'timeout' => 604800,
@@ -656,6 +684,63 @@ return [
                 'cookieExpires' => 63072000,
                 'debugStatus' => false,
                 'debugTrace' => true
+            ],
+            'socialbuttons' => [
+                'enabled' => true,
+                'buttons' => [
+                    'facebook' => [
+                        'enabled' => true,
+                        'label' => 'Facebook'
+                    ],
+                    'twitter' => [
+                        'enabled' => true,
+                        'label' => 'Twitter'
+                    ],
+                    'googleplus' => [
+                        'enabled' => true,
+                        'label' => 'Google+'
+                    ],
+                    'linkedin' => [
+                        'enabled' => true,
+                        'label' => 'Linkedin'
+                    ],
+                    'reddit' => [
+                        'enabled' => true,
+                        'label' => 'Reddit'
+                    ],
+                    'youtube' => [
+                        'enabled' => false,
+                        'label' => 'Youtube'
+                    ],
+                    'hackernews' => [
+                        'enabled' => false,
+                        'label' => 'Hackernews'
+                    ],
+                    'pinterest' => [
+                        'enabled' => false,
+                        'label' => 'Pinterest'
+                    ],
+                    'pocket' => [
+                        'enabled' => false,
+                        'label' => 'Pocket'
+                    ],
+                    'tumblr' => [
+                        'enabled' => false,
+                        'label' => 'Tumblr'
+                    ],
+                    'vk' => [
+                        'enabled' => false,
+                        'label' => 'VK'
+                    ],
+                    'github' => [
+                        'enabled' => false,
+                        'label' => 'Github'
+                    ],
+                    'email' => [
+                        'enabled' => true,
+                        'label' => 'Email'
+                    ]
+                ]
             ]
         ],
         'backups' => [
@@ -669,6 +754,8 @@ return [
                 0 => [
                     'name' => 'Default Site Backup',
                     'root' => '/',
+                    'schedule' => false,
+                    'schedule_at' => '0 3 * * *',
                     'exclude_paths' => '/backup
 /cache
 /images
@@ -680,9 +767,7 @@ return [
 .hg
 .idea
 .vscode
-node_modules',
-                    'schedule' => true,
-                    'schedule_at' => '0 3 * * *'
+node_modules'
                 ]
             ]
         ],
@@ -997,13 +1082,13 @@ node_modules',
                 3 => 'js',
                 4 => 'exe'
             ],
-            'salt' => '5BXaNuynC1wYHU'
+            'salt' => 'XYQWIePhlaUmKc'
         ],
         'site' => [
-            'title' => 'Blog',
-            'default_lang' => 'en ',
+            'title' => 'GarciaBlog',
+            'default_lang' => 'en',
             'author' => [
-                'name' => 'Adrian Garcia Bloggs',
+                'name' => 'Adrian Garcia',
                 'email' => 'adrian1994215@gmail.com'
             ],
             'taxonomies' => [
@@ -1011,7 +1096,7 @@ node_modules',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Materia Graficacion y animacion 6to Pucese'
+                'description' => 'Estudio y Desarrollo practico de la materia Graficacion y Animacion'
             ],
             'summary' => [
                 'enabled' => true,
@@ -1023,17 +1108,6 @@ node_modules',
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
-            ],
-            'menu' => [
-                0 => [
-                    'text' => 'Source',
-                    'icon' => 'github',
-                    'url' => 'https://github.com/getgrav/grav'
-                ],
-                1 => [
-                    'icon' => 'twitter',
-                    'url' => 'http://twitter.com/getgrav'
-                ]
             ]
         ],
         'streams' => [
@@ -1087,10 +1161,10 @@ node_modules',
             ],
             'home' => [
                 'alias' => '/home',
-                'hide_in_urls' => false
+                'hide_in_urls' => true
             ],
             'pages' => [
-                'theme' => 'learn2-git-sync',
+                'theme' => 'antimatter',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -1099,7 +1173,7 @@ node_modules',
                     'count' => 20
                 ],
                 'dateformat' => [
-                    'default' => 'd-m-Y H:i',
+                    'default' => NULL,
                     'short' => 'jS M Y',
                     'long' => 'F jS \\a\\t g:ia'
                 ],
@@ -1149,7 +1223,7 @@ node_modules',
                     0 => '.git',
                     1 => '.idea'
                 ],
-                'ignore_hidden' => NULL,
+                'ignore_hidden' => true,
                 'hide_empty_folders' => false,
                 'url_taxonomy_filters' => true,
                 'frontmatter' => [
@@ -1334,6 +1408,69 @@ node_modules',
                     ]
                 ]
             ],
+            'bootstrap-blog' => [
+                'enabled' => true,
+                'cdn_enabled' => false,
+                'back_to_top_button' => false,
+                'fluid_container' => false,
+                'favicon' => [
+                    'user/themes/quark/images/logo.png' => [
+                        'name' => 'logo.png',
+                        'type' => 'image/png',
+                        'size' => 6779,
+                        'path' => 'user/themes/quark/images/logo.png'
+                    ]
+                ],
+                'navbar' => [
+                    'image' => [
+                        'user/themes/quark/images/logo.png' => [
+                            'name' => 'logo.png',
+                            'type' => 'image/png',
+                            'size' => 6779,
+                            'path' => 'user/themes/quark/images/logo.png'
+                        ]
+                    ],
+                    'icon' => 'AdrianBlog',
+                    'style' => 'light',
+                    'override_page_style' => false,
+                    'dropdown' => true,
+                    'sticky' => false,
+                    'display_site_name' => false
+                ],
+                'sidebar' => [
+                    'enabled' => false,
+                    'align' => 'left',
+                    'twitter' => [
+                        'enabled' => false,
+                        'user' => 'garciaa94',
+                        'height' => 600,
+                        'theme' => 'dark'
+                    ],
+                    'about' => [
+                        'enabled' => false,
+                        'title' => 'About me',
+                        'content' => 'Some text about you...',
+                        'page' => '/home'
+                    ]
+                ],
+                'item' => [
+                    'featured_image' => '0',
+                    'show_prev_next' => false,
+                    'related_pages' => true,
+                    'category' => 'category',
+                    'tag' => 'tag'
+                ],
+                'comments' => [
+                    'enabled' => false
+                ],
+                'footer' => [
+                    'style' => 'dark',
+                    'text' => '<a href="http://facebook.com/garciaa94">Adrian Garcia</a>'
+                ],
+                'simplesearch' => [
+                    'layout' => 'boxed'
+                ]
+            ],
             'cardstack' => [
                 'enabled' => true,
                 'cardstack_route' => '/cards',
@@ -1363,16 +1500,15 @@ node_modules',
                 'top_level_version' => true,
                 'show_all_pages' => false,
                 'github' => [
-                    'position' => 'top',
-                    'tree' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/',
-                    'commits' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/'
+                    'position' => 'top'
                 ]
             ],
             'learn2-git-sync' => [
                 'enabled' => true,
                 'top_level_version' => false,
                 'github' => [
-                    'position' => 'top'
+                    'position' => 'top',
+                    'icon' => 'Adrian Garcia'
                 ],
                 'default_taxonomy_category' => 'docs',
                 'style' => 'default',
