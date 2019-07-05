@@ -19,4 +19,5 @@ HTML hace referencia al lenguaje de marcado para la elaboración de páginas web
 
 s un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.​ 
 
-![](imagen%20css.jpg)
+![](imagen%20css.jpg)     
+.
