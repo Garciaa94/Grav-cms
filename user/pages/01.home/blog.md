@@ -1,5 +1,6 @@
 ---
 title: Tareas-Clases
+published: true
 taxonomy:
     category:
         - docs
@@ -9,18 +10,23 @@ visible: true
 content:
     items:
         - '@self.children'
-    limit: 5
+    limit: 3
     order:
-        by: default
+        by: folder
         dir: desc
     pagination: true
     url_taxonomy_filters: true
-feed:
-    limit: 10
-    description: 'Aprendizaje de la herramienta de la materia Animacion y Graficacion'
 process:
     markdown: false
     twig: false
+resume:
+    general:
+        bgcolor: '#2fc0d1'
+        secondarycolor: '#9bd952'
+        github: '0'
+feed:
+    limit: 10
+    description: 'Aprendizaje de la herramienta de la materia Animacion y Graficacion'
 textsize:
     scale: ''
     modifier: ''
@@ -101,15 +107,14 @@ layout: boxed
 </head>
 <body>
 <!-- <p><center>Graficas y Animaciones.</center></p> -->
-    <div id="menu">
+  <!--  <div id="menu">
         <ul><center>
             <li><a href="https://www.thepetergarcia.com">inicio</a></li>
             <li><a href="https://github.com/garciaa94">Github</a></li>
             <li><a href="https://www.facebook.com/garciaa94">FaceBook</a></li>
         </center></ul>
-    </div>
-<!-- 
-        
+    </div> -->
+<!--     
     <table  style="border: hidden">
   <tr style="border: hidden">
     <td style="border: hidden"><a href="https://thepetergarcia.com/home/ejercicio-css-html"> <br> Ejercicios HTML-CSS</a></td>
@@ -123,7 +128,6 @@ layout: boxed
       <td style="border: hidden"><a href="https://thepetergarcia.com/home/juego-gravedad"> <br> Juego modificado </a></td>
 
   </tr>
-
 </table>  -->
     
     

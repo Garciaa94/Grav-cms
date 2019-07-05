@@ -1,7 +1,6 @@
 ---
-title: contacto
+title: contacto2
 ---
-
 
 <html lang="es">
 <head>

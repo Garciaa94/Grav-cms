@@ -1,8 +1,8 @@
 ---
-title: juego-de-examen
+title: juego-de-Memoria
+media_order: 'images.json,images.png,pixi.dev.js'
+published: true
 ---
-
-
 <html>
 	<head>
 		<title>PIXI Concentration</title>
@@ -13,17 +13,14 @@ title: juego-de-examen
 			}
 		</style>
 		<script src="pixi.dev.js"></script>
-		<!<script src="pixi-sound.js"></script><!--LIBRERIA DE SONIDO-->
-	<link rel="icon" type="imagen/png" href="favicon.png">
-          
-
+	<!--<script src="pixi-sound.js"></script>--LIBRERIA DE SONIDO
+	<link rel="icon" type="imagen/png" href="favicon.png">-->
 	</head>
 	<body>
 		<!--<audio id="myAudio" controls>
 					<source src="iphone-notificacion.mp3" type="audio/mpeg">
 				  </audio>	-->	
 	<script>
-		
 		var x = document.getElementById("myAudio");//AUDIO
 
   document.body.style.backgroundImage = "url('memo1.gif')";//poner imagen

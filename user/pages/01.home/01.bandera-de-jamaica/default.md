@@ -1,0 +1,13 @@
+---
+title: 'Bandera de Jamaica'
+---
+
+ Bandera Jamaica
+	<br>
+    <svg width="600" height="300"> 
+<rect width="100%" height="100%" style="fill:rgb(254,223,0);"></rect><!-- Color base bandera -->
+<path d="M300 110 L20 0 L580 0 Z " style="fill:rgb(0,155,58);"></path> <!-- triangulo arriba-->
+<path d="M300 190 L20 300 L580 300 Z " style="fill:rgb(0,155,58);"></path><!-- triangulo abajo -->
+<path d="M330 150 L600 270 L600 30 Z " style="fill:rgb(0,0,0);"></path><!-- triangulo derecho -->
+<path d="M270 150 L0 270 L0 30 Z " style="fill:rgb(0,0,0);"></path><!-- tringulo Izquierdo -->
+</svg>
