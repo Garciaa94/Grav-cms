@@ -10,7 +10,7 @@ visible: true
 content:
     items:
         - '@self.children'
-    limit: 3
+    limit: 5
     order:
         by: folder
         dir: desc
