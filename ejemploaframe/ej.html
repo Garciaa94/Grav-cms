@@ -1,11 +1,14 @@
 <html>
+<head>
+  <link rel="shortcut icon" href="favicon.jpg">
+</head>
   <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
   <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <body style='margin : 0px; overflow: hidden;' onload="ShowData()">
   <a-scene embedded arjs>
     <!--Marcador uno-->
-    <a-marker type = 'pattern'  url = 'archivo.patt'>
+    <a-marker type = 'pattern'  url = 'labI.pstt'>
       <a-text value=" 
         Estado:  Ocupado 
         Materia: Ingles
@@ -17,7 +20,7 @@
     <a-entity camera></a-entity>
 
     <!--Marcador dos-->
-    <a-marker type = 'pattern'  url = 'pattern-laboratorioI.patt'>
+    <a-marker type = 'pattern'  url = 'labII.pstt'>
       <div id="lab2"></div>
       <a-text value=" 
         Estado:  Ocupado 
@@ -30,7 +33,7 @@
     <a-entity camera></a-entity>
 
     <!--Marcador tres-->
-    <a-marker type = 'pattern'  url = 'archivo.patt'>
+    <a-marker type = 'pattern'  url = 'labIII.pstt'>
       <a-text value=" 
       Estado:  Ocupado 
       Materia: Ingenieria de Software

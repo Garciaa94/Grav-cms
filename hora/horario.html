@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="favicon.jpg">
+	<title>Horario</title>
+
+<script type="text/javascript">
+
+function mostrarSaludo(){
+ahora=new Date(); 
+hora=ahora.getHours();
+
+// /*  En estas 4 líneas le decimos que: si la hora de la PC es menor a 12 PM, que muestre el saludo: Buenos Días y a su vez que nos muestre nuestra imagen: dia.jpg . * /
+if(hora>7 && hora<12){
+texto="Buenos Dias"+" Clases por la mañana";  
+imagen="img/dia.jpg";
+}
+/* Las demás líneas hacen lo mismo: si la hora de la PC es tal, entonces que nos muestre el saludo correspondiente y también su imagen correspondiente. */
+// tarde
+if(hora>12 && hora<2){
+texto=	"Laboratorio Libre";
+imagen="img/tarde.jpg";
+}
+
+if(hora>2 && hora<4){
+texto=	"Laboratorio Libre";
+imagen="img/tarde.jpg";
+}
+
+if(hora>4 && hora<6){
+texto="Buenas Noches\n" +"Lab. 2\n "+
+		"Materia: Graficacion y Animacion\n"+
+		"Profesor: Marc Grob\n"+
+		"";
+imagen="img/noche.jpg";
+}
+
+ // noche 
+if(hora>18 && hora<20){
+texto="Buenas Noches\n" +"Lab. 2\n "+
+		"Materia: Ingenieria de Software\n"+
+		"Profesor: Javier Ku\n"+
+		"";
+imagen="img/noche.jpg";
+}
+
+if(hora>20 && hora<22){
+texto="Buenas Noches\n" +"Lab. 2\n "+
+		"Materia: Compiladores\n"+
+		"Profesor: Jose Carvajal\n"+
+		"";
+		imagen="img/noche.jpg";
+}
+
+if(hora>22 && hora<24){
+texto="No esta en funcionamiento el "+
+		" lab. 2";
+imagen="img/noche.jpg";
+}
+
+
+/* Acá le decimos que nos muestre la imagen (día, tarde o noche) en el destino con ID: tiempo. */
+document.images["tiempo"].src=imagen;
+
+
+/* Acá le decimos que nos muestre el saludo (Buenos días, Buenas tardes o Buenas Noches) en el siguiente destino con ID: saludo. */
+document.getElementById('saludo').innerHTML = texto;
+
+}
+
+</script>
+</head>
+<body onload="mostrarSaludo()">
+	<div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/3654410"><span style="color:gray;">Hora actual en</span><br /> Ecuador</a></h3><!-- fecha y hora--> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FGuayaquil" width="100%" height="115" frameborder="0" seamless></iframe> </div><!-- fecha y hora-->
+<div id="saludo"></div>
+<div id="img"><img name="tiempo"></img></div>
+</body>
+</html>

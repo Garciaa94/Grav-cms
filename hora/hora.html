@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+function mostrarSaludo(){
+ahora=new Date(); 
+hora=ahora.getHours();
+
+
+// /*  En estas 4 líneas le decimos que: si la hora de la PC es menor a 12 PM, que muestre el saludo: Buenos Días y a su vez que nos muestre nuestra imagen: dia.jpg . * /
+
+if(hora<12){
+texto="Buenos Dias";  
+imagen="img/dia.jpg";
+}
+
+
+/* Las demás líneas hacen lo mismo: si la hora de la PC es tal, entonces que nos muestre el saludo correspondiente y también su imagen correspondiente. */
+
+if(hora>12 && hora<18){
+texto="Buenas Tardes";
+imagen="img/tarde.jpg";
+}
+
+if(hora>18 && hora<24){
+texto="Buenas Noches\n"+"Lab. 2\n "+
+		"Materia: Ingenieria de Software\n"+
+		"Profesor: Javier Ku\n"+
+		"";		
+imagen="img/noche.jpg";
+}
+else
+{
+	
+}
+
+
+/* Acá le decimos que nos muestre la imagen (día, tarde o noche) en el destino con ID: tiempo. */
+document.images["tiempo"].src=imagen;
+
+
+/* Acá le decimos que nos muestre el saludo (Buenos días, Buenas tardes o Buenas Noches) en el siguiente destino con ID: saludo. */
+document.getElementById('saludo').innerHTML = texto;
+
+}
+
+</script>
+</head>
+<body onload="mostrarSaludo()">
+
+<div id="saludo"></div>
+
+<div id="img"><img name="tiempo"></img></div>
+
+</body>
+</html>
