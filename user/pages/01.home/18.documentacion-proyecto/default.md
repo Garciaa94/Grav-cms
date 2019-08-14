@@ -4,7 +4,7 @@ title: 'Documentación Proyecto'
 
 #### Objetivo del proyecto 
 * El objetivo de este proyecto es lograr la implementacion de de un aplicativo web aplicando las tecnicas de desarrollo y las herramientas usadas en clases con el fin de plasmar los resultados de lo aprendido en clases.
-
+### [Proyecto](http://thepetergarcia.com:3000/)<br>
 #### Documentacion del proyecto
 
 ##### Herramientas y tecnologias a u usar para la implementacion de nuestro aplicativo web
